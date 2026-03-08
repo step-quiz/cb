@@ -38,7 +38,7 @@ html, body {
     flex: 1;
     display: flex;
     flex-direction: column;
-    padding-left: 1%;
+    padding-left: 2%;/* Marge esquerre per a primera columna */
     overflow-y: auto; /* Permet l'scroll independent */
     padding-bottom: 60px; /* Marge extra de seguretat per a mòbils */
     -webkit-overflow-scrolling: touch; /* Suavitza l'scroll en tàctils */
