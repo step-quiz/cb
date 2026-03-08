@@ -275,9 +275,9 @@ button.opcio.seleccionada {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        height: 100vh;
-        width: 100vw;
-        background-color: var(--bg);
+        height: 100vh;      /* Fallback per a navegadors vells */
+        height: 100dvh;     /* Mesura perfecta per a la pantalla de bloqueig */
+        width: 100%;        /* Més segur que 100vw */        background-color: var(--bg);
         color: #333;
         text-align: center;
         padding: 30px;
