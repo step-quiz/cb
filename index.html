@@ -5,24 +5,19 @@
   <meta name="google-site-verification" content="n4wFLcRQBu5hvzynguDkyZ1FInSqiuurzVhHqmm0lmg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Activitat interactiva de matemàtiques">
-  <link rel="icon" href="icon.png" />
   <title>Generador d'Exàmens CB</title>
 
   <style>
-  :root {
-  --text-main: #2f3a1f;
-  --text-muted: #6b7550;
+    :root {
+      --text-main: #1e293b;
+      --text-muted: #64748b;
+      --bg-body: #f8fafc;
+      --eso-bg: #eff6ff;
+      --accent: #3b82f6;
+      --border-heavy: #cbd5e1;
+      --panel-w: 420px;
+    }
 
-  --bg-body: #f5f7ef;
-  --eso-bg: #eef3d8;
-
-  --accent: #8a9a3a;
-  --accent-dark: #6f7c2f;
-
-  --border-heavy: #cfd8a6;
-
-  --panel-w: 420px;
-  }
     * { box-sizing: border-box; }
 
     body {
@@ -83,7 +78,7 @@
       transition: all 0.15s ease;
     }
     select:hover { background-color: #f1f5f9; border-color: var(--text-main); }
-    select:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 2px rgba(138,154,58,0.25); }
+    select:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2); }
 
     .link-block { margin-top: 20px; padding-top: 15px; border-top: 1px solid rgba(0,0,0,0.08); }
     .link-label { font-size: 12px; font-weight: 700; color: var(--text-muted); text-transform: uppercase; margin-bottom: 8px; display: block; text-align: center;}
@@ -119,8 +114,9 @@
     
     .copy-btn { background: #ffffff; color: var(--text-main); border: 1px solid var(--border-heavy); box-shadow: 0 1px 2px rgba(0,0,0,0.05); }
     .copy-btn:hover { background: var(--bg-body); border-color: var(--text-muted); }
-    .open-btn { background: var(--accent); color: white; }
-    .open-btn:hover { background: var(--accent-dark); }
+    .open-btn { background: var(--text-muted); color: white; }
+    .open-btn:hover { background: #475569; }
+
     .copy-status { font-size: 13px; color: #059669; margin-top: 8px; min-height: 18px; font-weight: 700; text-align: center; }
 
     .select-atencio-shake {
@@ -141,13 +137,11 @@
 </head>
 <body>
 
-<div class="title-container">
-  <h1 class="title-row-1">
-    <img src="icon.png" alt="Icona" style="height:60px; margin-right:10px;">
-    Matemàtiques
-  </h1>
-  <h2 class="title-row-2">Proves de competència matemàtica</h2>
-</div>
+  <div class="title-container">
+    <h1 class="title-row-1">Matemàtiques</h1>
+    <h2 class="title-row-2">Proves de competència matemàtica</h2>
+  </div>
+
   <div class="main-wrapper">
     <div class="quiz-panel">
       <h2>Configura la prova</h2>
