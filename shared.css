@@ -1,0 +1,357 @@
+/* =========================================
+   VARIABLES GLOBALS
+   ========================================= */
+:root {
+    --primary: #0056b3;
+    --success: #28a745;
+    --error: #dc3545;
+    --bg: #f4f7f6;
+}
+
+/* =========================================
+   CONFIGURACIÓ BASE (Sense Scroll global)
+   ========================================= */
+html, body {
+    height: 100vh;
+    margin: 0;
+    overflow: hidden; 
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background-color: var(--bg);
+}
+
+/* =========================================
+   ESTRUCTURA PRINCIPAL (2 Columnes)
+   ========================================= */
+#app-container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 40px;
+    box-sizing: border-box;
+}
+
+#columna-a {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1%;
+    overflow-y: auto; /* Permet l'scroll independent */
+    padding-bottom: 60px; /* Marge extra de seguretat per a mòbils */
+    -webkit-overflow-scrolling: touch; /* Suavitza l'scroll en tàctils */
+}
+
+#columna-b {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto; /* Permet l'scroll independent */
+    padding-bottom: 60px; /* Marge extra de seguretat per a mòbils */
+    -webkit-overflow-scrolling: touch; /* Suavitza l'scroll en tàctils */
+}
+
+/* =========================================
+   CAPÇALERES I COMPTADOR
+   ========================================= */
+header {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.titol-reduit {
+    font-size: 1.5rem;
+    margin: 0;
+    color: #333;
+}
+
+#comptador-preguntes {
+    display: flex;           /* Activa el mode flexible */
+    align-items: center;     /* Alinea verticalment els textos */
+    justify-content: flex-start; /* Els manté a l'esquerra */
+    
+    font-size: 1.05rem; 
+    font-weight: normal; 
+    margin: 0;
+    color: #555;
+    
+    /* Mantenim la teva transició de fade */
+    opacity: 1;
+    transition: opacity 1.25s ease-in-out; 
+}
+
+/* Opcional: per si vols que el text del Mode tingui un toc diferent des del CSS */
+#comptador-preguntes span {
+    letter-spacing: 0.5px;
+    text-transform: uppercase; /* Li dóna un aire més d'indicador oficial */
+    font-size: 0.9rem;        /* Una mica més petit per no treure protagonisme */
+}
+
+.fade-out {
+    opacity: 0 !important;
+}
+
+/* =========================================
+   IMATGES (Enunciat i Pregunta)
+   ========================================= */
+#zona-enunciat, #zona-pregunta {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+#img-enunciat { 
+    width: 100%; 
+    height: auto; 
+    object-fit: contain; 
+}
+
+#img-pregunta { 
+    width: 100%; 
+    height: auto; 
+    object-fit: contain; 
+}
+
+/* Animacions d'aparició */
+.element-suau {
+    opacity: 0;
+    transition: opacity 0.5s ease-in;
+}
+
+.visible {
+    opacity: 1 !important;
+}
+
+/* =========================================
+   INTERACCIÓ (Opcions i Botons)
+   ========================================= */
+#opcions-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.fila-opcio {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    gap: 20px;
+}
+
+button.opcio {
+    min-width: 120px;
+    width: fit-content;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    border: 2px solid var(--primary);
+    background: white;
+    color: var(--primary);
+    border-radius: 6px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: all 0.2s;
+    flex-shrink: 0; 
+}
+
+button.opcio:hover:not(:disabled) { 
+    background-color: var(--primary); 
+    color: white; 
+}
+
+/* Estats de resposta */
+button.opcio.correcta { 
+    background-color: var(--success); 
+    border-color: var(--success); 
+    color: white; 
+}
+button.opcio.incorrecta { 
+    border-color: var(--error); 
+    color: var(--error); 
+    opacity: 0.7; 
+}
+button.opcio.seleccionada {
+    background-color: #eff6ff; 
+    border-color: var(--primary);
+    color: var(--primary);
+    box-shadow: 0 0 0 2px var(--primary); 
+}
+
+/* Botons d'acció */
+.btn-next {
+    padding: 12px 24px;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.btn-confirmar {
+    background-color: #000; 
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    animation: fadeIn 0.3s ease;
+}
+
+.btn-confirmar:hover { 
+    background-color: #333; 
+}
+
+/* =========================================
+   FEEDBACK I PISTES
+   ========================================= */
+.pista-contextual {
+    font-size: 1rem;
+    font-weight: 500;
+    color: black; /* Canviat a negre */
+    animation: fadeIn 0.4s ease;
+}
+
+.success-msg { 
+    color: var(--success); 
+    font-weight: bold; 
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateX(-10px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+
+/* =========================================
+   RESULTATS FINALS
+   ========================================= */
+.caixa-codi {
+    background: #e2e8f0;
+    padding: 15px;
+    border-radius: 8px;
+    border: 2px dashed var(--primary);
+    margin-top: 20px;
+    text-align: center;
+}
+
+.codi-text {
+    font-family: monospace;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--primary);
+    margin: 10px 0;
+    letter-spacing: 2px;
+}
+
+/* =========================================
+   PANTALLA DE BLOQUEIG: MODE VERTICAL
+   ========================================= */
+#avis-rotacio {
+    display: none;
+}
+
+/* Només mòbils/tauletes (hover: none) en vertical (portrait) */
+@media screen and (max-width: 900px) and (orientation: portrait) and (hover: none) {
+    
+    #app-container {
+        display: none !important;
+    }
+
+    #avis-rotacio {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+        background-color: var(--bg);
+        color: #333;
+        text-align: center;
+        padding: 30px;
+        box-sizing: border-box;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9999;
+    }
+
+    #avis-rotacio h2 {
+        color: var(--primary);
+        margin-top: 20px;
+        font-size: 1.8rem;
+    }
+
+    #avis-rotacio p {
+        font-size: 1.1rem;
+        color: #555;
+        max-width: 300px;
+        line-height: 1.5;
+    }
+
+    .icona-mobil {
+        width: 60px;
+        height: 100px;
+        border: 4px solid var(--primary);
+        border-radius: 12px;
+        position: relative;
+        animation: animacioGirar 2s infinite ease-in-out;
+    }
+
+    .icona-mobil::after {
+        content: '';
+        position: absolute;
+        bottom: 6px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 12px;
+        height: 12px;
+        border: 2px solid var(--primary);
+        border-radius: 50%;
+    }
+
+    @keyframes animacioGirar {
+        0% { transform: rotate(0deg); }
+        50% { transform: rotate(-90deg); }
+        100% { transform: rotate(-90deg); }
+    }
+}
+
+/* =========================================
+   MÒBILS EN HORITZONTAL: GRAELLA 2×2
+   ========================================= */
+@media screen and (max-height: 450px) and (orientation: landscape) and (hover: none) {
+    
+    #opcions-container {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr;
+        gap: 8px !important;
+    }
+    
+    /* Reordenem: A i B a l'esquerra, C i D a la dreta */
+    .fila-opcio:nth-child(1) { grid-row: 1; grid-column: 1; }
+    .fila-opcio:nth-child(2) { grid-row: 2; grid-column: 1; }
+    .fila-opcio:nth-child(3) { grid-row: 1; grid-column: 2; }
+    .fila-opcio:nth-child(4) { grid-row: 2; grid-column: 2; }
+    
+    .fila-opcio {
+        gap: 8px !important;
+    }
+    
+    button.opcio {
+        min-width: unset !important;
+        padding: 8px 12px !important;
+        font-size: 0.95rem !important;
+    }
+    
+    .btn-confirmar {
+        padding: 8px 10px !important;
+        font-size: 0.85rem !important;
+        white-space: nowrap;
+    }
+    
+    .pista-contextual {
+        font-size: 0.85rem !important;
+    }
+}

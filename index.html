@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="google-site-verification" content="n4wFLcRQBu5hvzynguDkyZ1FInSqiuurzVhHqmm0lmg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Activitat interactiva de matemàtiques">
+  <title>Generador d'Exàmens CB</title>
+
+  <style>
+    :root {
+      --text-main: #1e293b;
+      --text-muted: #64748b;
+      --bg-body: #f8fafc;
+      --eso-bg: #eff6ff;
+      --accent: #3b82f6;
+      --border-heavy: #cbd5e1;
+      --panel-w: 420px;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg-body);
+      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      color: var(--text-main);
+      padding: 15px;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .title-container { text-align: center; margin-bottom: 25px; }
+    .title-row-1 { display: flex; align-items: center; justify-content: center; gap: 6px; font-size: 32px; font-weight: 800; color: var(--text-main); margin: 0; }
+    .title-row-2 { font-size: 22px; font-weight: 400; color: var(--accent); margin-top: -5px; }
+
+    .title-row-1, .title-row-2, .main-wrapper { opacity: 0; animation: fade-in 0.4s ease-out forwards; }
+    .title-row-2 { animation-delay: 0.2s; }
+    .main-wrapper { animation-delay: 0.4s; }
+
+    @keyframes fade-in { 
+      from { opacity: 0; transform: translateY(15px); } 
+      to { opacity: 1; transform: translateY(0); } 
+    }
+
+    .main-wrapper { display: flex; justify-content: center; width: 100%; max-width: 1000px; }
+    .quiz-panel { 
+      width: var(--panel-w); 
+      max-width: 100%; 
+      padding: 25px; 
+      border-radius: 16px; 
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05); 
+      border: 1px solid var(--border-heavy); 
+      background-color: var(--eso-bg); 
+    }
+
+    h2 { margin: 0 0 18px 5px; font-size: 20px; font-weight: 800; text-align: center; }
+    
+    .row { display: grid; grid-template-columns: 100px 1fr; align-items: center; gap: 10px; margin-bottom: 12px; }
+    .row label { font-size: 14px; font-weight: 600; text-align: right; color: var(--text-main); }
+    
+    select { 
+      appearance: none; 
+      background-color: #ffffff; 
+      height: 36px; 
+      padding: 0 10px; 
+      font-size: 14px; 
+      border: 1px solid var(--border-heavy); 
+      border-radius: 6px; 
+      cursor: pointer; 
+      text-align: center; 
+      width: 100%; 
+      font-weight: 500; 
+      color: var(--text-main);
+      transition: all 0.15s ease;
+    }
+    select:hover { background-color: #f1f5f9; border-color: var(--text-main); }
+    select:focus { outline: none; border-color: var(--accent); box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.2); }
+
+    .link-block { margin-top: 20px; padding-top: 15px; border-top: 1px solid rgba(0,0,0,0.08); }
+    .link-label { font-size: 12px; font-weight: 700; color: var(--text-muted); text-transform: uppercase; margin-bottom: 8px; display: block; text-align: center;}
+    textarea.link-output { 
+      width: 100%; 
+      height: 55px; 
+      resize: none; 
+      font-family: monospace; 
+      font-size: 13px; 
+      padding: 10px; 
+      border-radius: 6px; 
+      border: 1px solid var(--border-heavy); 
+      background: #e2e8f0; 
+      word-break: break-all; 
+      color: var(--text-main); 
+    }
+
+    .btn-row { display: flex; gap: 8px; margin-top: 12px; }
+    .copy-btn, .open-btn { 
+      flex: 1; 
+      height: 40px; 
+      cursor: pointer; 
+      border-radius: 6px; 
+      font-weight: 700; 
+      font-size: 14px; 
+      display: flex; 
+      align-items: center; 
+      justify-content: center; 
+      border: none; 
+      gap: 6px; 
+      transition: all 0.2s ease; 
+    }
+    
+    .copy-btn { background: #ffffff; color: var(--text-main); border: 1px solid var(--border-heavy); box-shadow: 0 1px 2px rgba(0,0,0,0.05); }
+    .copy-btn:hover { background: var(--bg-body); border-color: var(--text-muted); }
+    .open-btn { background: var(--text-muted); color: white; }
+    .open-btn:hover { background: #475569; }
+
+    .copy-status { font-size: 13px; color: #059669; margin-top: 8px; min-height: 18px; font-weight: 700; text-align: center; }
+
+    .select-atencio-shake {
+      animation: blink-bg 0.4s 6, shake-select 2.5s ease-in-out;
+    }
+    @keyframes blink-bg {
+      0%, 100% { background-color: #ffffff; }
+      50% { background-color: #e8e1ac; }
+    }
+    @keyframes shake-select {
+      0%, 100% { transform: translateX(0); }
+      20% { transform: translateX(-4px); }
+      40% { transform: translateX(4px); }
+      60% { transform: translateX(-4px); }
+      80% { transform: translateX(4px); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="title-container">
+    <h1 class="title-row-1">Matemàtiques</h1>
+    <h2 class="title-row-2">Proves de competència matemàtica</h2>
+  </div>
+
+  <div class="main-wrapper">
+    <div class="quiz-panel">
+      <h2>Configura la prova</h2>
+      
+      <div class="row">
+        <label for="f-practica">Mode:</label>
+        <select id="f-practica">
+          <option value="1">Pràctica (amb pistes)</option>
+          <option value="0">Examen</option>
+        </select>
+      </div>
+
+      <div class="row">
+        <label for="f-nivell">Nivell:</label>
+        <select id="f-nivell">
+          <option value="">Tots els nivells</option>
+          <option value="4eso">4t ESO (final d'etapa)</option>
+          <option value="2eso">2n ESO (diagnòstica)</option>
+        </select>
+      </div>
+
+      <div class="row">
+        <label for="f-any">Any:</label>
+        <select id="f-any">
+        </select>
+      </div>
+
+      <div class="row">
+        <label for="f-dificultat">Dificultat:</label>
+        <select id="f-dificultat">
+          <option value="">Totes</option>
+          <option value="1">1 - Baixa</option>
+          <option value="2">2 - Mitjana</option>
+          <option value="3">3 - Alta</option>
+        </select>
+      </div>
+
+      <div class="row">
+        <label for="f-sentit">Sentit matemàtic:</label>
+        <select id="f-sentit">
+          <option value="">Tots</option>
+          <option value="espacial">Espacial</option>
+          <option value="mesura">De mesura</option>
+          <option value="estocastic">Estocàstic</option>
+          <option value="numeric">Numèric</option>
+          <option value="algebraic">Algebraic</option>
+        </select>
+      </div>
+
+      <div class="link-block">
+        <span class="link-label">Enllaç generat</span>
+        <textarea id="output-link" class="link-output" readonly></textarea>
+        
+        <div class="btn-row">
+          <button id="btn-copy" class="copy-btn">Copiar l'enllaç</button>
+          <button id="btn-open" class="open-btn">Obrir la web</button>
+        </div>
+        <div id="status-msg" class="copy-status"></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const BASE_URL = 'https://mates-ins.github.io/cb/test.html';
+    const anysPerNivell = {
+      '4eso': ['2025', '2024', '2023'],
+      '2eso': ['2025', '2024']
+    };
+
+    const selPractica = document.getElementById('f-practica');
+    const selNivell = document.getElementById('f-nivell');
+    const selAny = document.getElementById('f-any');
+    const selDificultat = document.getElementById('f-dificultat');
+    const selSentit = document.getElementById('f-sentit');
+    const outputLink = document.getElementById('output-link');
+    const btnCopy = document.getElementById('btn-copy');
+    const btnOpen = document.getElementById('btn-open');
+    const statusMsg = document.getElementById('status-msg');
+
+    function actualitzarAnys() {
+      const nivell = selNivell.value;
+      const anyAnterior = selAny.value;
+
+      let anys;
+      if (nivell) {
+        anys = anysPerNivell[nivell] || [];
+      } else {
+        const tots = new Set();
+        Object.values(anysPerNivell).forEach(arr => arr.forEach(a => tots.add(a)));
+        anys = [...tots].sort((a, b) => b - a);
+      }
+
+      selAny.innerHTML = '';
+      const optTots = document.createElement('option');
+      optTots.value = '';
+      optTots.textContent = 'Tots els anys';
+      selAny.appendChild(optTots);
+
+      anys.forEach(a => {
+        const opt = document.createElement('option');
+        opt.value = a;
+        opt.textContent = a;
+        selAny.appendChild(opt);
+      });
+
+      if (anys.includes(anyAnterior)) {
+        selAny.value = anyAnterior;
+      } else {
+        selAny.value = '';
+      }
+
+      updateLink();
+    }
+
+    function updateLink() {
+      const params = new URLSearchParams();
+      params.append('p', selPractica.value);
+      if (selNivell.value) params.append('nivell', selNivell.value);
+      if (selAny.value) params.append('any', selAny.value);
+      if (selDificultat.value) params.append('dificultat', selDificultat.value);
+      if (selSentit.value) params.append('sentit', selSentit.value);
+
+      const finalUrl = BASE_URL + '?' + decodeURIComponent(params.toString());
+      outputLink.value = finalUrl;
+    }
+
+    selNivell.addEventListener('change', actualitzarAnys);
+    [selPractica, selAny, selDificultat, selSentit].forEach(sel => {
+      sel.addEventListener('change', updateLink);
+    });
+
+    btnCopy.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(outputLink.value);
+        statusMsg.textContent = 'Copiat ✅';
+        setTimeout(() => statusMsg.textContent = '', 2000);
+      } catch (err) {
+        outputLink.select();
+        document.execCommand('copy');
+        statusMsg.textContent = 'Copiat ✅';
+        setTimeout(() => statusMsg.textContent = '', 2000);
+      }
+    });
+
+    btnOpen.addEventListener('click', () => {
+      window.open(outputLink.value, '_blank');
+    });
+
+    window.addEventListener('load', () => {
+      actualitzarAnys();
+
+      const selectors = [selPractica];
+      
+      setTimeout(() => {
+        selectors.forEach((sel, index) => {
+          setTimeout(() => {
+            sel.classList.add('select-atencio-shake');
+            setTimeout(() => {
+              sel.classList.remove('select-atencio-shake');
+            }, 2500);
+          }, index * 400);
+        });
+      }, 500);
+    });    
+  </script>
+</body>
+</html>

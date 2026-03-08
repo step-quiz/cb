@@ -1,0 +1,2083 @@
+[
+  {
+    "id": 1,
+    "any": 2025,
+    "nivell": "4eso",
+    "dificultat": 1,
+    "sentit": "estocastic",
+    "enunciat": "data/cb4eso2025e1.png",
+    "pregunta": "data/cb4eso2025p1.png",
+    "indexCorrecte": 0,
+    "pistes": [
+      "",
+      "Hi ha un error. Compta només els punts de la línia del gràfic.",
+      "El resultat no és correcte perquè has comptat punts de més. Fixa't bé i compta d'esquerra a dreta.",
+      "Has triat un nombre massa alt. Segurament has comptat totes les marques de les hores de l'eix horitzontal."
+    ]
+  },
+  {
+    "id": 2,
+    "any": 2025,
+    "nivell": "4eso",
+    "dificultat": 1,
+    "sentit": "estocastic",
+    "enunciat": "data/cb4eso2025e1.png",
+    "pregunta": "data/cb4eso2025p2.png",
+    "indexCorrecte": 1,
+    "pistes": [
+      "El recompte no és correcte, et surten poques ocasions. Pot ser que hagis mirat els punts que estan per sobre de 39 graus?",
+      "",
+      "Hi ha una petita errada en el teu recompte. Busca el nombre 39 a l'eix vertical i torna a comptar.",
+      "Has comptat massa punts. Situa't a la línia horitzontal del 39 i compta els punts que queden a aquesta altura o més amunt."
+    ]
+  },
+  {
+    "id": 3,
+    "any": 2025,
+    "nivell": "4eso",
+    "dificultat": 1,
+    "sentit": "mesura",
+    "enunciat": "data/cb4eso2025e1.png",
+    "pregunta": "data/cb4eso2025p3.png",
+    "indexCorrecte": 2,
+    "pistes": [
+      "Són massa poques hores, potser estàs comptant des del diumenge. L'inici és el dissabte a les 21h.",
+      "Aquesta no és la durada correcta. Pensa que des de dissabte a la nit fins dilluns a la tarda passen més de 24 hores.",
+      "",
+      "Has calculat malament, perquè voldria dir que han passat més de dos dies."
+    ]
+  },
+  {
+    "id": 4,
+    "any": 2025,
+    "nivell": "4eso",
+    "dificultat": 1,
+    "sentit": "numeric",
+    "enunciat": "data/cb4eso2025e1.png",
+    "pregunta": "data/cb4eso2025p4.png",
+    "indexCorrecte": 1,
+    "pistes": [
+      "El càlcul és incorrecte. Quantes vegades pren el medicament en un dia? I en 3 dies?",
+      "",
+      "Hi ha un error: potser has sumat 8 més 3. Pensa en primer lloc quantes vegades li toca el medicament, cada dia.",
+      "Error, potser has multiplicat els nombres de l'enunciat. Prendre el medicament cada 8 hores no vol dir fer-ho 8 vegades al dia."
+    ]
+  },
+  {
+    "id": 5,
+    "any": 2025,
+    "nivell": "4eso",
+    "dificultat": 1,
+    "sentit": "algebraic",
+    "enunciat": "data/cb4eso2025e2.png",
+    "pregunta": "data/cb4eso2025p5.png",
+    "indexCorrecte": 2,
+    "pistes": [
+      "Recorda que has de triar una frase FALSA, i aquesta és certa.",
+      "Error, perquè aquesta frase és certa: a menys pes, menys medicament",
+      "",
+      "No és aquesta la frase falsa, perquè la quantitat de medicament i el pes sí que són directament proporcionals."
+    ]
+  },
+  {
+    "id": 6,
+    "any": 2025,
+    "nivell": "4eso",
+    "dificultat": 2,
+    "sentit": "numeric",
+    "enunciat": "data/cb4eso2025e2.png",
+    "pregunta": "data/cb4eso2025p6.png",
+    "indexCorrecte": 0,
+    "pistes": [
+      "",
+      "Aquest pes no és el correcte. Segurament has multiplicat en comptes de dividir.",
+      "Hi ha un error en l'operació que has fet. Revisa la fórmula: 32=0,8·P.",
+      "Segurament ho has fet a ull, però no l'has encertat. Revisa la fórmula: 32=0,8·P."
+    ]
+  },
+  {
+    "id": 7,
+    "any": 2025,
+    "nivell": "4eso",
+    "dificultat": 3,
+    "sentit": "numeric",
+    "enunciat": "data/cb4eso2025e2.png",
+    "pregunta": "data/cb4eso2025p7.png",
+    "indexCorrecte": 3,
+    "pistes": [
+      "No és correcte. Primer has de buscar a la taula quants mil·lilitres toquen per a 22 kg. Després, recorda la resposta de la pregunta anterior. Finalment, fes una resta.",
+      "Hi ha una petita errada en la resta. Sabem que 22 kg correspon a la franja que dona 16 ml. Ara recorda la resposta de la pregunta anterior. Finalment, fes una resta.",
+      "Aquest nombre no és correcte, revisa càlculs.",
+      ""
+    ]
+  },
+  {
+    "id": 8,
+    "any": 2025,
+    "nivell": "4eso",
+    "dificultat": 2,
+    "sentit": "numeric",
+    "enunciat": "data/cb4eso2025e2.png",
+    "pregunta": "data/cb4eso2025p8.png",
+    "indexCorrecte": 3,
+    "pistes": [
+      "No has aplicat la proporció correcta. Quants mil·ligrams hi ha en 1 sol mil·lilitre? Comença per saber això.",
+      "És erroni el càlcul. Si 5 ml són 105 mg, pensa quant seria 1 ml. I després, quant serien 16 ml.",
+      "Hi ha errors en l'operació. Calcula primer la quantitat per a un sol mil·lilitre. Quan ho tinguis, multiplica'l per 16.",
+      ""
+    ]
+  },
+  {
+    "id": 9,
+    "any": 2025,
+    "nivell": "4eso",
+    "dificultat": 3,
+    "sentit": "espacial",
+    "enunciat": "data/cb4eso2025e3.png",
+    "pregunta": "data/cb4eso2025p9.png",
+    "indexCorrecte": 2,
+    "pistes": [
+      "Aquesta llargada és massa curta. Pista: l'altura són 1,05 metres = 105 centímetres.",
+      "La mesura no és correcta. Passa els 1,05 metres a centímetres i divideix entre 15 per saber quants esglaons hi ha. Finalment, cada esglaó fa 20 centímetres.",
+      "",
+      "Hi ha un error, potser has multiplicat de forma directa. Primer has de descobrir quants esglaons hi ha."
+    ]
+  },
+  {
+    "id": 10,
+    "any": 2025,
+    "nivell": "4eso",
+    "dificultat": 2,
+    "sentit": "espacial",
+    "enunciat": "data/cb4eso2025e3.png",
+    "pregunta": "data/cb4eso2025p10.png",
+    "indexCorrecte": 1,
+    "pistes": [
+      "No és correcte. El percentatge val 10, i l'altura val 1,05.",
+      "",
+      "Has obtingut una longitud errònia. Multiplica l'altura (1,05) per 100 i després dedueix quant val la longitud horitzontal.",
+      "El resultat és massa gran, potser t'has descuidat de fer una divisió final."
+    ]
+  },
+  {
+    "id": 11,
+    "any": 2025,
+    "nivell": "4eso",
+    "dificultat": 2,
+    "sentit": "espacial",
+    "enunciat": "data/cb4eso2025e3.png",
+    "pregunta": "data/cb4eso2025p11.png",
+    "indexCorrecte": 2,
+    "pistes": [
+      "Et falta una part del sostre, perquè només has trobat la superfície d'un dels dos costats.",
+      "Hi ha un error amb les mides del triangle. Per aplicar Pitàgores només necessites 15 metres.",
+      "",
+      "La base del triangle no és correcta. Per fer el càlcul has d'agafar només la meitat de la base de 30 metres d'ample."
+    ]
+  },
+  {
+    "id": 12,
+    "any": 2025,
+    "nivell": "4eso",
+    "dificultat": 1,
+    "sentit": "espacial",
+    "enunciat": "data/cb4eso2025e4.png",
+    "pregunta": "data/cb4eso2025p12.png",
+    "indexCorrecte": 1,
+    "pistes": [
+      "Et deixes algun eix de simetria per la lletra H. Segurament has comptat el vertical, però mira si n'hi ha més.",
+      "",
+      "Has comptat massa línies de simetria. Imagina't que doblegues la lletra H com si fos un paper, i que tot encaixi.",
+      "Aquest nombre és massa gran, perquè la lletra H no té un eix de simetria que vagi en diagonal."
+    ]
+  },
+  {
+    "id": 13,
+    "any": 2025,
+    "nivell": "4eso",
+    "dificultat": 2,
+    "sentit": "espacial",
+    "enunciat": "data/cb4eso2025e4.png",
+    "pregunta": "data/cb4eso2025p13.png",
+    "indexCorrecte": 0,
+    "pistes": [
+      "",
+      "Aquesta àrea no és la correcta. Busca quantes parts blanques i resta-ho de l'àrea total.",
+      "Hi ha un error. Has provat de dividir la placa en quadrets o triangles més petits?",
+      "Aquest valor és massa gran. Fixa't que una bona part de la placa està en blanc."
+    ]
+  },
+  {
+    "id": 14,
+    "any": 2025,
+    "nivell": "4eso",
+    "dificultat": 2,
+    "sentit": "espacial",
+    "enunciat": "data/cb4eso2025e4.png",
+    "pregunta": "data/cb4eso2025p14.png",
+    "indexCorrecte": 3,
+    "pistes": [
+      "La fracció no és correcta, perquè estem parlant de tota l'àrea.",
+      "Crec que confons entre perímetre i àrea. És veritat que 25 cm és la quarta part de 1 m, però pensa en l'àrea.",
+      "No és correcte. Quants quadrats de 25 cm caben a l'interior de la placa? La placa és un quadrat de 100 cm de costat.",
+      ""
+    ]
+  },
+  {
+    "id": 15,
+    "any": 2025,
+    "nivell": "4eso",
+    "dificultat": 1,
+    "sentit": "estocastic",
+    "enunciat": "data/cb4eso2025e5.png",
+    "pregunta": "data/cb4eso2025p15.png",
+    "indexCorrecte": 0,
+    "pistes": [
+      "",
+      "El total de persones no és correcte. Potser t'has equivocat sumant.",
+      "Aquest resultat no quadra. Agafa només els valors que corresponen als de menys de 30 anys.",
+      "Has obtingut un nombre massa gran. Comprova que estàs sumant les dades correctes."
+    ]
+  },
+  {
+    "id": 16,
+    "any": 2025,
+    "nivell": "4eso",
+    "dificultat": 2,
+    "sentit": "estocastic",
+    "enunciat": "data/cb4eso2025e5.png",
+    "pregunta": "data/cb4eso2025p16.png",
+    "indexCorrecte": 2,
+    "pistes": [
+      "El percentatge no és correcte. Pensa: quantes persones van 2 vegades per setmana? Després, recorda que el total són 250 enquestats.",
+      "Hi ha un error. Recorda que en total hi ha 250 persones, i fixa't que 84 van 2 vegades al mercat.",
+      "",
+      "Aquest percentatge és massa alt, potser has sumat una franja equivocada."
+    ]
+  },
+  {
+    "id": 17,
+    "any": 2025,
+    "nivell": "4eso",
+    "dificultat": 3,
+    "sentit": "estocastic",
+    "enunciat": "data/cb4eso2025e5.png",
+    "pregunta": "data/cb4eso2025p17.png",
+    "indexCorrecte": 2,
+    "pistes": [
+      "Aquesta mitjana és massa baixa. Has de calcular una mitjana ponderada.",
+      "Aquest resultat no és correcte. Són persones majors de 50 anys, que en total n'hi ha 95.",
+      "",
+      "La mitjana que et surt és massa alta, potser has dividit per un nombre total equivocat."
+    ]
+  },
+  {
+    "id": 18,
+    "any": 2025,
+    "nivell": "4eso",
+    "dificultat": 1,
+    "sentit": "estocastic",
+    "enunciat": "data/cb4eso2025e5.png",
+    "pregunta": "data/cb4eso2025p18.png",
+    "indexCorrecte": 3,
+    "pistes": [
+      "No és la probabilitat correcta. Segurament t'has confós en pensar que hi ha 3 franges d'edat diferents.",
+      "Hi ha un error de concepte, potser t'has confós perquè has vist el màxim de 4 cops per setmana.",
+      "El denominador de la teva fracció és massa petit. Quanta gent hi ha en total?",
+      ""
+    ]
+  },
+  {
+    "id": 19,
+    "any": 2025,
+    "nivell": "4eso",
+    "dificultat": 3,
+    "sentit": "numeric",
+    "enunciat": "data/cb4eso2025e6.png",
+    "pregunta": "data/cb4eso2025p19.png",
+    "indexCorrecte": 1,
+    "pistes": [
+      "Aquesta resposta no quadra. Si divideixes les 36 cartes entre 4 jugadors, dona exacte i ningú tindria cartes de més.",
+      "",
+      "No és correcte, perquè amb 6 jugadors, tothom tindria el mateix nombre de cartes.",
+      "Gairebé ho tens! És cert que amb 7 jugadors funciona, però ens demanen EL MÍNIM nombre de jugadors."
+    ]
+  },
+  {
+    "id": 20,
+    "any": 2025,
+    "nivell": "4eso",
+    "dificultat": 3,
+    "sentit": "estocastic",
+    "enunciat": "data/cb4eso2025e6.png",
+    "pregunta": "data/cb4eso2025p20.png",
+    "indexCorrecte": 3,
+    "pistes": [
+      "Atenció, aquesta frase sí que és certa: si hi ha 2 jugadors, les 36 cartes es reparteixen exactament i tothom té la mateixa probabilitat.",
+      "Aquesta frase és certa! Si divideixes 36 cartes entre 4 toquen a 9 cartes per persona i no en sobra cap, així que la probabilitat del comodí és idèntica.",
+      "Aquesta no és la frase falsa que estem buscant. Necessitem que les cartes no es reparteixin exactament.",
+      ""
+    ]
+  },
+  {
+    "id": 21,
+    "any": 2025,
+    "nivell": "4eso",
+    "dificultat": 2,
+    "sentit": "algebraic",
+    "enunciat": "data/cb4eso2025e7.png",
+    "pregunta": "data/cb4eso2025p21.png",
+    "indexCorrecte": 2,
+    "pistes": [
+      "Atenció, el teu error és que només tens en compte un jugador.",
+      "No és correcte, perquè sembla que les puntuacions s'estan restant, i haurien de sumar-se.",
+      "",
+      "No és la resposta correcta, gairebé ho tens!"
+    ]
+  },
+  {
+    "id": 22,
+    "any": 2025,
+    "nivell": "4eso",
+    "dificultat": 1,
+    "sentit": "numeric",
+    "enunciat": "data/cb4eso2025e8.png",
+    "pregunta": "data/cb4eso2025p22.png",
+    "indexCorrecte": 3,
+    "pistes": [
+      "Error: només has comptat 3 hores.",
+      "T'has equivocat, perquè segurament t'has oblidat de les primeres 3 hores.",
+      "Error, revisa els teus càlculs. Són 6 hores en total, no sempre es paga el mateix.",
+      ""
+    ]
+  },
+  {
+    "id": 23,
+    "any": 2025,
+    "nivell": "4eso",
+    "dificultat": 2,
+    "sentit": "mesura",
+    "enunciat": "data/cb4eso2025e8.png",
+    "pregunta": "data/cb4eso2025p23.png",
+    "indexCorrecte": 1,
+    "pistes": [
+      "No és correcte, perquè llavors haurien passat 6 hores en total i el preu seria major.",
+      "",
+      "Resposta incorrecta, perquè llavors haurien passat només 4 hores i no seria tan car.",
+      "Si només fos de 14h a 17h, són només 3 hores, no quadra amb el preu pagat."
+    ]
+  },
+  {
+    "id": 24,
+    "any": 2025,
+    "nivell": "4eso",
+    "dificultat": 2,
+    "sentit": "espacial",
+    "enunciat": "data/cb4eso2025e8.png",
+    "pregunta": "data/cb4eso2025p24.png",
+    "indexCorrecte": 3,
+    "pistes": [
+      "Aquesta gràfica no pot ser. Pensa una cosa: quant pagues per 2 hores? I quant pagues per 3 hores?",
+      "Gairbé ho tens! La gràfica correcta s'assembla molt a aquesta.",
+      "Aquesta opció no és correcta, perquè la tarifa plana dura 3 hores, i no 2 hores.",
+      ""
+    ]
+  },
+  {
+    "id": 25,
+    "any": 2025,
+    "nivell": "4eso",
+    "dificultat": 3,
+    "sentit": "estocastic",
+    "enunciat": "data/cb4eso2025e9.png",
+    "pregunta": "data/cb4eso2025p25.png",
+    "indexCorrecte": 1,
+    "pistes": [
+      "No està bé, perquè sembla que comencis pagant 1,5 euros per les primeres 3 hores.",
+      "",
+      "Incorrecte, perquè sembla que comencis pagant 1,5 euros per les primeres 3 hores.",
+      "Gairebé ho tens. El signe de restar de la fórmula no quadra, perquè semblaria que amb el pas de temps, cada cop pagues menys!"
+    ]
+  },
+  {
+    "id": 26,
+    "any": 2025,
+    "nivell": "4eso",
+    "dificultat": 3,
+    "sentit": "algebraic",
+    "enunciat": "data/cb4eso2025e9.png",
+    "pregunta": "data/cb4eso2025p26.png",
+    "indexCorrecte": 2,
+    "pistes": [
+      "Recorda que els angles d'un triangle qualsevol sumen 180º. A més, per trobar l'angle central A, has de dividir els 360º entre 8.",
+      "Has calculat bé l'angle A, però recorda que els altres dos angles són iguals, perquè el triangle és isòsceles.",
+      "",
+      "L'angle A no és correcte. Per trobar-lo, pensa que si multipliquem 8 vegades l'angle A, ens dona 360º."
+    ]
+  },
+  {
+    "id": 27,
+    "any": 2025,
+    "nivell": "4eso",
+    "dificultat": 2,
+    "sentit": "algebraic",
+    "enunciat": "data/cb4eso2025e9.png",
+    "pregunta": "data/cb4eso2025p27.png",
+    "indexCorrecte": 0,
+    "pistes": [
+      "",
+      "Aquest resultat no és correcte. Potser has oblidat elevar el radi al quadrat.",
+      "El valor de la superfície és massa gran. Segurament has multiplicat per 2, en comptes d'elevar el radi al quadrat.",
+      "Atenció, has utilitzat el diàmetre en lloc del radi? Calcula a partir del valor del radi."
+    ]
+  },
+  {
+    "id": 28,
+    "any": 2025,
+    "nivell": "4eso",
+    "dificultat": 1,
+    "sentit": "espacial",
+    "enunciat": "data/cb4eso2025e9.png",
+    "pregunta": "data/cb4eso2025p28.png",
+    "indexCorrecte": 0,
+    "pistes": [
+      "",
+      "Aquesta altura no quadra amb la proporció de l'ombra. Has d'aplicar una proporció directa.",
+      "Hi ha una errada en els teus càlculs.",
+      "Aquesta altura és massa gran, per un error en plantejar la proporció."
+    ]
+  },
+  {
+    "id": 29,
+    "any": 2025,
+    "nivell": "4eso",
+    "dificultat": 2,
+    "sentit": "estocastic",
+    "enunciat": "data/cb4eso2025e10.png",
+    "pregunta": "data/cb4eso2025p29.png",
+    "indexCorrecte": 0,
+    "pistes": [
+      "",
+      "Gairebé ho tens, revisa els càlculs.",
+      "No és correcte. El destí 1 és el més votat, per tant ha de tenir obligatòriament el sector més gran.",
+      "No és correcte. El destí 1 és el més votat, per tant ha de tenir obligatòriament el sector més gran."
+    ]
+  },
+  {
+    "id": 30,
+    "any": 2025,
+    "nivell": "4eso",
+    "dificultat": 3,
+    "sentit": "estocastic",
+    "enunciat": "data/cb4eso2025e10.png",
+    "pregunta": "data/cb4eso2025p30.png",
+    "indexCorrecte": 2,
+    "pistes": [
+      "No n'hi ha prou: si 10 alumnes passen al destí 2, els altres 6 passaran al destí 1. I el destí 1 continua guanyant.",
+      "Si tries aquesta opció, es produeix un empat amb el destí 1. I volem que guanyi el destí 2.",
+      "",
+      "Gairebé ho tens, però recorda que ens demanen COM A MÍNIM. Llegeix l'enunciat una altra vegada."
+    ]
+  },
+  {
+    "id": 31,
+    "any": 2025,
+    "nivell": "4eso",
+    "dificultat": 1,
+    "sentit": "numeric",
+    "enunciat": "data/cb4eso2025e11.png",
+    "pregunta": "data/cb4eso2025p31.png",
+    "indexCorrecte": 1,
+    "pistes": [
+      "pista pendent",
+      "",
+      "pista pendent",
+      "pista pendent"
+    ]
+  },
+  {
+    "id": 32,
+    "any": 2025,
+    "nivell": "4eso",
+    "dificultat": 2,
+    "sentit": "numeric",
+    "enunciat": "data/cb4eso2025e11.png",
+    "pregunta": "data/cb4eso2025p32.png",
+    "indexCorrecte": 3,
+    "pistes": [
+      "pista pendent",
+      "pista pendent",
+      "pista pendent",
+      ""
+    ]
+  },
+  {
+    "id": 33,
+    "any": 2025,
+    "nivell": "4eso",
+    "dificultat": 2,
+    "sentit": "estocastic",
+    "enunciat": "data/cb4eso2025e11.png",
+    "pregunta": "data/cb4eso2025p33.png",
+    "indexCorrecte": 0,
+    "pistes": [
+      "",
+      "pista pendent",
+      "pista pendent",
+      "pista pendent"
+    ]
+  },
+  {
+    "id": 34,
+    "any": 2024,
+    "nivell": "4eso",
+    "dificultat": 1,
+    "sentit": "estocastic",
+    "enunciat": "data/cb4eso2024e1.png",
+    "pregunta": "data/cb4eso2024p1.png",
+    "indexCorrecte": 3,
+    "pistes": [
+      "Error, aquest és el mes on ha venut menys peces.",
+      "No és correcte, repassa les teves sumes.",
+      "Error, potser has mirat només el nombre de jerseis.",
+      ""
+    ]
+  },
+  {
+    "id": 35,
+    "any": 2024,
+    "nivell": "4eso",
+    "dificultat": 2,
+    "sentit": "estocastic",
+    "enunciat": "data/cb4eso2024e1.png",
+    "pregunta": "data/cb4eso2024p2.png",
+    "indexCorrecte": 2,
+    "pistes": [
+      "Tens un error als càlculs, potser has dividit entre 8, però recorda que són 4 mesos.",
+      "Has calculat malament la mitjana, repassa-ho.",
+      "",
+      "No és correcte. Revisa la suma total abans de fer la divisió."
+    ]
+  },
+  {
+    "id": 36,
+    "any": 2024,
+    "nivell": "4eso",
+    "dificultat": 1,
+    "sentit": "numeric",
+    "enunciat": "data/cb4eso2024e1.png",
+    "pregunta": "data/cb4eso2024p3.png",
+    "indexCorrecte": 2,
+    "pistes": [
+      "Aquest mes no pot ser, perquè és on ven menys samarretes i menys jerseis.",
+      "Recorda que amb els jerseis guanya més diners... Multiplica cada quantitat pel seu preu.",
+      "",
+      "Revisa els càlculs. Has de sumar els guanys de samarretes i jerseis de cada mes."
+    ]
+  },
+  {
+    "id": 37,
+    "any": 2024,
+    "nivell": "4eso",
+    "dificultat": 1,
+    "sentit": "algebraic",
+    "enunciat": "data/cb4eso2024e1.png",
+    "pregunta": "data/cb4eso2024p4.png",
+    "indexCorrecte": 1,
+    "pistes": [
+      "Gairebé ho tens! El teu error és dir que el 12% equival a multiplicar per 12, i no és cert.",
+      "",
+      "Atenció, error: si ja fas servir el decimal, no cal tornar a dividir entre 100.",
+      "No és correcte, perquè has escollit la fórmula que diu els diners que li no estalvia."
+    ]
+  },
+  {
+    "id": 38,
+    "any": 2024,
+    "nivell": "4eso",
+    "dificultat": 3,
+    "sentit": "estocastic",
+    "enunciat": "data/cb4eso2024e2.png",
+    "pregunta": "data/cb4eso2024p5.png",
+    "indexCorrecte": 3,
+    "pistes": [
+      "Aquest no és el gràfic, perquè no és veritat que 40 valoracions siguin 'molt bona'.",
+      "Aquest gràfic no encaixa. Recorda que la categoria 'bona' és la que té més vots.",
+      "No és correcte aquest gràfic, perquè totes les valoracions tenen el même nombre de vots.",
+      ""
+    ]
+  },
+  {
+    "id": 39,
+    "any": 2024,
+    "nivell": "4eso",
+    "dificultat": 2,
+    "sentit": "numeric",
+    "enunciat": "data/cb4eso2024e2.png",
+    "pregunta": "data/cb4eso2024p6.png",
+    "indexCorrecte": 3,
+    "pistes": [
+      "T'ha donat un percentatge massa petit.",
+      "Revisa els teus càlculs. Recorda que has de comparar 32 valoracions respecte 80.",
+      "Revisa els càlculs. Hem de veure quin % suposa 32 valoracions respecte el total, que són 80.",
+      ""
+    ]
+  },
+  {
+    "id": 40,
+    "any": 2024,
+    "nivell": "4eso",
+    "dificultat": 3,
+    "sentit": "numeric",
+    "enunciat": "data/cb4eso2024e2.png",
+    "pregunta": "data/cb4eso2024p7.png",
+    "indexCorrecte": 0,
+    "pistes": [
+      "",
+      "Has calculat el percentatge només sobre les valoracions dolentes, no sobre el total.",
+      "Revisa el càlcul. Primer has de trobar quantes valoracions són i després el percentatge.",
+      "No és cert, però quasi ho tens. Segurament has fallat en l'últim pas."
+    ]
+  },
+  {
+    "id": 41,
+    "any": 2024,
+    "nivell": "4eso",
+    "dificultat": 3,
+    "sentit": "estocastic",
+    "enunciat": "data/cb4eso2024e3.png",
+    "pregunta": "data/cb4eso2024p8.png",
+    "indexCorrecte": 2,
+    "pistes": [
+      "Aquesta mitjana és massa petita. Revisa els càlculs.",
+      "Tu has fet una mitjana aritmètica, però pensa que has de fer una mitjana ponderada.",
+      "",
+      "Vas per bon camí, però repassa els càlculs perquè t'has equivocat en algun lloc."
+    ]
+  },
+  {
+    "id": 42,
+    "any": 2024,
+    "nivell": "4eso",
+    "dificultat": 1,
+    "sentit": "espacial",
+    "enunciat": "data/cb4eso2024e4.png",
+    "pregunta": "data/cb4eso2024p9.png",
+    "indexCorrecte": 3,
+    "pistes": [
+      "No és l'opció correcta, fixa't en la part superior, perquè no quadra.",
+      "No és correcte, perquè si fas girar aquesta figura obtindries un cilindre.",
+      "Aquesta figura no genera un cornet, perquè la part de sota no acaba en punta.",
+      ""
+    ]
+  },
+  {
+    "id": 43,
+    "any": 2024,
+    "nivell": "4eso",
+    "dificultat": 2,
+    "sentit": "estocastic",
+    "enunciat": "data/cb4eso2024e4.png",
+    "pregunta": "data/cb4eso2024p10.png",
+    "indexCorrecte": 2,
+    "pistes": [
+      "No és cert, ja que hi ha més cornets de xocolata que de nata.",
+      "Fixa't bé en la paraula 'altre' de l'enunciat. Quants altres cornets hi ha que no siguin de xocolata?",
+      "",
+      "Aquesta frase no és certa, perquè hi ha més cornets de xocolata que cornets de vaninilla."
+    ]
+  },
+  {
+    "id": 44,
+    "any": 2024,
+    "nivell": "4eso",
+    "dificultat": 2,
+    "sentit": "estocastic",
+    "enunciat": "data/cb4eso2024e4.png",
+    "pregunta": "data/cb4eso2024p11.png",
+    "indexCorrecte": 2,
+    "pistes": [
+      "T'has despistat en una cosa: hi ha més gelats de xocolata que d'altres sabors. Pensa quants casos favorables hi ha.",
+      "Aquesta és la probabilitat només per la xocolata. Et falta tenir en compte el sabor nata.",
+      "",
+      "No és cert. Potser t'has equivocat simplificant la fracció que tenies."
+    ]
+  },
+  {
+    "id": 45,
+    "any": 2024,
+    "nivell": "4eso",
+    "dificultat": 2,
+    "sentit": "estocastic",
+    "enunciat": "data/cb4eso2024e4.png",
+    "pregunta": "data/cb4eso2024p12.png",
+    "indexCorrecte": 1,
+    "pistes": [
+      "No és correcte. Pista: el nombre total de cornets ara és 8.",
+      "",
+      "Això seria correcte si fossin 4 cornets de xocolata entre 8 possibles, però... hi ha un cornet de xocolata menys.",
+      "Aquesta probabilitat és massa alta. Pensa que menys de la meitat de cornets són de xocolata."
+    ]
+  },
+  {
+    "id": 46,
+    "any": 2024,
+    "nivell": "4eso",
+    "dificultat": 2,
+    "sentit": "mesura",
+    "enunciat": "data/cb4eso2024e5.png",
+    "pregunta": "data/cb4eso2024p13.png",
+    "indexCorrecte": 1,
+    "pistes": [
+      "Repassa com has sumat les longituds, i pensa quin és el radi de la circumferència.",
+      "",
+      "Tens un error de càlcul, repassa-ho.",
+      "T'has equivocat quan has sumat l'altura amb el diàmetre de la bola, perquè ha de ser amb el radi de la bola."
+    ]
+  },
+  {
+    "id": 47,
+    "any": 2024,
+    "nivell": "4eso",
+    "dificultat": 2,
+    "sentit": "mesura",
+    "enunciat": "data/cb4eso2024e5.png",
+    "pregunta": "data/cb4eso2024p14.png",
+    "indexCorrecte": 0,
+    "pistes": [
+      "",
+      "Quan apliques el teorema de Pitàgores, has de fer servir 2 cm, i tu potser has fet servir 4 cm.",
+      "Revisa els teus càlculs, i recorda que cal aplicar el teorema de Pitàgores.",
+      "No pots sumar directament les longituds. Cal aplicar el teorema de Pitàgores."
+    ]
+  },
+  {
+    "id": 48,
+    "any": 2024,
+    "nivell": "4eso",
+    "dificultat": 1,
+    "sentit": "mesura",
+    "enunciat": "data/cb4eso2024e5.png",
+    "pregunta": "data/cb4eso2024p15.png",
+    "indexCorrecte": 1,
+    "pistes": [
+      "Has fet com si una bola tingués un volum d'1 cm cúbic, i això no és cert.",
+      "",
+      "El resultat és massa gran. Repassa els teus càlculs.",
+      "Aquest volum és massa gran. Repassa quants centímetres cúbics equivalen a 1 litre."
+    ]
+  },
+  {
+    "id": 49,
+    "any": 2024,
+    "nivell": "4eso",
+    "dificultat": 1,
+    "sentit": "espacial",
+    "enunciat": "data/cb4eso2024e6.png",
+    "pregunta": "data/cb4eso2024p16.png",
+    "indexCorrecte": 1,
+    "pistes": [
+      "Aquest plec no coincideix amb la figura final, perquè el triangle blau ha de ser més petit.",
+      "",
+      "Aquest plec no pot ser, perquè un vèrtex ha d'anar a parar al centre.",
+      "Aquest plec és impossible perquè en el dibuix veiem un triangle blau i no veiem un rectangle blau."
+    ]
+  },
+  {
+    "id": 50,
+    "any": 2024,
+    "nivell": "4eso",
+    "dificultat": 2,
+    "sentit": "algebraic",
+    "enunciat": "data/cb4eso2024e6.png",
+    "pregunta": "data/cb4eso2024p17.png",
+    "indexCorrecte": 3,
+    "pistes": [
+      "Això seria l'àrea de tot el quadrat sencer, i demanen només el triangle blau.",
+      "El triangle blau ocupa la meitat d'un quadradet petit, però tu ho has de comparar amb el quadrat gran.",
+      "Gairebé ho tens! T'ha passat una cosa, i és que ho has calculat a l'inrevés. Repassa: t'estan preguntant l'àrea del triangle blau.",
+      ""
+    ]
+  },
+  {
+    "id": 51,
+    "any": 2024,
+    "nivell": "4eso",
+    "dificultat": 2,
+    "sentit": "algebraic",
+    "enunciat": "data/cb4eso2024e7.png",
+    "pregunta": "data/cb4eso2024p18.png",
+    "indexCorrecte": 0,
+    "pistes": [
+      "",
+      "Tens bé la figura de l'esquerra, però no tens bé la figura de la dreta.",
+      "La figura de l'esquerra no toca en aquesta posició. Repassa-ho.",
+      "La figura de l'esquerra no toca en aquesta posició. Repassa-ho."
+    ]
+  },
+  {
+    "id": 52,
+    "any": 2024,
+    "nivell": "4eso",
+    "dificultat": 3,
+    "sentit": "numeric",
+    "enunciat": "data/cb4eso2024e7.png",
+    "pregunta": "data/cb4eso2024p19.png",
+    "indexCorrecte": 1,
+    "pistes": [
+      "No és correcte, n'hi ha més",
+      "",
+      "El resultat és massa gran, pensa-ho bé.",
+      "No és correcte, repassa com comptes les possibilitats."
+    ]
+  },
+  {
+    "id": 53,
+    "any": 2024,
+    "nivell": "4eso",
+    "dificultat": 3,
+    "sentit": "mesura",
+    "enunciat": "data/cb4eso2024e7.png",
+    "pregunta": "data/cb4eso2024p20.png",
+    "indexCorrecte": 1,
+    "pistes": [
+      "T'has quedat curt. Comprova quantes vegades hi cap 20 centímetres en les mesures totals.",
+      "",
+      "No és correcte. Potser t'has equivocat fent alguna divisió. Repassa-ho.",
+      "Aquest nombre és massa gran. Revisa els teus càlculs."
+    ]
+  },
+  {
+    "id": 54,
+    "any": 2024,
+    "nivell": "4eso",
+    "dificultat": 1,
+    "sentit": "algebraic",
+    "enunciat": "data/cb4eso2024e8.png",
+    "pregunta": "data/cb4eso2024p21.png",
+    "indexCorrecte": 3,
+    "pistes": [
+      "Aquest gràfic no quadra, perquè sabem que 1 dia costa 10 euros.",
+      "No quadra, perquè per 1 dia pagaria 30 euros.",
+      "Aquest gràfic no pot ser, perquè ja comença pagant 20 euros.",
+      ""
+    ]
+  },
+  {
+    "id": 55,
+    "any": 2024,
+    "nivell": "4eso",
+    "dificultat": 2,
+    "sentit": "numeric",
+    "enunciat": "data/cb4eso2024e8.png",
+    "pregunta": "data/cb4eso2024p22.png",
+    "indexCorrecte": 2,
+    "pistes": [
+      "Ha de ser un nombre més gran, perquè la quantitat que has triat ja surt només amb la quota fixa.",
+      "Tens algun error en els teus càlculs. Recorda que són dotze mesos.",
+      "",
+      "El resultat és massa alt. Revisa com has calculat el cost d'un sol mes."
+    ]
+  },
+  {
+    "id": 56,
+    "any": 2024,
+    "nivell": "4eso",
+    "dificultat": 1,
+    "sentit": "algebraic",
+    "enunciat": "data/cb4eso2024e9.png",
+    "pregunta": "data/cb4eso2024p23.png",
+    "indexCorrecte": 3,
+    "pistes": [
+      "Et falta sumar la quota fixa de 30 euros.",
+      "Llegeix bé l'enunciat: et demana la tarifa combinada, no la tarifa diària.",
+      "Has comès un error petit. Repassa qui és la lletra X i qui és la lletra Y.",
+      ""
+    ]
+  },
+  {
+    "id": 57,
+    "any": 2024,
+    "nivell": "4eso",
+    "dificultat": 2,
+    "sentit": "algebraic",
+    "enunciat": "data/cb4eso2024e9.png",
+    "pregunta": "data/cb4eso2024p24.png",
+    "indexCorrecte": 2,
+    "pistes": [
+      "No és cert, perquè amb els dies que tu dius, la tarifa combinada encara surt més barata",
+      "Si hi vas aquests dies, la combinada surt més a compte que la mensual. Per tant, no pot ser aquesta opció.",
+      "",
+      "Gairebé ho tens! Tot i que amb 8 dies la tarifa mensual és la que surt a compte, fixa't que el mínim nombre de dies."
+    ]
+  },
+  {
+    "id": 58,
+    "any": 2024,
+    "nivell": "4eso",
+    "dificultat": 1,
+    "sentit": "algebraic",
+    "enunciat": "data/cb4eso2024e10.png",
+    "pregunta": "data/cb4eso2024p25.png",
+    "indexCorrecte": 0,
+    "pistes": [
+      "",
+      "No és correcte: és veritat que el valor de 8 és el màxim de l'eix vertical, però al cap de 50 minuts, no ha fet 8 km.",
+      "Aquest valor de 40 correspon al desnivell màxim superat. Llegeix bé els gràfics.",
+      "Has mirat l'eix horitzontal (el temps), però t'has de fixar en l'eix vertiacal (la distància)."
+    ]
+  },
+  {
+    "id": 59,
+    "any": 2024,
+    "nivell": "4eso",
+    "dificultat": 2,
+    "sentit": "algebraic",
+    "enunciat": "data/cb4eso2024e10.png",
+    "pregunta": "data/cb4eso2024p26.png",
+    "indexCorrecte": 1,
+    "pistes": [
+      "Aquest desnivell correspon a 1 km recorregut, i per tant, al minut 10. Torna a mirar els gràfics.",
+      "",
+      "No és correcte, perquè aquest és el desnivell màxim, però et demanen el desnivell en el minut 25.",
+      "Atenció, tu has escrit el temps total de l'entrenament, però et demana un desnivell."
+    ]
+  },
+  {
+    "id": 60,
+    "any": 2024,
+    "nivell": "4eso",
+    "dificultat": 3,
+    "sentit": "algebraic",
+    "enunciat": "data/cb4eso2024e11.png",
+    "pregunta": "data/cb4eso2024p27.png",
+    "indexCorrecte": 0,
+    "pistes": [
+      "",
+      "En aquest tram l'inclinació no és la més alta possible.",
+      "En aquest tram l'inclinació no és la més alta possible.",
+      "En aquest tram l'inclinació no és la més alta possible."
+    ]
+  },
+  {
+    "id": 61,
+    "any": 2024,
+    "nivell": "4eso",
+    "dificultat": 1,
+    "sentit": "espacial",
+    "enunciat": "data/cb4eso2024e12.png",
+    "pregunta": "data/cb4eso2024p28.png",
+    "indexCorrecte": 2,
+    "pistes": [
+      "Aquest desenvolupament no permet formar un octàedre.",
+      "Aquest desenvolupament no permet formar un octàedre.",
+      "",
+      "Aquest desenvolupament no permet formar un octàedre."
+    ]
+  },
+  {
+    "id": 62,
+    "any": 2024,
+    "nivell": "4eso",
+    "dificultat": 1,
+    "sentit": "espacial",
+    "enunciat": "data/cb4eso2024e12.png",
+    "pregunta": "data/cb4eso2024p29.png",
+    "indexCorrecte": 0,
+    "pistes": [
+      "",
+      "Aquesta opció no és possible, perquè voldria dir que la figura original té 6 cares.",
+      "Opció incorrecta, perquè no veiem el vèrtex superior de l'octàedre.",
+      "No és correcte. Fixa't en el vèrtex superior de la figura original."
+    ]
+  },
+  {
+    "id": 63,
+    "any": 2024,
+    "nivell": "4eso",
+    "dificultat": 2,
+    "sentit": "espacial",
+    "enunciat": "data/cb4eso2024e12.png",
+    "pregunta": "data/cb4eso2024p30.png",
+    "indexCorrecte": 1,
+    "pistes": [
+      "Atenció, potser has multiplicat per 8 arestes, però un octàedre té 12 arestes.",
+      "",
+      "Potser has comptat 16 arestes? Recorda que un octàedre regular té exactament 12 arestes.",
+      "El resultat és massa gran. En aquest cas, no tenim 20 arestes."
+    ]
+  },
+  {
+    "id": 64,
+    "any": 2024,
+    "nivell": "4eso",
+    "dificultat": 1,
+    "sentit": "mesura",
+    "enunciat": "data/cb4eso2024e13.png",
+    "pregunta": "data/cb4eso2024p31.png",
+    "indexCorrecte": 0,
+    "pistes": [
+      "",
+      "Atenció, potser has pensat 1 cara retallada del total de 3. Però en total, n'hi havia 4.",
+      "Has calculat malament el percentatge, repassar-ho.",
+      "Gairebé! Ho has calculat a l'inrevés. Et demanen la part blanca i no la part grisa."
+    ]
+  },
+  {
+    "id": 65,
+    "any": 2024,
+    "nivell": "4eso",
+    "dificultat": 3,
+    "sentit": "algebraic",
+    "enunciat": "data/cb4eso2024e13.png",
+    "pregunta": "data/cb4eso2024p32.png",
+    "indexCorrecte": 2,
+    "pistes": [
+      "Pensa quants triangles iguals de color gris podries comptar.",
+      "Has comès algun error de càlcul. Revisa amb calma.",
+      "",
+      "No és correcte. Pista: has de restar 1 menys 7/16. Quant et donarà?"
+    ]
+  },
+  {
+    "id": 66,
+    "any": 2023,
+    "nivell": "4eso",
+    "dificultat": 1,
+    "sentit": "estocastic",
+    "enunciat": "data/cb4eso2023e1.png",
+    "pregunta": "data/cb4eso2023p1.png",
+    "indexCorrecte": 0,
+    "pistes": [
+      "",
+      "Aquesta no és l'opció correcta. Revisa els teus càlculs.",
+      "T'has confós, perquè has triat el total de la població mundial.",
+      "Error, perquè aquesta xifra correspon als telèfons amb Internet. Torna a llegir la pregunta."
+    ]
+  },
+  {
+    "id": 67,
+    "any": 2023,
+    "nivell": "4eso",
+    "dificultat": 2,
+    "sentit": "estocastic",
+    "enunciat": "data/cb4eso2023e1.png",
+    "pregunta": "data/cb4eso2023p2.png",
+    "indexCorrecte": 3,
+    "pistes": [
+      "No és correcte, perquè justament a l'Àfrica és on trobem el percentatge més baix.",
+      "Gairebé ho tens. Recorda que estàs buscant una proporció entre qui persones amb Internet respecte a la població total.",
+      "Vas per bon camí, però no és la correcta. Tot i tenir el nombre més alt d'usuaris d'Internet, fixa't en quanta població són.",
+      ""
+    ]
+  },
+  {
+    "id": 68,
+    "any": 2023,
+    "nivell": "4eso",
+    "dificultat": 3,
+    "sentit": "numeric",
+    "enunciat": "data/cb4eso2023e1.png",
+    "pregunta": "data/cb4eso2023p3.png",
+    "indexCorrecte": 2,
+    "pistes": [
+      "Aquesta diferència és massa petita. Revisa els percentatges de cada continent abans de restar.",
+      "Aquest resultat no és correcte. Assegura't d'haver calculat bé el percentatge de l'Àfrica primer.",
+      "",
+      "Has obtingut un valor massa alt. Repassa els percentatges i després ja restaràs."
+    ]
+  },
+  {
+    "id": 69,
+    "any": 2023,
+    "nivell": "4eso",
+    "dificultat": 1,
+    "sentit": "estocastic",
+    "enunciat": "data/cb4eso2023e1.png",
+    "pregunta": "data/cb4eso2023p4.png",
+    "indexCorrecte": 1,
+    "pistes": [
+      "No és cert, perquè hi ha més d'una zona on hi ha més telèfons que persones.",
+      "",
+      "Això no és cert a tot arreu. Fixa't en les dades.",
+      "Aquesta frase és falsa, podem trobar més d'un exemple on no funciona."
+    ]
+  },
+  {
+    "id": 70,
+    "any": 2023,
+    "nivell": "4eso",
+    "dificultat": 1,
+    "sentit": "algebraic",
+    "enunciat": "data/cb4eso2023e2.png",
+    "pregunta": "data/cb4eso2023p5.png",
+    "indexCorrecte": 0,
+    "pistes": [
+      "",
+      "No és correcte. Fixa't quantes fitxes necessitem per passar de la figura 3 a la figura 4.",
+      "No afegim tantes fitxes de cop. Fixa't quantes fitxes necessitem per passar de la figura 3 a la figura 4.",
+      "No afegim tantes fitxes de cop. Fixa't quantes fitxes necessitem per passar de la figura 3 a la figura 4."
+    ]
+  },
+  {
+    "id": 71,
+    "any": 2023,
+    "nivell": "4eso",
+    "dificultat": 2,
+    "sentit": "algebraic",
+    "enunciat": "data/cb4eso2023e2.png",
+    "pregunta": "data/cb4eso2023p6.png",
+    "indexCorrecte": 3,
+    "pistes": [
+      "És impossible que doni un nombre parell, te n'adones?",
+      "Aquest seria el nombre de fitxes per a la figura 8, no per a la figura 9.",
+      "És impossible que doni un nombre parell, te n'adones?",
+      ""
+    ]
+  },
+  {
+    "id": 72,
+    "any": 2023,
+    "nivell": "4eso",
+    "dificultat": 3,
+    "sentit": "algebraic",
+    "enunciat": "data/cb4eso2023e2.png",
+    "pregunta": "data/cb4eso2023p7.png",
+    "indexCorrecte": 1,
+    "pistes": [
+      "No és correcte, perquè aquesta opció necessita 119 fitxes.",
+      "",
+      "Aquesta opció no és correcta, perquè necessita 131 fitxes.",
+      "El nombre és massa gran. Repassa els càlculs."
+    ]
+  },
+  {
+    "id": 73,
+    "any": 2023,
+    "nivell": "4eso",
+    "dificultat": 2,
+    "sentit": "algebraic",
+    "enunciat": "data/cb4eso2023e2.png",
+    "pregunta": "data/cb4eso2023p8.png",
+    "indexCorrecte": 3,
+    "pistes": [
+      "Aquesta fórmula no quadra, perquè llavors significaria que la figura 3 necessita 4 fitxes, i no és cert.",
+      "Aquesta expressió no sempre funciona: per la figura 3, sí que funciona; però per la figura 4, no funciona.",
+      "No és l'opció correcta, però gairebé ho tens.",
+      ""
+    ]
+  },
+  {
+    "id": 74,
+    "any": 2023,
+    "nivell": "4eso",
+    "dificultat": 2,
+    "sentit": "algebraic",
+    "enunciat": "data/cb4eso2023e3.png",
+    "pregunta": "data/cb4eso2023p9.png",
+    "indexCorrecte": 1,
+    "pistes": [
+      "Aquest resultat no encaixa. Observa bé la taula. Saps què és un quadrat perfecte?",
+      "",
+      "Has calculat un nombre massa gran. Pensa que en la taula apareixen uns nombre que són quadrats perfectes.",
+      "Gairebé ho tens. T'has equivocat només en què has calculat per les 9 primeres figures, i et pregunten per les 8 primeres figures."
+    ]
+  },
+  {
+    "id": 75,
+    "any": 2023,
+    "nivell": "4eso",
+    "dificultat": 2,
+    "sentit": "algebraic",
+    "enunciat": "data/cb4eso2023e3.png",
+    "pregunta": "data/cb4eso2023p10.png",
+    "indexCorrecte": 1,
+    "pistes": [
+      "Opció incorrecta, perquè la gràfica indica que per la figura 4 calen menys fitxes que per la figura 3.",
+      "",
+      "No és correcte, perquè la gràfica indica que per construir la figura 2 caldrien 10 fitxes, i no és veritat.",
+      "Gràfica no correcta. Fixa't, és estrany que les figures 3 i 4 necessiten gairebé les mateixes fitxes."
+    ]
+  },
+  {
+    "id": 76,
+    "any": 2023,
+    "nivell": "4eso",
+    "dificultat": 1,
+    "sentit": "estocastic",
+    "enunciat": "data/cb4eso2023e4.png",
+    "pregunta": "data/cb4eso2023p12.png",
+    "indexCorrecte": 3,
+    "pistes": [
+      "Revisa els teus càlculs. Has de sumar els resultats d'obtenir un 2, un 4, un 6 i un 8.",
+      "Revisa els teus càlculs. Has de sumar els resultats d'obtenir un 2, un 4, un 6 i un 8.",
+      "Revisa els teus càlculs. Has de sumar els resultats d'obtenir un 2, un 4, un 6 i un 8.",
+      ""
+    ]
+  },
+  {
+    "id": 77,
+    "any": 2023,
+    "nivell": "4eso",
+    "dificultat": 2,
+    "sentit": "numeric",
+    "enunciat": "data/cb4eso2023e4.png",
+    "pregunta": "data/cb4eso2023p13.png",
+    "indexCorrecte": 0,
+    "pistes": [
+      "",
+      "Has calculat malament el percentatge. Fixa't que tenim 18 llançaments d'un total de 200.",
+      "Aquest percentatge és massa alt. Llegeix bé al gràfic quantes vegades ha obtenim el nombre 3.",
+      "No és correcte. Per calcular el percentatge, recorda que el total de llançaments és 200."
+    ]
+  },
+  {
+    "id": 78,
+    "any": 2023,
+    "nivell": "4eso",
+    "dificultat": 2,
+    "sentit": "estocastic",
+    "enunciat": "data/cb4eso2023e4.png",
+    "pregunta": "data/cb4eso2023p14.png",
+    "indexCorrecte": 0,
+    "pistes": [
+      "",
+      "Resposta incorrecta. Pista: el dau que busques és el que té menys resultats possibles, perquè llavors el resultat 2 té menys competidors.",
+      "Incorrecte. Pensa una cosa: com més cares tingui un dau, menys probable serà treure un 2.",
+      "No és la mateixa probabilitat, ja que depèn nombre total de cares que té el dau."
+    ]
+  },
+  {
+    "id": 79,
+    "any": 2023,
+    "nivell": "4eso",
+    "dificultat": 1,
+    "sentit": "estocastic",
+    "enunciat": "data/cb4eso2023e4.png",
+    "pregunta": "data/cb4eso2023p15.png",
+    "indexCorrecte": 3,
+    "pistes": [
+      "No és cert, perquè un dau no té memòria: encara que hagi sortit un 6 abans, no impedeix que torni a sortir.",
+      "No és veritat. Pensa que els llançaments anteriors no canvien res del futur. La probabilitat continua sent la mateixa.",
+      "No és correcte. En un dau equilibrat, encara que surti el 6 moltes vegades seguides, això no fa que ara sigui més fàcil treure un 6.",
+      ""
+    ]
+  },
+  {
+    "id": 80,
+    "any": 2023,
+    "nivell": "4eso",
+    "dificultat": 1,
+    "sentit": "espacial",
+    "enunciat": "data/cb4eso2023e5.png",
+    "pregunta": "data/cb4eso2023p16.png",
+    "indexCorrecte": 1,
+    "pistes": [
+      "Aquesta no és la que busquem, perquè amb aquesta opció sí que pot formar un cub.",
+      "",
+      "No és aquesta l'opció. Recorda que estem buscant el desplegament que no funciona.",
+      "Incorrecte. Fixa't que amb aquesta opció les cares sí que tanquen de manera correcta per formar un dau."
+    ]
+  },
+  {
+    "id": 81,
+    "any": 2023,
+    "nivell": "4eso",
+    "dificultat": 2,
+    "sentit": "espacial",
+    "enunciat": "data/cb4eso2023e6.png",
+    "pregunta": "data/cb4eso2023p18.png",
+    "indexCorrecte": 2,
+    "pistes": [
+      "Resposta incorrecta, perquè un costat l'has ampliat però l'altre no, i queda un full estranyament prim i llarg.",
+      "Aquestes mides no quadren. Recorda que per obtenir el DIN-A3 cal unir dos fulls DIN-A4 pel costat llarg.",
+      "",
+      "Error: crec que has calculat el doble de cada longitud, i llavors et surt un full massa gran."
+    ]
+  },
+  {
+    "id": 82,
+    "any": 2023,
+    "nivell": "4eso",
+    "dificultat": 3,
+    "sentit": "espacial",
+    "enunciat": "data/cb4eso2023e6.png",
+    "pregunta": "data/cb4eso2023p19.png",
+    "indexCorrecte": 2,
+    "pistes": [
+      "Aquest nombre és massa petit. Quantes vegades cal doblegar un full DIN-A0 per obtenir un DIN-A5?",
+      "T'has quedat curt. Això seria la quantitat de fulls DIN-A4, però l'enunciat demana fulls DIN-A5. Has de fer un pas més.",
+      "",
+      "Aquest nombre és massa gran, repassa els teus càlculs."
+    ]
+  },
+  {
+    "id": 83,
+    "any": 2023,
+    "nivell": "4eso",
+    "dificultat": 2,
+    "sentit": "mesura",
+    "enunciat": "data/cb4eso2023e6.png",
+    "pregunta": "data/cb4eso2023p20.png",
+    "indexCorrecte": 0,
+    "pistes": [
+      "",
+      "T'has equivocat, perquè has dit l'àrea d'un DIN-A2, i et demanen la d'un DIN-A3.",
+      "Crec que has fet la meitat i per això obtens 0,5 metres quadrats. No és correcte, repassa-ho.",
+      "La resposta no pot ser un nombre tant gran. Pensa una cosa: estem passant de DIN-A0 a un DIN-A3."
+    ]
+  },
+  {
+    "id": 84,
+    "any": 2023,
+    "nivell": "4eso",
+    "dificultat": 1,
+    "sentit": "numeric",
+    "enunciat": "data/cb4eso2023e7.png",
+    "pregunta": "data/cb4eso2023p22.png",
+    "indexCorrecte": 1,
+    "pistes": [
+      "Incorrecte: aquesta seria la resposta si les 40 fotografies fossin en blanc i negre.",
+      "",
+      "Hi ha un error en els càlculs. Crec que has comptat 15 fotografies en blanc i negre i 25 fotografies en color.",
+      "No és correcte. Aquesta seria la resposta si les 40 fotografies fossin en color."
+    ]
+  },
+  {
+    "id": 85,
+    "any": 2023,
+    "nivell": "4eso",
+    "dificultat": 2,
+    "sentit": "numeric",
+    "enunciat": "data/cb4eso2023e7.png",
+    "pregunta": "data/cb4eso2023p23.png",
+    "indexCorrecte": 2,
+    "pistes": [
+      "És incorrecte, perquè has calculat els diners que s'estalvia, però et demanem calcular el preu final amb descompte.",
+      "T'has equivocat. Crec que has fet com si el descompte fos del 50%, pot ser?",
+      "",
+      "No és correcte, perquè aquest és el preu sense descompte."
+    ]
+  },
+  {
+    "id": 86,
+    "any": 2023,
+    "nivell": "4eso",
+    "dificultat": 2,
+    "sentit": "numeric",
+    "enunciat": "data/cb4eso2023e7.png",
+    "pregunta": "data/cb4eso2023p24.png",
+    "indexCorrecte": 3,
+    "pistes": [
+      "No és correcte. L'Anna va imprimir moltes més fotografies. Repassa la teva estratègia.",
+      "No és cert, perquè si hagués encarregat 10 fotografies, hauria pagat menys de 4 euros. Repassa-ho.",
+      "Tens algun error de càlcul, perquè aquesta opció no és la correcta.",
+      ""
+    ]
+  },
+  {
+    "id": 87,
+    "any": 2023,
+    "nivell": "4eso",
+    "dificultat": 2,
+    "sentit": "algebraic",
+    "enunciat": "data/cb4eso2023e7.png",
+    "pregunta": "data/cb4eso2023p25.png",
+    "indexCorrecte": 0,
+    "pistes": [
+      "",
+      "No és l'opció correcta, però et dono una pista: has encertat 1 de les 2 equacions.",
+      "No és correcte. De totes maneres, has encertat una equació i l'altra equació, no.",
+      "Aquesta opció no funciona. Observa bé la primera equació: aquesta resta, no quadra amb l'enunciat."
+    ]
+  },
+  {
+    "id": 88,
+    "any": 2023,
+    "nivell": "4eso",
+    "dificultat": 1,
+    "sentit": "mesura",
+    "enunciat": "data/cb4eso2023e8.png",
+    "pregunta": "data/cb4eso2023p26.png",
+    "indexCorrecte": 2,
+    "pistes": [
+      "T'has equivocat, perquè tu proposes fer la meitat de l'alçada, però en canvi l'amplada no passa a la meitat.",
+      "Has obtingut un valor massa petit per a l'alçada. Revisa els càlculs.",
+      "",
+      "És molt estrany que l'alçada passi de 34 cm a 30 cm, i en canvi l'amplada disminueix molt més, en proporció. Ho entens?"
+    ]
+  },
+  {
+    "id": 89,
+    "any": 2023,
+    "nivell": "4eso",
+    "dificultat": 2,
+    "sentit": "mesura", 
+    "enunciat": "data/cb4eso2023e8.png",
+    "pregunta": "data/cb4eso2023p27.png",
+    "indexCorrecte": 2,
+    "pistes": [
+      "Has fet un bon primer pas, però no és correcte. Aquesta opció és el perímetre de la fotografi sense comptar les fustes del marc.",
+      "Sembla que has oblidat afegir algun tros de marc. Observa el dibuix amb calma i torna a calcular.",
+      "",
+      "Aquesta xifra és massa gran. Revisa els càlculs."
+    ]
+  },
+  {
+    "id": 90,
+    "any": 2023,
+    "nivell": "4eso",
+    "dificultat": 2,
+    "sentit": "numeric",
+    "enunciat": "data/cb4eso2023e9.png",
+    "pregunta": "data/cb4eso2023p29.png",
+    "indexCorrecte": 1,
+    "pistes": [
+      "No és la resposta correcta, però et dono una pista: has encertat un dels dos nombres.",
+      "",
+      "No és la resposta correcta, però et dono una pista: has encertat un dels dos nombres.",
+      "La teva resposta no és correcta, perquè has pensat com si l'error fos de 1 mm, i això no és cert."
+    ]
+  },
+  {
+    "id": 91,
+    "any": 2023,
+    "nivell": "4eso",
+    "dificultat": 2,
+    "sentit": "numeric",
+    "enunciat": "data/cb4eso2023e9.png",
+    "pregunta": "data/cb4eso2023p30.png",
+    "indexCorrecte": 2,
+    "pistes": [
+      "Aquest seria l'error si la construcció tingués 10 peces. Llegeix bé quantes peces té la torre.",
+      "Tens un error en el càlcul. Revisa-ho.",
+      "",
+      "Aquesta quantitat és massa gran. Recorda que les dades són 0,5 mm d'error per peça. Quantes peces hi ha?"
+    ]
+  },
+  {
+    "id": 92,
+    "any": 2023,
+    "nivell": "4eso",
+    "dificultat": 3,
+    "sentit": "numeric",
+    "enunciat": "data/cb4eso2023e9.png",
+    "pregunta": "data/cb4eso2023p31.png",
+    "indexCorrecte": 2,
+    "pistes": [
+      "La teva resposta no és correcta, perquè has pensat com si l'error fos de 1 mm, i això no és cert.",
+      "No és la resposta correcta, però et dono una pista: has encertat un dels dos nombres.",
+      "",
+      "No és la resposta correcta, però et dono una pista: has encertat un dels dos nombres."
+    ]
+  },
+  {
+    "id": 93,
+    "any": 2024,
+    "nivell": "2eso",
+    "dificultat": 1,
+    "sentit": "estocastic",
+    "enunciat": "data/cb2eso2024e1.png",
+    "pregunta": "data/cb2eso2024p1.png",
+    "indexCorrecte": 0,
+    "pistes": [
+      "",
+      "No és correcte. Revisa la suma. En total has de sumar 4 nombres.",
+      "No és correcte. Revisa la suma. En total has de sumar 4 nombres.",
+      "Has sumat el total d'alumnes de cada curs, però et demanen només els que han contestat l'enquesta. Fixa't en les barres de color fosc."
+    ]
+  },
+  {
+    "id": 94,
+    "any": 2024,
+    "nivell": "2eso",
+    "dificultat": 2,
+    "sentit": "estocastic",
+    "enunciat": "data/cb2eso2024e1.png",
+    "pregunta": "data/cb2eso2024p2.png",
+    "indexCorrecte": 3,
+    "pistes": [
+      "Gairebé ho tens! No és aquest gràfic, perquè la majoria d'alumnes sí que han contestat l'enquesta.",
+      "Aquest gràfic és impossible, perquè la majoria d'alumnes sí que han contestat l'enquesta",
+      "Les proporcions d'aquest gràfic no són correctes. Com a pista, gairebé el 80% dels alumnes han contestat.",
+      ""
+    ]
+  },
+  {
+    "id": 95,
+    "any": 2024,
+    "nivell": "2eso",
+    "dificultat": 1,
+    "sentit": "numeric",
+    "enunciat": "data/cb2eso2024e2.png",
+    "pregunta": "data/cb2eso2024p4.png",
+    "indexCorrecte": 2,
+    "pistes": [
+      "Atenció, només has comptat els que van a peu.",
+      "No és correcte. Els alumnes que van en transport públic aquí no compten.",
+      "",
+      "Error, perquè has sumat el percentatge de cotxe o moto. Torna a llegir la pregunta."
+    ]
+  },
+  {
+    "id": 96,
+    "any": 2024,
+    "nivell": "2eso",
+    "dificultat": 2,
+    "sentit": "mesura",
+    "enunciat": "data/cb2eso2024e3.png",
+    "pregunta": "data/cb2eso2024p7.png",
+    "indexCorrecte": 1,
+    "pistes": [
+      "No és possible aquesta senyal, perquè distàncies que hi ha sumen 5 km.",
+      "",
+      "Opció incorrecta. Pista: la carretera entre VilaA i VilaB fa 5,5 km.",
+      "Opció no correcta. Pensa que entre VilaA i VilaB hi ha 5,5 km de carretera."
+    ]
+  },
+  {
+    "id": 97,
+    "any": 2024,
+    "nivell": "2eso",
+    "dificultat": 2,
+    "sentit": "mesura",
+    "enunciat": "data/cb2eso2024e3.png",
+    "pregunta": "data/cb2eso2024p8.png",
+    "indexCorrecte": 2,
+    "pistes": [
+      "Has dividit 10 km entre 10 minuts, però les unitats no quadren. La velocitat es mesura en km/h.",
+      "No és correcte. Pista: converteix els 10 minuts a hores.",
+      "",
+      "Atenció, no has de multiplicar 10 per 10. La velocitat es calcula dividint: distància / temps."
+    ]
+  },
+  {
+    "id": 98,
+    "any": 2024,
+    "nivell": "2eso",
+    "dificultat": 2,
+    "sentit": "mesura",
+    "enunciat": "data/cb2eso2024e3.png",
+    "pregunta": "data/cb2eso2024p9.png",
+    "indexCorrecte": 0,
+    "pistes": [
+      "",
+      "No és el trajecte més curt. Pensa-ho millor.",
+      "No és la millor opció, perquè n'hi ha una amb menys km.",
+      "No és l'opció amb menys km, perquè el bus passa 2 vegades per Vilagran, i això allarga el recorregut."
+    ]
+  },
+  {
+    "id": 99,
+    "any": 2024,
+    "nivell": "2eso",
+    "dificultat": 2,
+    "sentit": "numeric",
+    "enunciat": "data/cb2eso2024e4.png",
+    "pregunta": "data/cb2eso2024p10.png",
+    "indexCorrecte": 2,
+    "pistes": [
+      "Gairebé ho tens, però el mínim no és 100.",
+      "Revisa els teus càlculs, no és aquesta l'opció correcta.",
+      "",
+      "Tens un error en els 180 minuts, perquè cada viatge màxim 15 minuts."
+    ]
+  },
+  {
+    "id": 100,
+    "any": 2024,
+    "nivell": "2eso",
+    "dificultat": 2,
+    "sentit": "algebraic",
+    "enunciat": "data/cb2eso2024e4.png",
+    "pregunta": "data/cb2eso2024p11.png",
+    "indexCorrecte": 2,
+    "pistes": [
+      "No és correcte, perquè has comptat com si en Lluc fes 1 viatge cada dia.",
+      "Atenció, has comptat 7 dies, però el Lluc no agafa el bus el cap de setmana.",
+      "",
+      "Error, perquè en el fons has comptat 7 dies, però el Lluc el bus 5 dies a la setmana."
+    ]
+  },
+  {
+    "id": 101,
+    "any": 2024,
+    "nivell": "2eso",
+    "dificultat": 3,
+    "sentit": "algebraic",
+    "enunciat": "data/cb2eso2024e4.png",
+    "pregunta": "data/cb2eso2024p12.png",
+    "indexCorrecte": 1,
+    "pistes": [
+      "No és correcte. Recorda que cada dia fa 2 viatges: al matí i a la tarda.",
+      "",
+      "Has comptat malament els viatges. Recorda que cada dia fa dos viatges, un al matí i un a la tarda.",
+      "No és correcte. Recorda que cada dia fa 2 viatges: al matí i a la tarda."
+    ]
+  },
+  {
+    "id": 102,
+    "any": 2024,
+    "nivell": "2eso",
+    "dificultat": 2,
+    "sentit": "mesura",
+    "enunciat": "data/cb2eso2024e5.png",
+    "pregunta": "data/cb2eso2024p13.png",
+    "indexCorrecte": 0,
+    "pistes": [
+      "",
+      "Has triat un camí massa llarg. Hi ha una possibilitat que és més curt.",
+      "Aquest camí no és el més curt. Busca el camí més curt possible.",
+      "Aquesta distància és massa gran. Hi ha un camí més curt."
+    ]
+  },
+  {
+    "id": 103,
+    "any": 2024,
+    "nivell": "2eso",
+    "dificultat": 1,
+    "sentit": "espacial",
+    "enunciat": "data/cb2eso2024e6.png",
+    "pregunta": "data/cb2eso2024p15.png",
+    "indexCorrecte": 3,
+    "pistes": [
+      "No és correcte. Pista: la solució ha de començar per E, perquè comença anant cap a l'est.",
+      "Gairebé ho tens, però un dels moviments no és correcte. Revisa amb calma.",
+      "Aquesta opció no és possible, perquè l'últim moviment ha de ser O.",
+      ""
+    ]
+  },
+  {
+    "id": 104,
+    "any": 2024,
+    "nivell": "2eso",
+    "dificultat": 2,
+    "sentit": "mesura",
+    "enunciat": "data/cb2eso2024e7.png",
+    "pregunta": "data/cb2eso2024p18.png",
+    "indexCorrecte": 3,
+    "pistes": [
+      "Opció incorrecta. Pensa que has de sumar moltes vegades el costat de 60 m.",
+      "La tanca mesura més metres dels que has escollit aquí. Revisa bé la forma del parc.",
+      "Gairebé ho tens, però et falten alguns trams. Potser t'estàs oblidant algunes cantonades.",
+      ""
+    ]
+  },
+  {
+    "id": 105,
+    "any": 2024,
+    "nivell": "2eso",
+    "dificultat": 1,
+    "sentit": "espacial",
+    "enunciat": "data/cb2eso2024e7.png",
+    "pregunta": "data/cb2eso2024p19.png",
+    "indexCorrecte": 2,
+    "pistes": [
+      "Aquesta opció sí que funciona. Recorda que estem buscant una opció que NO funcioni.",
+      "Aquesta divisió sí que dona 2 parts iguals. Recorda que estem buscant una opció que NO dona 2 parts iguals.",
+      "",
+      "Aquesta divisió sí que dona 2 parts iguals. Recorda que estem buscant una opció que NO dona 2 parts iguals."
+    ]
+  },
+  {
+    "id": 106,
+    "any": 2024,
+    "nivell": "2eso",
+    "dificultat": 1,
+    "sentit": "numeric",
+    "enunciat": "data/cb2eso2024e8.png",
+    "pregunta": "data/cb2eso2024p20.png",
+    "indexCorrecte": 1,
+    "pistes": [
+      "No és correcte. Revisa els teus càlculs.",
+      "",
+      "No és correcte. Revisa els teus càlculs.",
+      "No és correcte. Revisa els teus càlculs."
+    ]
+  },
+  {
+    "id": 107,
+    "any": 2024,
+    "nivell": "2eso",
+    "dificultat": 2,
+    "sentit": "numeric",
+    "enunciat": "data/cb2eso2024e8.png",
+    "pregunta": "data/cb2eso2024p21.png",
+    "indexCorrecte": 1,
+    "pistes": [
+      "Gairebé ho tens! El teu error és que has escollit l'estalvi per cada viatge. Et pregunten l'estalvi total.",
+      "",
+      "Revisa els càlculs. Potser t'has equivocat quan has restat.",
+      "No és correcte. Has fet com si només comprés 1 sol bitllet de 2 euros."
+    ]
+  },
+  {
+    "id": 108,
+    "any": 2024,
+    "nivell": "2eso",
+    "dificultat": 2,
+    "sentit": "numeric",
+    "enunciat": "data/cb2eso2024e8.png",
+    "pregunta": "data/cb2eso2024p22.png",
+    "indexCorrecte": 2,
+    "pistes": [
+      "No és correcte. Aquesta resposta seria si el bitllet senzill costés 1 euro.",
+      "T'has equivocat, repassa els càlculs.",
+      "",
+      "Vigila, perquè has restat 0,25 euros directament del preu. Pista: l'estalvi és el 25% de 2 euros."
+    ]
+  },
+  {
+    "id": 109,
+    "any": 2025,
+    "nivell": "2eso",
+    "dificultat": 1,
+    "sentit": "estocastic",
+    "enunciat": "data/cb2eso2025e1.png",
+    "pregunta": "data/cb2eso2025p1.png",
+    "indexCorrecte": 3,
+    "pistes": [
+      "No és correcte. Has comptat només els vots del projecte A.",
+      "No és correcte. Has comptat només els vots del projecte B.",
+      "Aquesta xifra no és correcta. Potser t'has confós i has comptat els alumnes de 2n, en lloc dels alumnes de 1r.",
+      ""
+    ]
+  },
+  {
+    "id": 110,
+    "any": 2025,
+    "nivell": "2eso",
+    "dificultat": 1,
+    "sentit": "numeric",
+    "enunciat": "data/cb2eso2025e1.png",
+    "pregunta": "data/cb2eso2025p2.png",
+    "indexCorrecte": 1,
+    "pistes": [
+      "Atenció, per trobar el percentatge no pots escriure directament 24. Has de comparar el 24 amb el nombre total de vots.",
+      "",
+      "No és correcte: em sembla que has posat els vots del projecte B. Torna a llegir la pregunta.",
+      "Opció incorrecta. Revisa els teus càlculs."
+    ]
+  },
+  {
+    "id": 111,
+    "any": 2025,
+    "nivell": "2eso",
+    "dificultat": 2,
+    "sentit": "numeric",
+    "enunciat": "data/cb2eso2025e1.png",
+    "pregunta": "data/cb2eso2025p3.png",
+    "indexCorrecte": 2,
+    "pistes": [
+      "Aquesta fracció no és correcta. Quants alumnes de 3r han votat el projecte B? Quants n'hi ha en total?",
+      "No és correcte. Revisa els teus càlculs.",
+      "",
+      "Has comès un error de lectura, perquè aquesta opció correspon al projecte A, no el projecte B. Torna a llegir la pregunta."
+    ]
+  },
+  {
+    "id": 112,
+    "any": 2025,
+    "nivell": "2eso",
+    "dificultat": 2,
+    "sentit": "numeric",
+    "enunciat": "data/cb2eso2025e1.png",
+    "pregunta": "data/cb2eso2025p4.png",
+    "indexCorrecte": 3,
+    "pistes": [
+      "No és correcte, perquè els percentatges que veiem a 4t d'ESO ens diuen que ha de ser 1 de cada 4.",
+      "No és correcte, perquè els percentatges que veiem a 4t d'ESO ens diuen que ha de ser 1 de cada 4.",
+      "Gairebé ho tens, però t'has confós de projecte: és el projecte B.",
+      ""
+    ]
+  },
+  {
+    "id": 113,
+    "any": 2025,
+    "nivell": "2eso",
+    "dificultat": 1,
+    "sentit": "mesura",
+    "enunciat": "data/cb2eso2025e2.png",
+    "pregunta": "data/cb2eso2025p6.png",
+    "indexCorrecte": 1,
+    "pistes": [
+      "Has comès un error de càlcul. Revisa les operacions.",
+      "",
+      "Aquesta superfície és massa gran. Recorda que l'espai no és un rectangle complet.",
+      "T'has equivocat perquè 80 metres quadrats és tot el rectangle sencer."
+    ]
+  },
+  {
+    "id": 114,
+    "any": 2025,
+    "nivell": "2eso",
+    "dificultat": 2,
+    "sentit": "mesura",
+    "enunciat": "data/cb2eso2025e2.png",
+    "pregunta": "data/cb2eso2025p7.png",
+    "indexCorrecte": 0,
+    "pistes": [
+      "",
+      "Incorrecte. Et dono 2 pistes: la part inferior no té color verd. I has d'aplicar el teorema de Pitàgores.",
+      "Incorrecte. Et dono 2 pistes: la part inferior no té color verd. I has d'aplicar el teorema de Pitàgores.",
+      "Incorrecte. Et dono 2 pistes: la part inferior no té color verd. I has d'aplicar el teorema de Pitàgores."
+    ]
+  },
+  {
+    "id": 115,
+    "any": 2025,
+    "nivell": "2eso",
+    "dificultat": 2,
+    "sentit": "numeric",
+    "enunciat": "data/cb2eso2025e3.png",
+    "pregunta": "data/cb2eso2025p10.png",
+    "indexCorrecte": 2,
+    "pistes": [
+      "Aquesta puntuació és massa baixa. Si un dard es clava al cercle central, obtens el doble de puntuació.",
+      "No és correcte. La puntuació pot ser més alta, pensa per què.",
+      "",
+      "T'has equivocat en els càlculs, perquè és impossible treure una puntuació tan alta."
+    ]
+  },
+  {
+    "id": 116,
+    "any": 2025,
+    "nivell": "2eso",
+    "dificultat": 3,
+    "sentit": "numeric",
+    "enunciat": "data/cb2eso2025e4.png",
+    "pregunta": "data/cb2eso2025p12.png",
+    "indexCorrecte": 0,
+    "pistes": [
+      "",
+      "No és correcte. Revisa bé les combinacions.",
+      "Has comptat massa combinacions. Revisa.",
+      "Hi ha massa combinacions. Repassa quins valors es poden obtenir amb cada dard."
+    ]
+  },
+  {
+    "id": 117,
+    "any": 2025,
+    "nivell": "2eso",
+    "dificultat": 2,
+    "sentit": "numeric",
+    "enunciat": "data/cb2eso2025e5.png",
+    "pregunta": "data/cb2eso2025p14.png",
+    "indexCorrecte": 2,
+    "pistes": [
+      "No és correcte. Pensa bé: quantes partides realment ha guanyat en Leo?",
+      "El percentatge no és correcte. Revisa quantes partides ha guanyat en Leo, de les 5 partides que s'han jugat.",
+      "",
+      "Atenció, això no és possible, perquè el 50% és la meitat, i tenim 5 partides."
+    ]
+  },
+  {
+    "id": 118,
+    "any": 2025,
+    "nivell": "2eso",
+    "dificultat": 1,
+    "sentit": "estocastic",
+    "enunciat": "data/cb2eso2025e5.png",
+    "pregunta": "data/cb2eso2025p15.png",
+    "indexCorrecte": 3,
+    "pistes": [
+      "Atenció, aquesta és la mitjana d'en Leo, i estem buscant la d'en Nil.",
+      "No és correcte. Revisa la suma total de punts del Nil.",
+      "Revisa els càlculs. Pensa que la mitjana pot ser un nombre decimal.",
+      ""
+    ]
+  },
+  {
+    "id": 119,
+    "any": 2025,
+    "nivell": "2eso",
+    "dificultat": 2,
+    "sentit": "algebraic",
+    "enunciat": "data/cb2eso2025e6.png",
+    "pregunta": "data/cb2eso2025p17.png",
+    "indexCorrecte": 3,
+    "pistes": [
+      "La posició no és correcta. Recorda que girar a l'esquerra vol dir girar en sentit antihorari",
+      "No és correcte. Revisa la direcció del robot després de cada gir i compta bé les caselles.",
+      "Hi ha un error en el recorregut. Recorda que girar a la dreta vol dir girar en sentit horari.",
+      ""
+    ]
+  },
+  {
+    "id": 120,
+    "any": 2025,
+    "nivell": "2eso",
+    "dificultat": 2,
+    "sentit": "algebraic",
+    "enunciat": "data/cb2eso2025e7.png",
+    "pregunta": "data/cb2eso2025p19.png",
+    "indexCorrecte": 0,
+    "pistes": [
+      "",
+      "No és correcte. Crec que has repetit 3 vegades, i has de repetir 4 vegades.",
+      "No és correcte. Revisa els passos.",
+      "No és correcte. Crec que has repetit 2 vegades, i has de repetir 4 vegades."
+    ]
+  },
+  {
+    "id": 121,
+    "any": 2025,
+    "nivell": "2eso",
+    "dificultat": 2,
+    "sentit": "algebraic",
+    "enunciat": "data/cb2eso2025e8.png",
+    "pregunta": "data/cb2eso2025p21.png",
+    "indexCorrecte": 3,
+    "pistes": [
+      "Has obtingut un consum massa baix. Potser t'has oblidat de comptar el consum dels girs.",
+      "No és correcte. Recorda que cada gir consumeix 2 UC i no 1 UC.",
+      "No és correcte, revisa el nombre de caselles i de girs del recorregut.",
+      ""
+    ]
+  },
+  {
+    "id": 122,
+    "any": 2025,
+    "nivell": "2eso",
+    "dificultat": 3,
+    "sentit": "algebraic",
+    "enunciat": "data/cb2eso2025e8.png",
+    "pregunta": "data/cb2eso2025p22.png",
+    "indexCorrecte": 2,
+    "pistes": [
+      "No és correcte. Recorda que cada gir consumeix 2 UC.",
+      "Error: has intercanviat els coeficients. Gairebé ho tens.",
+      "",
+      "No és correcte. Cada casella consumeix 1 UC, no 2 UC. Revisa."
+    ]
+  },
+  {
+    "id": 123,
+    "any": 2025,
+    "nivell": "2eso",
+    "dificultat": 1,
+    "sentit": "algebraic",
+    "enunciat": "data/cb2eso2025e9.png",
+    "pregunta": "data/cb2eso2025p23.png",
+    "indexCorrecte": 0,
+    "pistes": [
+      "",
+      "No és correcte. Revisa el gràfic i busca en quin segon el robot s'atura.",
+      "No és correcte. Revisa el gràfic i busca en quin segon el robot s'atura.",
+      "Potser has confós el valor de l'eix horitzontal amb el de l'eix vertical. Fixa't en el temps."
+    ]
+  },
+  {
+    "id": 124,
+    "any": 2025,
+    "nivell": "2eso",
+    "dificultat": 3,
+    "sentit": "algebraic",
+    "enunciat": "data/cb2eso2025e9.png",
+    "pregunta": "data/cb2eso2025p24.png",
+    "indexCorrecte": 1,
+    "pistes": [
+      "N'has comptat pocs. Busca al gràfic moments en què la bateria baixa de cop 2 UC.",
+      "",
+      "Has comptat massa girs. Recorda que un gir consumeix 2 UC en un segon. Revisa.",
+      "Has comptat massa girs. Recorda que un gir consumeix 2 UC en un segon. Revisa."
+    ]
+  },
+  {
+    "id": 125,
+    "any": 2025,
+    "nivell": "2eso",
+    "dificultat": 3,
+    "sentit": "algebraic",
+    "enunciat": "data/cb2eso2025e9.png",
+    "pregunta": "data/cb2eso2025p25.png",
+    "indexCorrecte": 3,
+    "pistes": [
+      "Aquest recorregut és impossible, perquè no coincideix amb el gràfic.",
+      "No és correcte. No quadra amb el gràfic.",
+      "Aquest recorregut no correspon al gràfic. Revisa els passos i els girs.",
+      ""
+    ]
+  },
+  {
+    "id": 126,
+    "any": 2025,
+    "nivell": "2eso",
+    "dificultat": 1,
+    "sentit": "espacial",
+    "enunciat": "data/cb2eso2025e10.png",
+    "pregunta": "data/cb2eso2025p26.png",
+    "indexCorrecte": 0,
+    "pistes": [
+      "",
+      "Aquest model no és correcte, perquè no surt un cub.",
+      "No és correcte. Imagina't plegant el cartró: li falta la tapa.",
+      "Aquest model no funciona perquè té massa cares."
+    ]
+  },
+  {
+    "id": 127,
+    "any": 2025,
+    "nivell": "2eso",
+    "dificultat": 2,
+    "sentit": "espacial",
+    "enunciat": "data/cb2eso2025e10.png",
+    "pregunta": "data/cb2eso2025p27.png",
+    "indexCorrecte": 2,
+    "pistes": [
+      "Gairebé ho tens, però 4 capses hi cabrien a la meitat de sota de la capsa gran, i encara et queda un pis per omplir.",
+      "Aquesta resposta no és correcta. Pensa bé quantes capses petites hi caben.",
+      "",
+      "No és correcte. Imagina't com quedarien les capses petites dins de la capsa gran: no hi caben 10 capses petites."
+    ]
+  },
+  {
+    "id": 128,
+    "any": 2025,
+    "nivell": "2eso",
+    "dificultat": 1,
+    "sentit": "estocastic",
+    "enunciat": "data/cb2eso2025e10.png",
+    "pregunta": "data/cb2eso2025p28.png",
+    "indexCorrecte": 1,
+    "pistes": [
+      "No és correcte, perquè no ha omplert la meitat de capses amb joguina.",
+      "",
+      "Aquesta probabilitat seria correcta si només hi hagués una capsa amb joguina, però n'hi ha dues.",
+      "Crec que t'has confós, perquè aquesta és la probabilitat d'agafar una capsa sense joguina."
+    ]
+  },
+  {
+    "id": 129,
+    "any": 2025,
+    "nivell": "2eso",
+    "dificultat": 2,
+    "sentit": "espacial",
+    "enunciat": "data/cb2eso2025e10.png",
+    "pregunta": "data/cb2eso2025p29.png",
+    "indexCorrecte": 3,
+    "pistes": [
+      "Has comptat una cara per capsa, i això no quadra, perquè hi ha més cares per pintar.",
+      "Et falten cares per comptar. Revisa la construcció des de tots els costats: davant, darrere, dalt i els laterals.",
+      "Gairebé ho tens, però et deixes algunes cares. Mira també la part de darrere i la part de sota.",
+      ""
+    ]
+  },
+  {
+    "id": 130,
+    "any": 2025,
+    "nivell": "2eso",
+    "dificultat": 1,
+    "sentit": "espacial",
+    "enunciat": "data/cb2eso2025e10.png",
+    "pregunta": "data/cb2eso2025p30.png",
+    "indexCorrecte": 2,
+    "pistes": [
+      "Has comptades poques capses. Recorda que algunes estan amagades darrere d'altres.",
+      "Gairebé ho tens, però et falta comptar alguna capsa oculta.",
+      "",
+      "Has obtingut massa capses. Revisa amb calma."
+    ]
+  }
+]
+  

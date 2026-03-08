@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta name="google-site-verification" content="n4wFLcRQBu5hvzynguDkyZ1FInSqiuurzVhHqmm0lmg" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Prova Competències Bàsiques</title>
+    <link rel="stylesheet" href="shared.css?v=20">
+</head>
+<body>
+
+    <div id="avis-rotacio">
+        <div class="icona-mobil"></div>
+        <h2>Gira el dispositiu</h2>
+        <p>Per a una millor experiència, aquesta prova s'ha de realitzar amb la pantalla en horitzontal.</p>
+    </div>
+
+    <div id="app-container">
+        <div id="columna-a">
+            <header>
+                <h1 class="titol-reduit" id="titol-principal">Matemàtiques ESO</h1>
+            </header>
+            
+            <div id="zona-enunciat">
+                <img id="img-enunciat" src="" alt="Enunciat de l'activitat" class="element-suau">
+            </div>
+        </div>
+
+        <div id="columna-b">
+            <header>
+                <p id="comptador-preguntes">Carregant preguntes...</p>
+            </header>
+
+            <div id="zona-pregunta">
+                <img id="img-pregunta" src="" alt="Pregunta" class="element-suau">
+            </div>
+
+            <div id="opcions-container" class="element-suau">
+                </div>
+
+            <div style="margin-top: 30px; text-align: right;">
+                <button id="btn-seguent" class="btn-next" style="display: none;">Pregunta següent</button>
+            </div>
+
+            <div id="pantalla-final" style="display: none; padding: 20px; text-align: center;">
+                <h2>🎉 Prova finalitzada</h2>
+                <div id="resum-detallat"></div>
+
+                <div class="caixa-codi">
+    <!-- El contingut real el genera core.js a finalitzarProva() -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="core.js?v=21"></script>
+</body>
+</html>
