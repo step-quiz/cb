@@ -12,7 +12,8 @@
    CONFIGURACIÓ BASE (Sense Scroll global)
    ========================================= */
 html, body {
-    height: 100vh;
+    height: 100vh;      /* Suport per a navegadors molt antics */
+    height: 100dvh;     /* La solució màgica i moderna */    
     margin: 0;
     overflow: hidden; 
     font-family: 'Segoe UI', system-ui, sans-serif;
@@ -28,8 +29,8 @@ html, body {
     height: 100%;
     max-width: 1500px;
     margin: 0 auto;
-    padding: 20px;
-    gap: 40px;
+    padding: 10px;  /* Per a cada columna, el marge interior global */
+    gap: 20px; /* Espai fix entre les dues columnes */
     box-sizing: border-box;
 }
 
