@@ -1,3 +1,4 @@
+Així està bé?
 <!DOCTYPE html>
 <html lang="ca">
 <head>
@@ -21,18 +22,18 @@
     * { box-sizing: border-box; }
 
     body {
-      margin: 0;
-      background: var(--bg-body);
-      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
-      color: var(--text-main);
-      padding: 15px;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-    }
-
+    margin: 0;
+    background: var(--bg-body);
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    color: var(--text-main);
+    padding: 15px;
+    padding-top: 30px; /* 1. AFEGEIX AIXÒ: És l'espai exacte que vols deixar a dalt */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; /* 2. CANVIA AIXÒ: de 'center' a 'flex-start' */
+}
     .title-container { text-align: center; margin-bottom: 25px; }
     .title-row-1 { display: flex; align-items: center; justify-content: center; gap: 6px; font-size: 32px; font-weight: 800; color: var(--text-main); margin: 0; }
     .title-row-2 { font-size: 22px; font-weight: 400; color: var(--accent); margin-top: -5px; }
@@ -205,9 +206,9 @@
   </div>
 
   <script>
-    const BASE_URL = 'https://cb.step-quiz.net/test.html';
+    const BASE_URL = 'https://mates-ins.github.io/cb/test.html';
     const anysPerNivell = {
-      '4eso': ['2025', '2024', '2023', '2022'],
+      '4eso': ['2025', '2024', '2023'],
       '2eso': ['2025', '2024']
     };
 
@@ -307,17 +308,5 @@
       }, 500);
     });    
   </script>
-
-<footer style="position: fixed; bottom: 0; left: 0; width: 100%; background-color: #f8f9fa; border-top: 1px solid #ccc; padding: 10px; z-index: 9999; display: flex; align-items: center; justify-content: center; gap: 15px; flex-wrap: wrap; box-sizing: border-box; text-align: center;">
-    <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" style="flex-shrink: 0;">
-        <img alt="Llicència CC BY-NC-ND" style="border-width:0; height: 31px;" src="https://licensebuttons.net/l/by-nc-nd/4.0/88x31.png" />
-    </a>
-    <span style="font-size: 0.85em; color: #333;">
-        © 2026 <strong>[DAVID ARSO CIVIL]</strong>. Ús educatiu lliure. 
-        <br style="display: none;" /> Prohibida la comercialització i la modificació (<a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/" style="color: #333; text-decoration: underline;">CC BY-NC-ND 4.0</a>).
-    </span>
-</footer>
-  
-  
 </body>
 </html>
