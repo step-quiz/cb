@@ -29,8 +29,8 @@ html, body {
     height: 100%;
     max-width: 1500px;
     margin: 0 auto;
-    padding: 10px;  /* Per a cada columna, el marge interior global */
-    gap: 20px; /* Espai fix entre les dues columnes */
+    padding: 15px;  /* Per a cada columna, el marge interior global */
+    gap: 30px; /* Espai fix entre les dues columnes */
     box-sizing: border-box;
 }
 
@@ -51,6 +51,16 @@ html, body {
     overflow-y: auto; /* Permet l'scroll independent */
     padding-bottom: 60px; /* Marge extra de seguretat per a mòbils */
     -webkit-overflow-scrolling: touch; /* Suavitza l'scroll en tàctils */
+}
+
+@media screen and (max-width: 1200px) {
+    #app-container {
+        gap: 10px;      /* Reduïm la distància entre columnes */
+        padding: 10px;  /* Reduïm l'espai exterior per guanyar amplada útil */
+    }
+   #columna-a {
+        padding-left: 0%;
+    }
 }
 
 /* =========================================
