@@ -327,7 +327,7 @@ function finalitzarProva() {
         const valIntents3 = parseInt(cadenaIntents.substring(20, 30), 10);
 
         // Afegim aquests 3 mega-nombres a la suma de control
-        sumaControl += valIntents1 + valIntents2 + valIntents3;
+//        sumaControl += valIntents1 + valIntents2 + valIntents3;
 
         const charControl = "TRWAGMYFPDXBNJZSQVHLCKE".charAt(sumaControl % 23);
         codiFinal = `${charControl}${randChars}-${dd}${mm}-${hh}${min}-${notaStr}-${cadenaIntents}-cb`;
