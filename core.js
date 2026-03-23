@@ -273,11 +273,13 @@ function finalitzarProva() {
     const notaNumber = (encerts / total) * 10;
     const notaStr = notaNumber.toFixed(2).padStart(5, '0').replace('.', ',');
 
-    const lletres = "abcdefghijklmnopqrstuvwxyz";
-    let randChars = "";
-    for(let i=0; i<3; i++) {
-        randChars += lletres.charAt(Math.floor(Math.random() * lletres.length));
-    }
+    // Salt codificat (no aleatori per a CB):
+    // Posició 0: 'S' = 2n ESO, 'Q' = 4t ESO
+    // Posicions 1-2: últims 2 dígits de l'any (p.ex. 26 per a 2026)
+    const nivellChar = (filtreNivell === '4eso') ? 'q' : 's';
+    const ara2 = new Date();
+    const anyStr = String(ara2.getFullYear()).slice(-2); // '26'
+    const randChars = nivellChar + anyStr;  // p.ex. 's26' o 'q26'
 
     const ara = new Date();
     const dd = String(ara.getDate()).padStart(2, '0');
