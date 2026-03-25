@@ -261,79 +261,74 @@ function finalitzarProva() {
     // 2. Mostrar la pantalla final
     document.getElementById('pantalla-final').style.display = 'block';
 
-    // 3. Càlculs base comuns per als dos modes
-// ---------------------------------------------------------------
-// ALGORISME DE VERIFICACIÓ DOCENT
-// Genera un codi únic que l'alumne lliura al professor.
-// Inclou: nota, data/hora, i una lletra de control (algorisme DNI)
-// per detectar manipulacions. No recull ni envia dades personals.
-// ---------------------------------------------------------------
+    // 3. Generació del codi de verificació — FORMAT v2
+    // ---------------------------------------------------------------
+    // Genera un codi v2 idèntic al de game-core.js (step-quiz operacions).
+    // Format: Lsss-DDMM-HHMM-EE-D-S-QQ-NNN-RRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+    // L'analitzador-stepquiz.html el parseja com a format 'v2'.
+    // ---------------------------------------------------------------
+
     const total = preguntesActives.length;
     const encerts = resultatsExamen.filter(r => r.encertat).length;
-    const notaNumber = (encerts / total) * 10;
-    const notaStr = notaNumber.toFixed(2).padStart(5, '0').replace('.', ',');
+    const notaSobre10 = (encerts / total) * 10;
 
-    // Salt codificat (no aleatori per a CB):
-    // Posició 0: 'S' = 2n ESO, 'Q' = 4t ESO
-    // Posicions 1-2: últims 2 dígits de l'any (p.ex. 26 per a 2026)
-    const nivellChar = (filtreNivell === '4eso') ? 'q' : 's';
-    const ara2 = new Date();
-    const anyStr = String(ara2.getFullYear()).slice(-2); // '26'
-    const randChars = nivellChar + anyStr;  // p.ex. 's26' o 'q26'
+    // ── Salt aleatori (3 lletres minúscules, igual que game-core.js) ──
+    let salt = '';
+    const ch = 'abcdefghijklmnopqrstuvwxyz';
+    for (let i = 0; i < 3; i++) salt += ch.charAt(Math.floor(Math.random() * ch.length));
 
+    // ── Data i hora ──
     const ara = new Date();
-    const dd = String(ara.getDate()).padStart(2, '0');
-    const mm = String(ara.getMonth() + 1).padStart(2, '0');
-    const hh = String(ara.getHours()).padStart(2, '0');
+    const dd  = String(ara.getDate()).padStart(2, '0');
+    const mm  = String(ara.getMonth() + 1).padStart(2, '0');
+    const hh  = String(ara.getHours()).padStart(2, '0');
     const min = String(ara.getMinutes()).padStart(2, '0');
 
-    // Transformem a valors numèrics per a l'algorisme antifrau
-    const valNota = parseInt(notaStr.replace(',', ''), 10);
-    const valDD = parseInt(dd, 10);
-    const valMM = parseInt(mm, 10);
-    const valHH = parseInt(hh, 10);
-    const valMin = parseInt(min, 10);
-    const valCode = randChars.charCodeAt(0);
+    // ── Codi d'exercici ──
+    const exCode = 'CB';
 
-    let sumaControl = valNota + valDD + valMM + valHH + valMin + valCode;
-    let codiFinal = "";
+    // ── Dificultat: codifiquem nivell+any per no perdre la info ──
+    //    0 = sense nivell, 1 = 2eso, 2 = 4eso
+    const dif = filtreNivell === '2eso' ? '1' : filtreNivell === '4eso' ? '2' : '0';
 
-    // 4. Lògica específica segons si és Examen o Pràctica
+    // ── Sessions i preguntes ──
+    const sessions  = '1';
+    const questions = String(Math.min(total, 99)).padStart(2, '0');
+
+    // ── Nota (NNN = nota × 10, arrodonida, 000-100) ──
+    const notaInt = Math.round(notaSobre10 * 10);
+    const notaStr = String(notaInt).padStart(3, '0');
+
+    // ── Resultats per pregunta (30 chars) ──
+    let resultsStr = '';
     if (modeExamen) {
-        // --- MODE EXAMEN ---
-        const charControl = "TRWAGMYFPDXBNJZSQVHLCKE".charAt(sumaControl % 23);
-        codiFinal = `${charControl}${randChars}-${dd}${mm}-${hh}${min}-${notaStr}-cb`;
-
+        // Mode examen: 1=encert, 4=error (sense intents intermedis)
+        resultatsExamen.forEach(r => {
+            resultsStr += r.encertat ? '1' : '4';
+        });
     } else {
-        // --- MODE PRÀCTICA ---
-        let cadenaIntents = "";
-        
-        // Recorrem totes les preguntes actives per saber els intents
+        // Mode pràctica: 1=1r intent, 2=2n, 3=3r, 4=fallit
         preguntesActives.forEach(p => {
-            // L'objecte intentsPerPregunta guarda els ERRORS.
-            // Si no hi ha errors (o no existeix), intents = 0 + 1 = 1 intent (encert a la primera)
             let errors = intentsPerPregunta[p.id] || 0;
             let intents = errors + 1;
-            if (intents > 4) intents = 4; // Limitem a 4 per seguretat
-            
-            cadenaIntents += intents.toString();
+            if (intents > 4) intents = 4;
+            resultsStr += intents.toString();
         });
-
-        // 💡 TRUC: Si estàs fent proves amb &max=2, la cadena tindria 2 xifres i trencaria l'Excel.
-        // Amb padEnd l'omplim de zeros fins a 30 automàticament si és més curta.
-        cadenaIntents = cadenaIntents.padEnd(30, '0');
-
-        // Partim la cadena en 3 blocs de 10 xifres per poder sumar-los informàticament sense trencar res
-        const valIntents1 = parseInt(cadenaIntents.substring(0, 10), 10);
-        const valIntents2 = parseInt(cadenaIntents.substring(10, 20), 10);
-        const valIntents3 = parseInt(cadenaIntents.substring(20, 30), 10);
-
-        // Afegim aquests 3 mega-nombres a la suma de control
-//        sumaControl += valIntents1 + valIntents2 + valIntents3;
-
-        const charControl = "TRWAGMYFPDXBNJZSQVHLCKE".charAt(sumaControl % 23);
-        codiFinal = `${charControl}${randChars}-${dd}${mm}-${hh}${min}-${notaStr}-${cadenaIntents}-cb`;
     }
+    resultsStr = resultsStr.padEnd(30, '0');
+
+    // ── Checksum (idèntic a game-core.js i analitzador-stepquiz.html) ──
+    const sumaControl = notaInt
+        + parseInt(dd, 10) + parseInt(mm, 10)
+        + parseInt(hh, 10) + parseInt(min, 10)
+        + salt.charCodeAt(0);
+    const lletra = 'TRWAGMYFPDXBNJZSQVHLCKE'.charAt(sumaControl % 23);
+
+    // ── Codi final v2 ──
+    const codiFinal = `${lletra}${salt}-${dd}${mm}-${hh}${min}-${exCode}-${dif}-${sessions}-${questions}-${notaStr}-${resultsStr}`;
+
+    // ── Nota amb coma per mostrar a pantalla ──
+    const notaDisplay = notaSobre10.toFixed(2).replace('.', ',');
 
     // 5. Visualització del Resum i Codi
     document.getElementById('resum-detallat').style.display = 'block';
@@ -352,18 +347,21 @@ function finalitzarProva() {
 
     if (modeExamen) {
         const pNota = document.createElement('p');
-        pNota.innerHTML = `Nota: <span style="font-size:1.5rem; color:var(--primary)"><strong>${notaStr}</strong></span>`;
+        pNota.innerHTML = `Nota: <span style="font-size:1.5rem; color:var(--primary)"><strong>${notaDisplay}</strong></span>`;
         resumDiv.appendChild(pNota);
     }    
-    document.querySelector('.caixa-codi').innerHTML = `
+    const caixaCodi = document.querySelector('.caixa-codi');
+    caixaCodi.innerHTML = `
         <p>Copia el codi i lliura'l al professor:</p>
-        <button id="btn-copiar-codi" class="btn-confirmar" style="font-size: 1.2rem; padding: 15px 25px; font-family: monospace; letter-spacing: 1px; cursor: pointer; word-break: break-all;" onclick="copiarCodi('${codiFinal}')">
-            ${codiFinal}
+        <button id="btn-copiar-codi" class="btn-confirmar" style="font-size: 1.2rem; padding: 15px 25px; font-family: monospace; letter-spacing: 1px; cursor: pointer; word-break: break-all;">
         </button>
         <div id="msg-copiat" style="display: none; color: #28a745; margin-top: 15px; font-weight: bold; font-size: 1.1rem;">
             Copiat! ✅
         </div>
     `;
+    const btnCodi = document.getElementById('btn-copiar-codi');
+    btnCodi.textContent = codiFinal;
+    btnCodi.addEventListener('click', () => copiarCodi(codiFinal));
 }
 
 // ==========================================
