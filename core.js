@@ -295,8 +295,11 @@ function finalitzarProva() {
     //    0 = sense nivell, 1 = 2eso, 2 = 4eso
     const dif = filtreNivell === '2eso' ? '1' : filtreNivell === '4eso' ? '2' : '0';
 
-    // ── Sessions i preguntes ──
-    const sessions  = '1';
+    // ── Sessions: codifiquem el MODE (examen o pràctica) ──
+    //    1 = mode examen (sense pistes)
+    //    2 = mode pràctica (amb pistes)
+    //    L'analitzador decodifica: 1→'Examen', 2→'Pràctica'
+    const sessions = modeExamen ? '1' : '2';
     const questions = String(Math.min(total, 99)).padStart(2, '0');
 
     // ── Nota (NNN = nota × 10, arrodonida, 000-100) ──
