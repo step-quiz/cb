@@ -272,17 +272,21 @@ function finalitzarProva() {
     const encerts = resultatsExamen.filter(r => r.encertat).length;
     const notaSobre10 = (encerts / total) * 10;
 
-    // ── Salt aleatori (3 lletres minúscules, igual que game-core.js) ──
-    let salt = '';
-    const ch = 'abcdefghijklmnopqrstuvwxyz';
-    for (let i = 0; i < 3; i++) salt += ch.charAt(Math.floor(Math.random() * ch.length));
-
     // ── Data i hora ──
     const ara = new Date();
     const dd  = String(ara.getDate()).padStart(2, '0');
     const mm  = String(ara.getMonth() + 1).padStart(2, '0');
     const hh  = String(ara.getHours()).padStart(2, '0');
     const min = String(ara.getMinutes()).padStart(2, '0');
+
+    // ── Salt codificat (conserva nivell + any de la convocatòria) ──
+    // Posició 0: 's' = 2n ESO, 'q' = 4t ESO
+    // Posicions 1-2: últims 2 dígits de l'any (p.ex. 26 per a 2026)
+    // Compatible amb regex v2: [a-z][a-z0-9]{2} → ex: "q26", "s25"
+    // L'analitzador ja sap decodificar-ho (parseCode, línia 309-311).
+    const nivellChar = (filtreNivell === '4eso') ? 'q' : 's';
+    const anyStr = String(ara.getFullYear()).slice(-2);
+    const salt = nivellChar + anyStr;
 
     // ── Codi d'exercici ──
     const exCode = 'CB';
