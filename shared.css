@@ -29,7 +29,11 @@ html, body {
     height: 100%;
     max-width: 1500px;
     margin: 0 auto;
-    padding: 15px;  /* Per a cada columna, el marge interior global */
+    /* [FIX BUG6] safe-area-inset per a iPhones amb notch/Dynamic Island */
+    padding: 15px
+             max(15px, env(safe-area-inset-right))
+             max(15px, env(safe-area-inset-bottom))
+             max(15px, env(safe-area-inset-left));
     gap: 30px; /* Espai fix entre les dues columnes */
     box-sizing: border-box;
 }
@@ -56,7 +60,10 @@ html, body {
 @media screen and (max-width: 1200px) {
     #app-container {
         gap: 10px;      /* Reduïm la distància entre columnes */
-        padding: 10px;  /* Reduïm l'espai exterior per guanyar amplada útil */
+        padding: 10px
+                 max(10px, env(safe-area-inset-right))
+                 max(10px, env(safe-area-inset-bottom))
+                 max(10px, env(safe-area-inset-left));
     }
    #columna-a {
         padding-left: 0%;
