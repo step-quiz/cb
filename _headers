@@ -1,0 +1,8 @@
+# Cloudflare Pages — capçaleres per al desplegament del cb (cb.step-quiz.net)
+#
+# Permet que m.step-quiz.net descarregui les imatges de /data per generar
+# el PDF de l'alumnat (fetch cross-origin). Les imatges són públiques, així
+# que s'obre a qualsevol origen; si ho vols restringir, canvia el "*" per
+# "https://m.step-quiz.net".
+/data/*
+  Access-Control-Allow-Origin: *
