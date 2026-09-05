@@ -206,7 +206,28 @@
 
   <script>
     const BASE_URL = 'https://cb.step-quiz.net/test.html';
-    const anysPerNivell = { '4eso': ['2025', '2024', '2023', '2022'], '2eso': ['2025', '2024'] };
+    // Anys que ofereix el desplegable. Aquesta llista es refà sola llegint
+    // preguntes.json en carregar la pàgina; la d'aquí només serveix de reserva
+    // si el fitxer no es pot llegir (per exemple obrint l'index amb file://).
+    // En afegir una edició nova no cal tocar-la: n'hi ha prou d'afegir les
+    // preguntes a preguntes.json.
+    let anysPerNivell = { '4eso': ['2026', '2025', '2024', '2023', '2022'], '2eso': ['2026', '2025', '2024'] };
+
+    async function carregarAnysDelBanc() {
+      try {
+        const resposta = await fetch('preguntes.json');
+        if (!resposta.ok) return;
+        const preguntes = await resposta.json();
+        const perNivell = {};
+        preguntes.forEach(q => { (perNivell[q.nivell] ??= new Set()).add(String(q.any)); });
+        if (!Object.keys(perNivell).length) return;
+        anysPerNivell = Object.fromEntries(Object.entries(perNivell)
+          .map(([nivell, anys]) => [nivell, [...anys].sort((a, b) => b - a)]));
+        actualitzarAnys();
+      } catch (err) {
+        // sense accés al fitxer ens quedem amb la llista de reserva
+      }
+    }
 
     const selPractica = document.getElementById('f-practica');
     const selNivell = document.getElementById('f-nivell');
@@ -262,6 +283,7 @@
 
     window.addEventListener('load', () => {
       actualitzarAnys();
+      carregarAnysDelBanc();
       setTimeout(() => {
         selPractica.classList.add('select-atencio-shake');
         setTimeout(() => selPractica.classList.remove('select-atencio-shake'), 2500);
