@@ -108,3 +108,12 @@ a partir d'aquest `preguntes.json`.
 ## Llicència
 
 © 2026 David Arso Civil. Ús educatiu lliure. Prohibida la comercialització i la modificació ([CC BY-NC-ND 4.0](http://creativecommons.org/licenses/by-nc-nd/4.0/)).
+
+<!-- atribucio-centre:inici -->
+
+---
+
+Material desenvolupat per **David Arso Civil** per al Departament de Matemàtiques de l'INS Miquel Tarradell.
+Contingut sota CC BY-NC-SA 4.0, codi sota llicència MIT. Vegeu [`LLICENCIA.md`](LLICENCIA.md).
+
+<!-- atribucio-centre:final -->

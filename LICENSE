@@ -1,28 +1,56 @@
-Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International
-(CC BY-NC-ND 4.0)
+Copyright (c) 2026 David Arso Civil
+
+Aquest projecte té dues llicències, segons el tipus de fitxer.
+
+═══════════════════════════════════════════════════════════════════════
+CONTINGUT PEDAGÒGIC — CC BY-NC-SA 4.0
+═══════════════════════════════════════════════════════════════════════
+
+S'hi inclou tot el material didàctic: textos, exercicis, enunciats,
+solucions, imatges, fitxes i documents PDF.
+
+Es pot compartir i adaptar, també per a usos no comercials, sempre que
+se n'atribueixi l'autoria i que el material derivat es publiqui amb
+aquesta mateixa llicència.
+
+Text complet:
+https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode.ca
+
+Resum llegible:
+https://creativecommons.org/licenses/by-nc-sa/4.0/deed.ca
+
+═══════════════════════════════════════════════════════════════════════
+CODI — MIT
+═══════════════════════════════════════════════════════════════════════
+
+S'hi inclou el codi font: fitxers .js, .py, .css, plantilles HTML i
+eines de construcció.
+
+MIT License
 
 Copyright (c) 2026 David Arso Civil
 
-Aquest projecte és una eina pedagògica. Es distribueix sota la llicència
-Creative Commons BY-NC-ND 4.0.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-Ets lliure de:
-  - Compartir — copiar i redistribuir el material en qualsevol mitjà o format.
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-Amb les condicions següents:
-  - Atribució (BY) — Has d'indicar l'autoria (David Arso Civil), proporcionar
-    un enllaç a la llicència i indicar si has fet canvis. Ho pots fer de qualsevol
-    manera raonable, però mai de manera que suggereixi que l'autor t'avala.
-  - No Comercial (NC) — No pots utilitzar el material amb finalitats comercials
-    ni obtenir-ne cap benefici econòmic.
-  - Sense Derivades (ND) — Si remescles, transformes o crees a partir del
-    material, no pots distribuir el material modificat.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
-Cap restricció addicional — No pots aplicar termes legals ni mesures tecnològiques
-que restringeixin legalment altres persones de fer allò que la llicència permet.
+═══════════════════════════════════════════════════════════════════════
+ATRIBUCIÓ
+═══════════════════════════════════════════════════════════════════════
 
-Text complet de la llicència (en anglès):
-https://creativecommons.org/licenses/by-nc-nd/4.0/legalcode
-
-Resum llegible:
-https://creativecommons.org/licenses/by-nc-nd/4.0/
+Material desenvolupat per David Arso Civil per al Departament de Matemàtiques
+de l'INS Miquel Tarradell.
