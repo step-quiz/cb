@@ -2510,6 +2510,982 @@
       "Fórmula no correcta. Pensa que l'altura inicial de 50 mm és constant i no depèn de D.",
       "Amb aquesta fórmula, al cap d'un dia l'alçada seria negativa, i això no té sentit."
     ]
+  },
+  {
+    "id": 158,
+    "any": 2026,
+    "nivell": "4eso",
+    "dificultat": 1,
+    "sentit": "numeric",
+    "enunciat": "data/cb4eso2026e1.png",
+    "pregunta": "data/cb4eso2026p1.png",
+    "indexCorrecte": 2,
+    "pistes": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 159,
+    "any": 2026,
+    "nivell": "4eso",
+    "dificultat": 2,
+    "sentit": "numeric",
+    "enunciat": "data/cb4eso2026e1.png",
+    "pregunta": "data/cb4eso2026p2.png",
+    "indexCorrecte": 2,
+    "pistes": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 160,
+    "any": 2026,
+    "nivell": "4eso",
+    "dificultat": 2,
+    "sentit": "mesura",
+    "enunciat": "data/cb4eso2026e1.png",
+    "pregunta": "data/cb4eso2026p3.png",
+    "indexCorrecte": 3,
+    "pistes": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 161,
+    "any": 2026,
+    "nivell": "4eso",
+    "dificultat": 3,
+    "sentit": "espacial",
+    "enunciat": "data/cb4eso2026e1.png",
+    "pregunta": "data/cb4eso2026p4.png",
+    "indexCorrecte": 2,
+    "pistes": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 162,
+    "any": 2026,
+    "nivell": "4eso",
+    "dificultat": 1,
+    "sentit": "algebraic",
+    "enunciat": "data/cb4eso2026e2.png",
+    "pregunta": "data/cb4eso2026p5.png",
+    "indexCorrecte": 0,
+    "pistes": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 163,
+    "any": 2026,
+    "nivell": "4eso",
+    "dificultat": 2,
+    "sentit": "algebraic",
+    "enunciat": "data/cb4eso2026e2.png",
+    "pregunta": "data/cb4eso2026p6.png",
+    "indexCorrecte": 3,
+    "pistes": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 164,
+    "any": 2026,
+    "nivell": "4eso",
+    "dificultat": 2,
+    "sentit": "espacial",
+    "enunciat": "data/cb4eso2026e3.png",
+    "pregunta": "data/cb4eso2026p7.png",
+    "indexCorrecte": 0,
+    "pistes": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 165,
+    "any": 2026,
+    "nivell": "4eso",
+    "dificultat": 1,
+    "sentit": "mesura",
+    "enunciat": "data/cb4eso2026e3.png",
+    "pregunta": "data/cb4eso2026p8.png",
+    "indexCorrecte": 1,
+    "pistes": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 166,
+    "any": 2026,
+    "nivell": "4eso",
+    "dificultat": 1,
+    "sentit": "mesura",
+    "enunciat": "data/cb4eso2026e4.png",
+    "pregunta": "data/cb4eso2026p9.png",
+    "indexCorrecte": 0,
+    "pistes": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 167,
+    "any": 2026,
+    "nivell": "4eso",
+    "dificultat": 2,
+    "sentit": "espacial",
+    "enunciat": "data/cb4eso2026e4.png",
+    "pregunta": "data/cb4eso2026p10.png",
+    "indexCorrecte": 3,
+    "pistes": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 168,
+    "any": 2026,
+    "nivell": "4eso",
+    "dificultat": 1,
+    "sentit": "algebraic",
+    "enunciat": "data/cb4eso2026e5.png",
+    "pregunta": "data/cb4eso2026p11.png",
+    "indexCorrecte": 1,
+    "pistes": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 169,
+    "any": 2026,
+    "nivell": "4eso",
+    "dificultat": 2,
+    "sentit": "algebraic",
+    "enunciat": "data/cb4eso2026e5.png",
+    "pregunta": "data/cb4eso2026p12.png",
+    "indexCorrecte": 2,
+    "pistes": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 170,
+    "any": 2026,
+    "nivell": "4eso",
+    "dificultat": 3,
+    "sentit": "algebraic",
+    "enunciat": "data/cb4eso2026e5.png",
+    "pregunta": "data/cb4eso2026p13.png",
+    "indexCorrecte": 3,
+    "pistes": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 171,
+    "any": 2026,
+    "nivell": "4eso",
+    "dificultat": 1,
+    "sentit": "estocastic",
+    "enunciat": "data/cb4eso2026e6.png",
+    "pregunta": "data/cb4eso2026p14.png",
+    "indexCorrecte": 0,
+    "pistes": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 172,
+    "any": 2026,
+    "nivell": "4eso",
+    "dificultat": 2,
+    "sentit": "estocastic",
+    "enunciat": "data/cb4eso2026e6.png",
+    "pregunta": "data/cb4eso2026p15.png",
+    "indexCorrecte": 2,
+    "pistes": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 173,
+    "any": 2026,
+    "nivell": "4eso",
+    "dificultat": 2,
+    "sentit": "estocastic",
+    "enunciat": "data/cb4eso2026e6.png",
+    "pregunta": "data/cb4eso2026p16.png",
+    "indexCorrecte": 0,
+    "pistes": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 174,
+    "any": 2026,
+    "nivell": "4eso",
+    "dificultat": 3,
+    "sentit": "estocastic",
+    "enunciat": "data/cb4eso2026e7.png",
+    "pregunta": "data/cb4eso2026p17.png",
+    "indexCorrecte": 2,
+    "pistes": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 175,
+    "any": 2026,
+    "nivell": "4eso",
+    "dificultat": 2,
+    "sentit": "algebraic",
+    "enunciat": "data/cb4eso2026e7.png",
+    "pregunta": "data/cb4eso2026p18.png",
+    "indexCorrecte": 1,
+    "pistes": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 176,
+    "any": 2026,
+    "nivell": "4eso",
+    "dificultat": 1,
+    "sentit": "algebraic",
+    "enunciat": "data/cb4eso2026e8.png",
+    "pregunta": "data/cb4eso2026p19.png",
+    "indexCorrecte": 0,
+    "pistes": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 177,
+    "any": 2026,
+    "nivell": "4eso",
+    "dificultat": 2,
+    "sentit": "algebraic",
+    "enunciat": "data/cb4eso2026e8.png",
+    "pregunta": "data/cb4eso2026p20.png",
+    "indexCorrecte": 0,
+    "pistes": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 178,
+    "any": 2026,
+    "nivell": "4eso",
+    "dificultat": 3,
+    "sentit": "algebraic",
+    "enunciat": "data/cb4eso2026e8.png",
+    "pregunta": "data/cb4eso2026p21.png",
+    "indexCorrecte": 3,
+    "pistes": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 179,
+    "any": 2026,
+    "nivell": "4eso",
+    "dificultat": 3,
+    "sentit": "numeric",
+    "enunciat": "data/cb4eso2026e9.png",
+    "pregunta": "data/cb4eso2026p22.png",
+    "indexCorrecte": 2,
+    "pistes": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 180,
+    "any": 2026,
+    "nivell": "4eso",
+    "dificultat": 3,
+    "sentit": "estocastic",
+    "enunciat": "data/cb4eso2026e9.png",
+    "pregunta": "data/cb4eso2026p23.png",
+    "indexCorrecte": 1,
+    "pistes": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 181,
+    "any": 2026,
+    "nivell": "4eso",
+    "dificultat": 2,
+    "sentit": "mesura",
+    "enunciat": "data/cb4eso2026e10.png",
+    "pregunta": "data/cb4eso2026p24.png",
+    "indexCorrecte": 1,
+    "pistes": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 182,
+    "any": 2026,
+    "nivell": "4eso",
+    "dificultat": 2,
+    "sentit": "numeric",
+    "enunciat": "data/cb4eso2026e10.png",
+    "pregunta": "data/cb4eso2026p25.png",
+    "indexCorrecte": 1,
+    "pistes": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 183,
+    "any": 2026,
+    "nivell": "4eso",
+    "dificultat": 3,
+    "sentit": "mesura",
+    "enunciat": "data/cb4eso2026e10.png",
+    "pregunta": "data/cb4eso2026p26.png",
+    "indexCorrecte": 0,
+    "pistes": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 184,
+    "any": 2026,
+    "nivell": "4eso",
+    "dificultat": 1,
+    "sentit": "numeric",
+    "enunciat": "data/cb4eso2026e11.png",
+    "pregunta": "data/cb4eso2026p27.png",
+    "indexCorrecte": 3,
+    "pistes": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 185,
+    "any": 2026,
+    "nivell": "4eso",
+    "dificultat": 2,
+    "sentit": "numeric",
+    "enunciat": "data/cb4eso2026e11.png",
+    "pregunta": "data/cb4eso2026p28.png",
+    "indexCorrecte": 2,
+    "pistes": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 186,
+    "any": 2026,
+    "nivell": "4eso",
+    "dificultat": 3,
+    "sentit": "numeric",
+    "enunciat": "data/cb4eso2026e11.png",
+    "pregunta": "data/cb4eso2026p29.png",
+    "indexCorrecte": 3,
+    "pistes": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 187,
+    "any": 2026,
+    "nivell": "4eso",
+    "dificultat": 1,
+    "sentit": "estocastic",
+    "enunciat": "data/cb4eso2026e12.png",
+    "pregunta": "data/cb4eso2026p30.png",
+    "indexCorrecte": 0,
+    "pistes": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 188,
+    "any": 2026,
+    "nivell": "4eso",
+    "dificultat": 2,
+    "sentit": "estocastic",
+    "enunciat": "data/cb4eso2026e12.png",
+    "pregunta": "data/cb4eso2026p31.png",
+    "indexCorrecte": 1,
+    "pistes": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 189,
+    "any": 2026,
+    "nivell": "4eso",
+    "dificultat": 2,
+    "sentit": "estocastic",
+    "enunciat": "data/cb4eso2026e12.png",
+    "pregunta": "data/cb4eso2026p32.png",
+    "indexCorrecte": 1,
+    "pistes": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 190,
+    "any": 2026,
+    "nivell": "2eso",
+    "dificultat": 2,
+    "sentit": "algebraic",
+    "enunciat": "data/cb2eso2026e1.png",
+    "pregunta": "data/cb2eso2026p1.png",
+    "indexCorrecte": 2,
+    "pistes": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 191,
+    "any": 2026,
+    "nivell": "2eso",
+    "dificultat": 2,
+    "sentit": "mesura",
+    "enunciat": "data/cb2eso2026e1.png",
+    "pregunta": "data/cb2eso2026p2.png",
+    "indexCorrecte": 3,
+    "pistes": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 192,
+    "any": 2026,
+    "nivell": "2eso",
+    "dificultat": 2,
+    "sentit": "algebraic",
+    "enunciat": "data/cb2eso2026e2.png",
+    "pregunta": "data/cb2eso2026p3.png",
+    "indexCorrecte": 0,
+    "pistes": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 193,
+    "any": 2026,
+    "nivell": "2eso",
+    "dificultat": 2,
+    "sentit": "numeric",
+    "enunciat": "data/cb2eso2026e2.png",
+    "pregunta": "data/cb2eso2026p4.png",
+    "indexCorrecte": 2,
+    "pistes": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 194,
+    "any": 2026,
+    "nivell": "2eso",
+    "dificultat": 2,
+    "sentit": "numeric",
+    "enunciat": "data/cb2eso2026e3.png",
+    "pregunta": "data/cb2eso2026p5.png",
+    "indexCorrecte": 2,
+    "pistes": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 195,
+    "any": 2026,
+    "nivell": "2eso",
+    "dificultat": 3,
+    "sentit": "numeric",
+    "enunciat": "data/cb2eso2026e3.png",
+    "pregunta": "data/cb2eso2026p6.png",
+    "indexCorrecte": 0,
+    "pistes": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 196,
+    "any": 2026,
+    "nivell": "2eso",
+    "dificultat": 2,
+    "sentit": "algebraic",
+    "enunciat": "data/cb2eso2026e4.png",
+    "pregunta": "data/cb2eso2026p7.png",
+    "indexCorrecte": 2,
+    "pistes": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 197,
+    "any": 2026,
+    "nivell": "2eso",
+    "dificultat": 1,
+    "sentit": "algebraic",
+    "enunciat": "data/cb2eso2026e4.png",
+    "pregunta": "data/cb2eso2026p8.png",
+    "indexCorrecte": 1,
+    "pistes": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 198,
+    "any": 2026,
+    "nivell": "2eso",
+    "dificultat": 3,
+    "sentit": "numeric",
+    "enunciat": "data/cb2eso2026e4.png",
+    "pregunta": "data/cb2eso2026p9.png",
+    "indexCorrecte": 1,
+    "pistes": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 199,
+    "any": 2026,
+    "nivell": "2eso",
+    "dificultat": 3,
+    "sentit": "numeric",
+    "enunciat": "data/cb2eso2026e4.png",
+    "pregunta": "data/cb2eso2026p10.png",
+    "indexCorrecte": 3,
+    "pistes": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 200,
+    "any": 2026,
+    "nivell": "2eso",
+    "dificultat": 1,
+    "sentit": "espacial",
+    "enunciat": "data/cb2eso2026e5.png",
+    "pregunta": "data/cb2eso2026p11.png",
+    "indexCorrecte": 0,
+    "pistes": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 201,
+    "any": 2026,
+    "nivell": "2eso",
+    "dificultat": 1,
+    "sentit": "algebraic",
+    "enunciat": "data/cb2eso2026e6.png",
+    "pregunta": "data/cb2eso2026p13.png",
+    "indexCorrecte": 1,
+    "pistes": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 202,
+    "any": 2026,
+    "nivell": "2eso",
+    "dificultat": 2,
+    "sentit": "algebraic",
+    "enunciat": "data/cb2eso2026e6.png",
+    "pregunta": "data/cb2eso2026p14.png",
+    "indexCorrecte": 2,
+    "pistes": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 203,
+    "any": 2026,
+    "nivell": "2eso",
+    "dificultat": 2,
+    "sentit": "algebraic",
+    "enunciat": "data/cb2eso2026e6.png",
+    "pregunta": "data/cb2eso2026p15.png",
+    "indexCorrecte": 0,
+    "pistes": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 204,
+    "any": 2026,
+    "nivell": "2eso",
+    "dificultat": 1,
+    "sentit": "espacial",
+    "enunciat": "data/cb2eso2026e7.png",
+    "pregunta": "data/cb2eso2026p16.png",
+    "indexCorrecte": 3,
+    "pistes": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 205,
+    "any": 2026,
+    "nivell": "2eso",
+    "dificultat": 3,
+    "sentit": "espacial",
+    "enunciat": "data/cb2eso2026e7.png",
+    "pregunta": "data/cb2eso2026p17.png",
+    "indexCorrecte": 1,
+    "pistes": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 206,
+    "any": 2026,
+    "nivell": "2eso",
+    "dificultat": 1,
+    "sentit": "estocastic",
+    "enunciat": "data/cb2eso2026e8.png",
+    "pregunta": "data/cb2eso2026p18.png",
+    "indexCorrecte": 1,
+    "pistes": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 207,
+    "any": 2026,
+    "nivell": "2eso",
+    "dificultat": 2,
+    "sentit": "estocastic",
+    "enunciat": "data/cb2eso2026e8.png",
+    "pregunta": "data/cb2eso2026p19.png",
+    "indexCorrecte": 3,
+    "pistes": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 208,
+    "any": 2026,
+    "nivell": "2eso",
+    "dificultat": 1,
+    "sentit": "numeric",
+    "enunciat": "data/cb2eso2026e9.png",
+    "pregunta": "data/cb2eso2026p20.png",
+    "indexCorrecte": 3,
+    "pistes": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 209,
+    "any": 2026,
+    "nivell": "2eso",
+    "dificultat": 2,
+    "sentit": "estocastic",
+    "enunciat": "data/cb2eso2026e9.png",
+    "pregunta": "data/cb2eso2026p21.png",
+    "indexCorrecte": 1,
+    "pistes": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 210,
+    "any": 2026,
+    "nivell": "2eso",
+    "dificultat": 3,
+    "sentit": "estocastic",
+    "enunciat": "data/cb2eso2026e9.png",
+    "pregunta": "data/cb2eso2026p22.png",
+    "indexCorrecte": 3,
+    "pistes": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 211,
+    "any": 2026,
+    "nivell": "2eso",
+    "dificultat": 2,
+    "sentit": "espacial",
+    "enunciat": "data/cb2eso2026e10.png",
+    "pregunta": "data/cb2eso2026p23.png",
+    "indexCorrecte": 2,
+    "pistes": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 212,
+    "any": 2026,
+    "nivell": "2eso",
+    "dificultat": 1,
+    "sentit": "espacial",
+    "enunciat": "data/cb2eso2026e10.png",
+    "pregunta": "data/cb2eso2026p24.png",
+    "indexCorrecte": 2,
+    "pistes": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 213,
+    "any": 2026,
+    "nivell": "2eso",
+    "dificultat": 2,
+    "sentit": "mesura",
+    "enunciat": "data/cb2eso2026e11.png",
+    "pregunta": "data/cb2eso2026p25.png",
+    "indexCorrecte": 0,
+    "pistes": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 214,
+    "any": 2026,
+    "nivell": "2eso",
+    "dificultat": 2,
+    "sentit": "mesura",
+    "enunciat": "data/cb2eso2026e11.png",
+    "pregunta": "data/cb2eso2026p26.png",
+    "indexCorrecte": 0,
+    "pistes": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 215,
+    "any": 2026,
+    "nivell": "2eso",
+    "dificultat": 3,
+    "sentit": "mesura",
+    "enunciat": "data/cb2eso2026e12.png",
+    "pregunta": "data/cb2eso2026p27.png",
+    "indexCorrecte": 0,
+    "pistes": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 216,
+    "any": 2026,
+    "nivell": "2eso",
+    "dificultat": 1,
+    "sentit": "mesura",
+    "enunciat": "data/cb2eso2026e12.png",
+    "pregunta": "data/cb2eso2026p28.png",
+    "indexCorrecte": 3,
+    "pistes": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 217,
+    "any": 2026,
+    "nivell": "2eso",
+    "dificultat": 1,
+    "sentit": "estocastic",
+    "enunciat": "data/cb2eso2026e13.png",
+    "pregunta": "data/cb2eso2026p29.png",
+    "indexCorrecte": 2,
+    "pistes": [
+      "",
+      "",
+      "",
+      ""
+    ]
+  },
+  {
+    "id": 218,
+    "any": 2026,
+    "nivell": "2eso",
+    "dificultat": 2,
+    "sentit": "mesura",
+    "enunciat": "data/cb2eso2026e13.png",
+    "pregunta": "data/cb2eso2026p30.png",
+    "indexCorrecte": 1,
+    "pistes": [
+      "",
+      "",
+      "",
+      ""
+    ]
   }
 ]
   
