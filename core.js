@@ -15,6 +15,20 @@ const filtreNivell = urlParams.get('nivell');
 const filtreSentit = urlParams.get('sentit');
 const filtreDificultat = urlParams.get('dificultat');
 const filtreMax = urlParams.get('max');
+const filtreQ = urlParams.get('q');
+
+// "158-160,163" -> Set {158,159,160,163}
+function expandeixIds(text) {
+    const conjunt = new Set();
+    text.split(',').forEach(tros => {
+        const m = /^(\d+)(?:-(\d+))?$/.exec(tros.trim());
+        if (!m) return;
+        const a = Number(m[1]);
+        const b = m[2] ? Number(m[2]) : a;
+        for (let i = Math.min(a, b); i <= Math.max(a, b); i++) conjunt.add(i);
+    });
+    return conjunt;
+}
 
 // Títol dinàmic segons el nivell
 const titolsNivell = {
@@ -54,6 +68,12 @@ async function inicialitzarApp() {
             return compleix;
         });
         
+        // Tria explícita de preguntes (paràmetre q). Es respecta l'ordre del banc.
+        if (filtreQ) {
+            const permesos = expandeixIds(filtreQ);
+            if (permesos.size) preguntesActives = preguntesActives.filter(p => permesos.has(p.id));
+        }
+
         if (filtreMax && !isNaN(filtreMax)) {
             preguntesActives = preguntesActives.slice(0, parseInt(filtreMax));
         }

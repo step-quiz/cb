@@ -36,6 +36,7 @@ cb/
 | `dificultat` | `1`, `2`, `3` | Nivell de dificultat |
 | `sentit` | `espacial`, `mesura`, `estocastic`, `numeric`, `algebraic` | Sentit matemàtic |
 | `max` | enter positiu | Nombre màxim de preguntes |
+| `q` | ids separats per comes, amb rangs | Tria explícita de preguntes: `11-14,24,28`. S'aplica abans de `max` i respecta l'ordre del banc. Els ids que no passin la resta de filtres s'ignoren |
 
 Exemple: `test.html?p=1&nivell=4eso&any=2025&dificultat=1`
 

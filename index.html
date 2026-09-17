@@ -47,7 +47,7 @@
       to { opacity: 1; transform: translateY(0); } 
     }
 
-    .main-wrapper { display: flex; justify-content: center; width: 100%; max-width: 1000px; }
+    .main-wrapper { display: flex; justify-content: center; align-items: flex-start; flex-wrap: wrap; gap: 16px; width: 100%; max-width: 1000px; }
     
     .quiz-panel { 
       width: var(--panel-w); 
@@ -130,6 +130,60 @@
 
     .copy-status { font-size: 13px; color: #059669; margin-top: 5px; min-height: 15px; font-weight: 700; text-align: center; }
 
+    /* ── Tria de preguntes ── */
+    .tria-btn {
+      appearance: none;
+      background-color: #ffffff;
+      height: 36px;
+      padding: 0 10px;
+      font-family: inherit;
+      font-size: 14px;
+      border: 1px solid var(--border-heavy);
+      border-radius: 6px;
+      cursor: pointer;
+      text-align: center;
+      width: 100%;
+      font-weight: 500;
+      color: var(--text-main);
+      transition: all 0.15s ease;
+    }
+    .tria-btn:hover:not(:disabled) { border-color: var(--accent); }
+    .tria-btn[aria-expanded="true"] { border-color: var(--accent); box-shadow: 0 0 0 2px rgba(59,130,246,0.2); }
+    .tria-btn:disabled { cursor: default; color: var(--text-muted); background: #f1f5f9; }
+
+    .tria-panel {
+      width: 330px;
+      max-width: 100%;
+      padding: 15px 18px;
+      border-radius: 16px;
+      box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05);
+      border: 1px solid var(--border-heavy);
+      background-color: #ffffff;
+    }
+    .tria-panel[hidden] { display: none; }
+    .tria-cap { display: flex; align-items: baseline; justify-content: space-between; gap: 8px; margin-bottom: 10px; }
+    .tria-cap h3 { margin: 0; font-size: 16px; font-weight: 800; }
+    .tria-compte { font-size: 13px; font-weight: 700; color: var(--accent); white-space: nowrap; }
+
+    .tria-accions { display: flex; gap: 6px; margin-bottom: 10px; }
+    .tria-accions button {
+      flex: 1; height: 30px; font-family: inherit; font-size: 13px; font-weight: 600;
+      color: var(--text-main); background: #ffffff; border: 1px solid var(--border-heavy);
+      border-radius: 6px; cursor: pointer; transition: all 0.15s ease;
+    }
+    .tria-accions button:hover { border-color: var(--accent); color: var(--accent); }
+
+    .tria-llista { max-height: 340px; overflow-y: auto; margin: 0 -4px; padding: 0 4px; }
+    .tria-item { display: flex; align-items: center; gap: 9px; padding: 5px 6px; border-radius: 6px; cursor: pointer; }
+    .tria-item:hover { background: var(--eso-bg); }
+    .tria-item input { width: 16px; height: 16px; margin: 0; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
+    .tria-item span { font-size: 13px; line-height: 1.35; }
+    .tria-item input:not(:checked) + span { color: var(--text-muted); }
+
+    .tria-avis { margin-top: 10px; font-size: 12px; line-height: 1.45; color: #92400e; background: #fef3c7; border-radius: 6px; padding: 8px 10px; }
+    .tria-avis[hidden] { display: none; }
+    .tria-buit { font-size: 13px; color: var(--text-muted); text-align: center; padding: 20px 0; }
+
     /* Animació atenció */
     .select-atencio-shake { animation: blink-bg 0.4s 6, shake-select 2.5s ease-in-out; }
     @keyframes blink-bg { 0%, 100% { background-color: #ffffff; } 50% { background-color: #e8e1ac; } }
@@ -191,6 +245,11 @@
         </select>
       </div>
 
+      <div class="row">
+        <label for="f-preguntes">Preguntes:</label>
+        <button type="button" id="f-preguntes" class="tria-btn" aria-expanded="false" aria-controls="tria-panel">Totes</button>
+      </div>
+
       <div class="link-block">
         <div class="btn-row">
           <button id="btn-copy" class="copy-btn">Copiar l'enllaç</button>
@@ -202,6 +261,19 @@
         <textarea id="output-link" class="link-output" readonly></textarea>
       </div>
     </div>
+
+    <div class="tria-panel" id="tria-panel" role="group" aria-labelledby="tria-titol" hidden>
+      <div class="tria-cap">
+        <h3 id="tria-titol">Tria les preguntes</h3>
+        <span class="tria-compte" id="tria-compte"></span>
+      </div>
+      <div class="tria-accions">
+        <button type="button" id="tria-totes">Totes</button>
+        <button type="button" id="tria-cap">Cap</button>
+      </div>
+      <div class="tria-llista" id="tria-llista"></div>
+      <p class="tria-avis" id="tria-avis" hidden></p>
+    </div>
   </div>
 
   <script>
@@ -212,6 +284,7 @@
     // En afegir una edició nova no cal tocar-la: n'hi ha prou d'afegir les
     // preguntes a preguntes.json.
     let anysPerNivell = { '4eso': ['2026', '2025', '2024', '2023', '2022'], '2eso': ['2026', '2025', '2024'] };
+    let bancPreguntes = null;   // preguntes.json sencer, per poder triar-les una a una
 
     async function carregarAnysDelBanc() {
       try {
@@ -221,11 +294,12 @@
         const perNivell = {};
         preguntes.forEach(q => { (perNivell[q.nivell] ??= new Set()).add(String(q.any)); });
         if (!Object.keys(perNivell).length) return;
+        bancPreguntes = preguntes;
         anysPerNivell = Object.fromEntries(Object.entries(perNivell)
           .map(([nivell, anys]) => [nivell, [...anys].sort((a, b) => b - a)]));
         actualitzarAnys();
       } catch (err) {
-        // sense accés al fitxer ens quedem amb la llista de reserva
+        // sense accés al fitxer ens quedem amb la llista de reserva i sense tria
       }
     }
 
@@ -238,6 +312,20 @@
     const btnCopy = document.getElementById('btn-copy');
     const btnOpen = document.getElementById('btn-open');
     const statusMsg = document.getElementById('status-msg');
+    const btnTria = document.getElementById('f-preguntes');
+    const triaPanel = document.getElementById('tria-panel');
+    const triaLlista = document.getElementById('tria-llista');
+    const triaCompte = document.getElementById('tria-compte');
+    const triaAvis = document.getElementById('tria-avis');
+
+    const NOMS_SENTIT = {
+      espacial: 'espacial', mesura: 'de mesura', estocastic: 'estocàstic',
+      numeric: 'numèric', algebraic: 'algebraic'
+    };
+    const MAX_CODI = 30;        // el codi de verificació final només desa 30 resultats
+
+    let preguntesFiltrades = [];   // les que passen els filtres, en l'ordre del banc
+    let triades = new Set();       // ids que sortiran a la prova
 
     function actualitzarAnys() {
       const nivell = selNivell.value;
@@ -251,7 +339,88 @@
         selAny.appendChild(opt);
       });
       if (anys.includes(anyAnterior)) selAny.value = anyAnterior;
-      updateLink();
+      refrescarTria();
+    }
+
+    // Comprimeix [158,159,160,163] en "158-160,163" per no inflar l'enllaç.
+    function comprimeixIds(ids) {
+      const n = [...ids].sort((a, b) => a - b);
+      const trossos = [];
+      for (let i = 0; i < n.length;) {
+        let j = i;
+        while (j + 1 < n.length && n[j + 1] === n[j] + 1) j++;
+        trossos.push(j - i >= 2 ? `${n[i]}-${n[j]}` : n.slice(i, j + 1).join(','));
+        i = j + 1;
+      }
+      return trossos.join(',');
+    }
+
+    // Número d'ítem dins de la seva prova: data/cb4eso2025p7.png -> 7
+    function numeroItem(p) {
+      const m = /p(\d+)\.png$/.exec(p.pregunta);
+      return m ? m[1] : '?';
+    }
+
+    // Només es mostra el que no s'hagi fixat abans amb els filtres.
+    function etiquetaPregunta(p) {
+      const trossos = [];
+      if (!selNivell.value) trossos.push(p.nivell === '4eso' ? '4t ESO' : '2n ESO');
+      if (!selAny.value) trossos.push(p.any);
+      trossos.push('ítem ' + numeroItem(p));
+      trossos.push(NOMS_SENTIT[p.sentit] || p.sentit);
+      trossos.push('dificultat ' + p.dificultat);
+      return trossos.join(' · ');
+    }
+
+    function recalcularFiltrades() {
+      if (!bancPreguntes) { preguntesFiltrades = []; return; }
+      preguntesFiltrades = bancPreguntes.filter(p =>
+        (!selNivell.value || p.nivell === selNivell.value) &&
+        (!selAny.value || String(p.any) === selAny.value) &&
+        (!selDificultat.value || String(p.dificultat) === selDificultat.value) &&
+        (!selSentit.value || p.sentit === selSentit.value));
+      triades = new Set(preguntesFiltrades.map(p => p.id));   // en canviar de filtre, totes
+    }
+
+    function pintarLlista() {
+      triaLlista.innerHTML = '';
+      if (!preguntesFiltrades.length) {
+        triaLlista.innerHTML = '<p class="tria-buit">Cap pregunta amb aquests filtres.</p>';
+        return;
+      }
+      const fragment = document.createDocumentFragment();
+      preguntesFiltrades.forEach(p => {
+        const fila = document.createElement('label');
+        fila.className = 'tria-item';
+        const caixa = document.createElement('input');
+        caixa.type = 'checkbox';
+        caixa.checked = triades.has(p.id);
+        caixa.dataset.id = p.id;
+        const text = document.createElement('span');
+        text.textContent = etiquetaPregunta(p);
+        fila.append(caixa, text);
+        fragment.appendChild(fila);
+      });
+      triaLlista.appendChild(fragment);
+    }
+
+    function pintarEstatTria() {
+      const total = preguntesFiltrades.length;
+      const n = triades.size;
+      if (!bancPreguntes) {
+        btnTria.textContent = 'Totes';
+        btnTria.disabled = true;
+        return;
+      }
+      btnTria.disabled = total === 0;
+      btnTria.textContent = total === 0 ? 'Cap pregunta'
+        : n === total ? `Totes (${total})`
+        : `${n} de ${total}`;
+      triaCompte.textContent = `${n} de ${total}`;
+      const passa = n > MAX_CODI;
+      triaAvis.hidden = !passa;
+      if (passa) triaAvis.textContent =
+        `Amb més de ${MAX_CODI} preguntes el codi de verificació del final es queda curt i l'analitzador no el sabrà llegir.`;
     }
 
     function updateLink() {
@@ -261,11 +430,47 @@
       if (selAny.value) params.append('any', selAny.value);
       if (selDificultat.value) params.append('dificultat', selDificultat.value);
       if (selSentit.value) params.append('sentit', selSentit.value);
+      if (bancPreguntes && preguntesFiltrades.length && triades.size < preguntesFiltrades.length) {
+        params.append('q', comprimeixIds(triades));
+      }
       outputLink.value = BASE_URL + '?' + decodeURIComponent(params.toString());
     }
 
+    function refrescarTria() {
+      recalcularFiltrades();
+      pintarLlista();
+      pintarEstatTria();
+      updateLink();
+    }
+
+    btnTria.addEventListener('click', () => {
+      const obert = triaPanel.hidden;
+      triaPanel.hidden = !obert;
+      btnTria.setAttribute('aria-expanded', String(obert));
+    });
+
+    triaLlista.addEventListener('change', ev => {
+      const caixa = ev.target.closest('input[type="checkbox"]');
+      if (!caixa) return;
+      const id = Number(caixa.dataset.id);
+      caixa.checked ? triades.add(id) : triades.delete(id);
+      pintarEstatTria();
+      updateLink();
+    });
+
+    document.getElementById('tria-totes').addEventListener('click', () => {
+      triades = new Set(preguntesFiltrades.map(p => p.id));
+      pintarLlista(); pintarEstatTria(); updateLink();
+    });
+
+    document.getElementById('tria-cap').addEventListener('click', () => {
+      triades.clear();
+      pintarLlista(); pintarEstatTria(); updateLink();
+    });
+
     selNivell.addEventListener('change', actualitzarAnys);
-    [selPractica, selAny, selDificultat, selSentit].forEach(sel => sel.addEventListener('change', updateLink));
+    [selAny, selDificultat, selSentit].forEach(sel => sel.addEventListener('change', refrescarTria));
+    selPractica.addEventListener('change', updateLink);
 
     btnCopy.addEventListener('click', async () => {
       try {
