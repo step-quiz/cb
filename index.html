@@ -322,7 +322,7 @@
       espacial: 'espacial', mesura: 'de mesura', estocastic: 'estocàstic',
       numeric: 'numèric', algebraic: 'algebraic'
     };
-    const MAX_CODI = 30;        // el codi de verificació final només desa 30 resultats
+    const MAX_CODI = 40;        // posicions del camp de resultats del codi de verificació
 
     let preguntesFiltrades = [];   // les que passen els filtres, en l'ordre del banc
     let triades = new Set();       // ids que sortiran a la prova
@@ -420,7 +420,7 @@
       const passa = n > MAX_CODI;
       triaAvis.hidden = !passa;
       if (passa) triaAvis.textContent =
-        `Amb més de ${MAX_CODI} preguntes el codi de verificació del final es queda curt i l'analitzador no el sabrà llegir.`;
+        `Pots continuar, però el codi de verificació del final només desa el detall de les ${MAX_CODI} primeres preguntes. La nota segueix sent la de les ${n}.`;
     }
 
     function updateLink() {

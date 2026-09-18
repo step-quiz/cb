@@ -378,7 +378,7 @@
     "indexCorrecte": 3,
     "pistes": [
       "Aquesta gràfica no pot ser. Pensa una cosa: quant pagues per 2 hores? I quant pagues per 3 hores?",
-      "Gairbé ho tens! La gràfica correcta s'assembla molt a aquesta.",
+      "Gairebé ho tens! La gràfica correcta s'assembla molt a aquesta.",
       "Aquesta opció no és correcta, perquè la tarifa plana dura 3 hores, i no 2 hores.",
       ""
     ]
@@ -588,7 +588,7 @@
       "Gairebé ho tens! El teu error és dir que el 12% equival a multiplicar per 12, i no és cert.",
       "",
       "Atenció, error: si ja fas servir el decimal, no cal tornar a dividir entre 100.",
-      "No és correcte, perquè has escollit la fórmula que diu els diners que li no estalvia."
+      "No és correcte, perquè has escollit la fórmula que diu els diners que no li estalvia."
     ]
   },
   {
@@ -603,7 +603,7 @@
     "pistes": [
       "Aquest no és el gràfic, perquè no és veritat que 40 valoracions siguin 'molt bona'.",
       "Aquest gràfic no encaixa. Recorda que la categoria 'bona' és la que té més vots.",
-      "No és correcte aquest gràfic, perquè totes les valoracions tenen el même nombre de vots.",
+      "No és correcte aquest gràfic, perquè totes les valoracions tenen el mateix nombre de vots.",
       ""
     ]
   },
@@ -684,7 +684,7 @@
       "No és cert, ja que hi ha més cornets de xocolata que de nata.",
       "Fixa't bé en la paraula 'altre' de l'enunciat. Quants altres cornets hi ha que no siguin de xocolata?",
       "",
-      "Aquesta frase no és certa, perquè hi ha més cornets de xocolata que cornets de vaninilla."
+      "Aquesta frase no és certa, perquè hi ha més cornets de xocolata que cornets de vainilla."
     ]
   },
   {
@@ -841,7 +841,7 @@
     "pregunta": "data/cb4eso2024p20.png",
     "indexCorrecte": 1,
     "pistes": [
-      "T'has quedat curt. Comprova quantes vegades hi cap 20 centímetres en les mesures totals.",
+      "T'has quedat curt. Comprova quantes vegades hi caben 20 centímetres en les mesures totals.",
       "",
       "No és correcte. Potser t'has equivocat fent alguna divisió. Repassa-ho.",
       "Aquest nombre és massa gran. Revisa els teus càlculs."
@@ -924,7 +924,7 @@
       "",
       "No és correcte: és veritat que el valor de 8 és el màxim de l'eix vertical, però al cap de 50 minuts, no ha fet 8 km.",
       "Aquest valor de 40 correspon al desnivell màxim superat. Llegeix bé els gràfics.",
-      "Has mirat l'eix horitzontal (el temps), però t'has de fixar en l'eix vertiacal (la distància)."
+      "Has mirat l'eix horitzontal (el temps), però t'has de fixar en l'eix vertical (la distància)."
     ]
   },
   {
@@ -1019,7 +1019,7 @@
     "pistes": [
       "",
       "Atenció, potser has pensat 1 cara retallada del total de 3. Però en total, n'hi havia 4.",
-      "Has calculat malament el percentatge, repassar-ho.",
+      "Has calculat malament el percentatge, repassa-ho.",
       "Gairebé! Ho has calculat a l'inrevés. Et demanen la part blanca i no la part grisa."
     ]
   },
@@ -1066,7 +1066,7 @@
     "indexCorrecte": 3,
     "pistes": [
       "No és correcte, perquè justament a l'Àfrica és on trobem el percentatge més baix.",
-      "Gairebé ho tens. Recorda que estàs buscant una proporció entre qui persones amb Internet respecte a la població total.",
+      "Gairebé ho tens. Recorda que estàs buscant una proporció entre les persones amb Internet i la població total.",
       "Vas per bon camí, però no és la correcta. Tot i tenir el nombre més alt d'usuaris d'Internet, fixa't en quanta població són.",
       ""
     ]
@@ -1179,7 +1179,7 @@
     "pistes": [
       "Aquest resultat no encaixa. Observa bé la taula. Saps què és un quadrat perfecte?",
       "",
-      "Has calculat un nombre massa gran. Pensa que en la taula apareixen uns nombre que són quadrats perfectes.",
+      "Has calculat un nombre massa gran. Pensa que en la taula apareixen uns nombres que són quadrats perfectes.",
       "Gairebé ho tens. T'has equivocat només en què has calculat per les 9 primeres figures, i et pregunten per les 8 primeres figures."
     ]
   },
@@ -1227,7 +1227,7 @@
     "pistes": [
       "",
       "Has calculat malament el percentatge. Fixa't que tenim 18 llançaments d'un total de 200.",
-      "Aquest percentatge és massa alt. Llegeix bé al gràfic quantes vegades ha obtenim el nombre 3.",
+      "Aquest percentatge és massa alt. Llegeix bé al gràfic quantes vegades hem obtingut el nombre 3.",
       "No és correcte. Per calcular el percentatge, recorda que el total de llançaments és 200."
     ]
   },
@@ -1244,7 +1244,7 @@
       "",
       "Resposta incorrecta. Pista: el dau que busques és el que té menys resultats possibles, perquè llavors el resultat 2 té menys competidors.",
       "Incorrecte. Pensa una cosa: com més cares tingui un dau, menys probable serà treure un 2.",
-      "No és la mateixa probabilitat, ja que depèn nombre total de cares que té el dau."
+      "No és la mateixa probabilitat, ja que depèn del nombre total de cares que té el dau."
     ]
   },
   {
@@ -1273,7 +1273,7 @@
     "pregunta": "data/cb4eso2023p16.png",
     "indexCorrecte": 1,
     "pistes": [
-      "Aquesta no és la que busquem, perquè amb aquesta opció sí que pot formar un cub.",
+      "Aquesta no és la que busquem, perquè amb aquesta opció sí que es pot formar un cub.",
       "",
       "No és aquesta l'opció. Recorda que estem buscant el desplegament que no funciona.",
       "Incorrecte. Fixa't que amb aquesta opció les cares sí que tanquen de manera correcta per formar un dau."
@@ -1324,7 +1324,7 @@
       "",
       "T'has equivocat, perquè has dit l'àrea d'un DIN-A2, i et demanen la d'un DIN-A3.",
       "Crec que has fet la meitat i per això obtens 0,5 metres quadrats. No és correcte, repassa-ho.",
-      "La resposta no pot ser un nombre tant gran. Pensa una cosa: estem passant de DIN-A0 a un DIN-A3."
+      "La resposta no pot ser un nombre tan gran. Pensa una cosa: estem passant de DIN-A0 a un DIN-A3."
     ]
   },
   {
@@ -1417,7 +1417,7 @@
     "pregunta": "data/cb4eso2023p27.png",
     "indexCorrecte": 2,
     "pistes": [
-      "Has fet un bon primer pas, però no és correcte. Aquesta opció és el perímetre de la fotografi sense comptar les fustes del marc.",
+      "Has fet un bon primer pas, però no és correcte. Aquesta opció és el perímetre de la fotografia sense comptar les fustes del marc.",
       "Sembla que has oblidat afegir algun tros de marc. Observa el dibuix amb calma i torna a calcular.",
       "",
       "Aquesta xifra és massa gran. Revisa els càlculs."
@@ -1529,7 +1529,7 @@
     "pregunta": "data/cb2eso2024p7.png",
     "indexCorrecte": 1,
     "pistes": [
-      "No és possible aquesta senyal, perquè distàncies que hi ha sumen 5 km.",
+      "No és possible aquest senyal, perquè les distàncies que hi ha sumen 5 km.",
       "",
       "Opció incorrecta. Pista: la carretera entre VilaA i VilaB fa 5,5 km.",
       "Opció no correcta. Pensa que entre VilaA i VilaB hi ha 5,5 km de carretera."
@@ -1580,7 +1580,7 @@
       "Gairebé ho tens, però el mínim no és 100.",
       "Revisa els teus càlculs, no és aquesta l'opció correcta.",
       "",
-      "Tens un error en els 180 minuts, perquè cada viatge màxim 15 minuts."
+      "Tens un error en els 180 minuts, perquè cada viatge dura com a màxim 15 minuts."
     ]
   },
   {
@@ -1596,7 +1596,7 @@
       "No és correcte, perquè has comptat com si en Lluc fes 1 viatge cada dia.",
       "Atenció, has comptat 7 dies, però el Lluc no agafa el bus el cap de setmana.",
       "",
-      "Error, perquè en el fons has comptat 7 dies, però el Lluc el bus 5 dies a la setmana."
+      "Error, perquè en el fons has comptat 7 dies, però el Lluc agafa el bus 5 dies a la setmana."
     ]
   },
   {
@@ -1626,7 +1626,7 @@
     "indexCorrecte": 0,
     "pistes": [
       "",
-      "Has triat un camí massa llarg. Hi ha una possibilitat que és més curt.",
+      "Has triat un camí massa llarg. Hi ha una possibilitat que és més curta.",
       "Aquest camí no és el més curt. Busca el camí més curt possible.",
       "Aquesta distància és massa gran. Hi ha un camí més curt."
     ]
@@ -2073,7 +2073,7 @@
     "pregunta": "data/cb2eso2025p30.png",
     "indexCorrecte": 2,
     "pistes": [
-      "Has comptades poques capses. Recorda que algunes estan amagades darrere d'altres.",
+      "Has comptat poques capses. Recorda que algunes estan amagades darrere d'altres.",
       "Gairebé ho tens, però et falta comptar alguna capsa oculta.",
       "",
       "Has obtingut massa capses. Revisa amb calma."
@@ -2156,7 +2156,7 @@
       "Aquesta probabilitat és massa petita.",
       "Aquesta probabilitat és massa petita.",
       "",
-      "Atenció: una probabilitat = 1 voldria que en Pol i la Lídia segur que coincideixen, però això no ho sabem."
+      "Atenció: una probabilitat = 1 voldria dir que en Pol i la Lídia segur que coincideixen, però això no ho sabem."
     ]
   },
   {
@@ -2284,7 +2284,7 @@
       "",
       "No és correcte. Et dono una pista: pensa en nombres que siguin quadrats perfectes.",
       "No és correcte. Et dono una pista: pensa en nombres que siguin quadrats perfectes.",
-      "Gairebé ho tens!, has donat escollit l'opció com si et pregunten el pis 6è. Però et pregunten el pis 5è."
+      "Gairebé ho tens! Has escollit l'opció com si et preguntessin el pis 6è. Però et pregunten el pis 5è."
     ]
   },
   {
@@ -2362,7 +2362,7 @@
     "indexCorrecte": 3,
     "pistes": [
       "No és correcte. La situació que indica el gràfic és que l'equip B està remuntant.",
-      "Gairebé ho tens, però pensa quina diferència hi ha enter 1 i -3.",
+      "Gairebé ho tens, però pensa quina diferència hi ha entre 1 i -3.",
       "Resposta incorrecta. Pensa que l'equip A perd avantatge durant aquest minut.",
       ""
     ]
@@ -2428,7 +2428,7 @@
       "",
       "No és correcte. Revisa els càlculs.",
       "Atenció, pensa que en 1 minut no es perden 60 vegades els 0,2 litres, sinó 20 vegades.",
-      "No es pot substituir directament els 60 segons i posar-ho als litres. Pensa quin càlcul faràs."
+      "No es poden substituir directament els 60 segons i posar-ho als litres. Pensa quin càlcul faràs."
     ]
   },
   {
@@ -2442,7 +2442,7 @@
     "indexCorrecte": 2,
     "pistes": [
       "No és correcte. Crec que tu has escrit la diferència de litres, però has de trobar un percentatge.",
-      "No es pot escriure directament els 10 litres com un percentatge. Has de fer càlculs, saps quins són?",
+      "No es poden escriure directament els 10 litres com un percentatge. Has de fer càlculs, saps quins són?",
       "",
       "Gairebé ho tens! Jo crec que has comparat 3 amb 7, però el que has de comparar és 3 amb 10."
     ]

@@ -342,7 +342,13 @@ function finalitzarProva() {
             resultsStr += intents.toString();
         });
     }
-    resultsStr = resultsStr.padEnd(30, '0');
+    // El camp de resultats del format v2 admet de 30 a 40 posicions, una per pregunta.
+    // Amb 30 preguntes o menys s'omple a 30, com sempre, perquè els codis de les proves
+    // de tota la vida surtin idèntics als d'abans. Només s'eixampla a 40 quan cal.
+    // Per sobre de 40 es reté: val més perdre el detall de les últimes que no pas
+    // que l'analitzador rebutgi el codi sencer i es perdi també la nota.
+    const ampladaRes = resultsStr.length > 30 ? 40 : 30;
+    resultsStr = resultsStr.slice(0, 40).padEnd(ampladaRes, '0');
 
     // ── Checksum (idèntic a game-core.js i analitzador-stepquiz.html) ──
     const sumaControl = notaInt
