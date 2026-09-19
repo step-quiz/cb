@@ -2521,10 +2521,10 @@
     "pregunta": "data/cb4eso2026p1.png",
     "indexCorrecte": 2,
     "pistes": [
+      "Deus haver copiat la primera opció, no és correcte. Pista: has de fer una divisió.",
+      "No és correcte, perquè amb 72 kg cadascuna, 8 persones pesarien només 576 kg.",
       "",
-      "",
-      "",
-      ""
+      "El resultat és massa alt: amb 78 kg cadascuna, 8 persones passarien dels 600 kg que admet l'ascensor."
     ]
   },
   {
@@ -2537,10 +2537,10 @@
     "pregunta": "data/cb4eso2026p2.png",
     "indexCorrecte": 2,
     "pistes": [
+      "No quadra. 720 kg entre 12 persones surten a 60 kg cadascuna, i el pes mitjà que has trobat a la pregunta anterior no era de 60 kg.",
+      "Has fet servir un pes mitjà de 70 kg. Torna a la pregunta anterior i mira quin has obtingut.",
       "",
-      "",
-      "",
-      ""
+      "El resultat és massa gran: aquesta xifra surt de comptar 90 kg per persona. Pensa-ho millor."
     ]
   },
   {
@@ -2553,9 +2553,9 @@
     "pregunta": "data/cb4eso2026p3.png",
     "indexCorrecte": 3,
     "pistes": [
-      "",
-      "",
-      "",
+      "Aquest valor no és correcte, sembla com si has fet una divisió que no toca fer-la.",
+      "Hi ha un error: sembla que has oblidat l'amplada d'1,6 m.",
+      "No és correcte, perquè has multiplicat només 1,6 per 2,5.",
       ""
     ]
   },
@@ -2569,10 +2569,10 @@
     "pregunta": "data/cb4eso2026p4.png",
     "indexCorrecte": 2,
     "pistes": [
+      "Et surten poques caixes. Mira quantes en caben al llarg de cada mida de la cabina i multiplica els tres nombres.",
+      "Gairebé ho tens. A l'altura hi caben més caixes de les que has comptat.",
       "",
-      "",
-      "",
-      ""
+      "Has volgut apilar una caixa de més a l'altura, però no hi cap aquesta caixa extra."
     ]
   },
   {
@@ -2586,9 +2586,9 @@
     "indexCorrecte": 0,
     "pistes": [
       "",
-      "",
-      "",
-      ""
+      "Gairebé. Has comptat 8 trams, però de la planta baixa a la 7a només n'hi ha 7.",
+      "Has intercanviat els dos temps. Els 10 segons són el que dura cada aturada; pujar un tram només en costa 5.",
+      "El total és massa alt: aquesta xifra surt de comptar quatre aturades, i només n'hi ha dues."
     ]
   },
   {
@@ -2601,9 +2601,9 @@
     "pregunta": "data/cb4eso2026p6.png",
     "indexCorrecte": 3,
     "pistes": [
-      "",
-      "",
-      "",
+      "Aquesta gràfica no correspon perquè voldria dir que s'atura a la 2a i a la 4a planta.",
+      "No és correcte perquè aquí sembla que s'atura a la 1a i la 2a planta.",
+      "En aquesta gràfica l'ascensor només s'atura una vegada, i l'enunciat en diu dues.",
       ""
     ]
   },
@@ -2618,9 +2618,9 @@
     "indexCorrecte": 0,
     "pistes": [
       "",
-      "",
-      "",
-      ""
+      "No és correcte. Aplica el teorema de Pitàgores per trobar la hipotenusa d'un triangle rectangle de catets 3 i 5.",
+      "Aquest valor és massa gran. La hipotenusa no pot mesurar tant si els catets fan 3 m i 5 m.",
+      "Has sumat els dos catets, i això és impossible, perquè en un triangle rectangle la hipotenusa sempre és més petita que la suma dels catets."
     ]
   },
   {
@@ -2633,10 +2633,10 @@
     "pregunta": "data/cb4eso2026p8.png",
     "indexCorrecte": 1,
     "pistes": [
+      "No és correcte. Potser has multiplicat 3·5, però pensa que has de repartir esglaons... has de pensar en una divisió.",
       "",
-      "",
-      "",
-      ""
+      "Segurament has fet (15:3)·5, com si fos una regla de tres. Has de canviar d'estratègia: has de repartir esglaons, i això és una divisió. Et recomano que facis abans 15 cm = 0,15 m.",
+      "Sembla que has dividit els 5 m de llargada entre 15 cm. El que compta és l'altura del tram: 3 m."
     ]
   },
   {
@@ -2650,9 +2650,9 @@
     "indexCorrecte": 0,
     "pistes": [
       "",
-      "",
-      "",
-      ""
+      "No quadra. Una volta sencera són 360º i s'han de repartir entre les 16 pestanyes.",
+      "Has dividit 360 entre 8, i t'ha donat un angle massa gran. Revisa l'esquema i compta bé quantes pestanyes té l'anella.",
+      "Aquest angle seria un angle recte, però en l'esquema ja es veu que és un angle més petit."
     ]
   },
   {
@@ -2665,9 +2665,9 @@
     "pregunta": "data/cb4eso2026p10.png",
     "indexCorrecte": 3,
     "pistes": [
-      "",
-      "",
-      "",
+      "Només has comptat l'eix que ja et donen dibuixat. Prova de trobar altres eixos de simetria.",
+      "No has comptat totes les possibilitats. A part de les dues diagonals, pensa també en la possibilitat que hi hagi eixos horitzontals o verticals.",
+      "Gairebé ho tens, pensa-hi més!",
       ""
     ]
   },
@@ -2681,10 +2681,10 @@
     "pregunta": "data/cb4eso2026p11.png",
     "indexCorrecte": 1,
     "pistes": [
+      "Et falta algun segment. Torna a les figures i mira de quant en quant creixen.",
       "",
-      "",
-      "",
-      ""
+      "N'has comptat massa. Compta els segments que s'afegeixen cada vegada que hi entren dues anelles.",
+      "Surten massa segments. Segurament has fet créixer la successió més de pressa del que mostren les figures."
     ]
   },
   {
@@ -2697,10 +2697,10 @@
     "pregunta": "data/cb4eso2026p12.png",
     "indexCorrecte": 2,
     "pistes": [
+      "Amb 10 anelles encara no s'arriba a 19 segments. Continua la sèrie una mica més enllà.",
+      "Gairebé, però amb 12 anelles encara en falten. Segueix afegint anelles de dues en dues.",
       "",
-      "",
-      "",
-      ""
+      "Te n'has passat: amb 16 anelles la figura ja tindria més de 19 segments."
     ]
   },
   {
@@ -2713,9 +2713,9 @@
     "pregunta": "data/cb4eso2026p13.png",
     "indexCorrecte": 3,
     "pistes": [
-      "",
-      "",
-      "",
+      "Aquest expressió no és correcta: prova-la amb la primera figura (la de 2 anelles i 1 segment), i veuràs que no es compleix.",
+      "No és correcta: comprova-la amb la figura de 4 anelles: veuràs a la gràfica que els segments no es corresponen amb les anelles.",
+      "Gairebé, però prova-la amb la figura de 2 anelles i ja no quadra. Repassa-la terme a terme.",
       ""
     ]
   },
@@ -2730,9 +2730,9 @@
     "indexCorrecte": 0,
     "pistes": [
       "",
-      "",
-      "",
-      ""
+      "Aquest és el percentatge de la primera setmana. Fixa't bé en quina barra és la segona.",
+      "Aquest correspon a la tercera setmana. Torna a la gràfica i situa-hi la segona.",
+      "Això voldria dir que l'hotel va estar gairebé ple, i la segona setmana és la que menys places va ocupar."
     ]
   },
   {
@@ -2745,10 +2745,10 @@
     "pregunta": "data/cb4eso2026p15.png",
     "indexCorrecte": 2,
     "pistes": [
+      "Aquestes són les places d'una sola setmana. La mitjana les ha de tenir en compte totes quatre.",
+      "Hi ha un error pel camí. Repassa la suma de les quatre setmanes abans de dividir.",
       "",
-      "",
-      "",
-      ""
+      "Aquesta és la suma de les quatre setmanes. Si vols obtenir la mitjana, encara et falta un pas per a fer."
     ]
   },
   {
@@ -2762,9 +2762,9 @@
     "indexCorrecte": 0,
     "pistes": [
       "",
-      "",
-      "",
-      ""
+      "En aquest diagrama les quatre setmanes ocupen un quart cadascuna, però sabem que els ingressos no van ser iguals.",
+      "Aquí la primera setmana s'emporta la meitat del total, i això no és així.",
+      "Gairebé ho tens, però aquest diagrama dona menys a la tercera setmana que a la segona i això no és així."
     ]
   },
   {
@@ -2777,10 +2777,10 @@
     "pregunta": "data/cb4eso2026p17.png",
     "indexCorrecte": 2,
     "pistes": [
+      "No és aquesta. El preu per plaça surt de comparar els diners ingressats amb les places ocupades.",
+      "Gairebé, però n'hi ha una de més cara. Torna a fer la comparació.",
       "",
-      "",
-      "",
-      ""
+      "És la que més va ingressar, però també la que més places va ocupar. No és la nostra opció."
     ]
   },
   {
@@ -2793,10 +2793,10 @@
     "pregunta": "data/cb4eso2026p18.png",
     "indexCorrecte": 1,
     "pistes": [
+      "La primera equació és correcta. La segona equació, no: mira bé quin dels dos tipus d'habitació dona dues places.",
       "",
-      "",
-      "",
-      ""
+      "Has canviat de lloc les 29 habitacions i les 40 places. Torna a llegir bé les dades.",
+      "No és correcte. Pensa què és el que suma 29: són les habitacions o són les places?"
     ]
   },
   {
@@ -2810,9 +2810,9 @@
     "indexCorrecte": 0,
     "pistes": [
       "",
-      "",
-      "",
-      ""
+      "Aquest és el resultat per a 15 ºC, per tant no és la resposta.",
+      "Sembla que has canviat la fracció 9/5 per un altre nombre, potser 5. Torna a mirar bé la fórmula.",
+      "Has multiplicat per 9, en lloc de multiplicar per 9/5."
     ]
   },
   {
@@ -2826,9 +2826,9 @@
     "indexCorrecte": 0,
     "pistes": [
       "",
-      "",
-      "",
-      ""
+      "T'has aturat a mig camí: has restat els 32 i encara queden operacions per fer.",
+      "Hi ha un error pel camí. Revisa la fórmula amb calma.",
+      "Has aplicat la fracció a l'inrevés. Pensa que 95 ºF han de donar bastants menys graus Celsius."
     ]
   },
   {
@@ -2841,9 +2841,9 @@
     "pregunta": "data/cb4eso2026p21.png",
     "indexCorrecte": 3,
     "pistes": [
-      "",
-      "",
-      "",
+      "Aquesta fórmula no és correcta: prova-la amb els 95 ºF de la pregunta anterior i veuràs que no encaixa.",
+      "Aquesta és la fórmula de l'enunciat amb les lletres canviades de nom, i per aïllar la C has de fer una altra cosa.",
+      "Gairebé, però no has operat bé amb la fracció. Torna a aïllar la C, pas a pas.",
       ""
     ]
   },
@@ -2857,10 +2857,10 @@
     "pregunta": "data/cb4eso2026p22.png",
     "indexCorrecte": 2,
     "pistes": [
+      "Et surten poques parelles. Potser t'has deixat algun color pel camí.",
+      "Falten parelles. Et recomano que facis la llista ordenada, color per color, i no te'n deixaràs cap.",
       "",
-      "",
-      "",
-      ""
+      "Aquest és el nombre de parelles si es pogués repetir color, i la Xènia ha dit que no en vol repetir."
     ]
   },
   {
@@ -2873,10 +2873,10 @@
     "pregunta": "data/cb4eso2026p23.png",
     "indexCorrecte": 1,
     "pistes": [
+      "La probabilitat és més alta. Compta bé de quantes maneres poden sortir dos botons iguals.",
       "",
-      "",
-      "",
-      ""
+      "No quadra. És cert que totes les combinacions possibles són 25, però pensa que són 5 casos els que són favorables.",
+      "Aquest valor és massa alt. Els casos en què els dos botons coincideixen són bastants menys."
     ]
   },
   {
@@ -2889,10 +2889,10 @@
     "pregunta": "data/cb4eso2026p24.png",
     "indexCorrecte": 1,
     "pistes": [
+      "Amb 2 mm els discos hi caben un nombre exacte de vegades i no sobra res de barra.",
       "",
-      "",
-      "",
-      ""
+      "Amb 4 mm no sobra res de material, perquè 1.000 mm és divisible entre 4 mm.",
+      "Amb 5 mm no sobra res de material, perquè 1.000 mm és divisible entre 5 mm."
     ]
   },
   {
@@ -2905,10 +2905,10 @@
     "pregunta": "data/cb4eso2026p25.png",
     "indexCorrecte": 1,
     "pistes": [
+      "Et surten pocs discos. Vigila les unitats: els quilograms i els grams no es poden barrejar.",
       "",
-      "",
-      "",
-      ""
+      "El resultat és massa gran. Troba primer quant pesa un disc sol i després pensa què has de dividir.",
+      "Aquest nombre és desmesurat. Potser has multiplicat en algun pas on tocava dividir."
     ]
   },
   {
@@ -2922,9 +2922,9 @@
     "indexCorrecte": 0,
     "pistes": [
       "",
-      "",
-      "",
-      ""
+      "No quadra. Suma tots els trossos que travessen el botó d'esquerra a dreta i veuràs que no encaixa.",
+      "Gairebé, però encara et falta un pas: el botó té dos forats, no un. Tu has fet els càlculs pensant en un sol forat, segurament.",
+      "Has restat 25 - 8 - 4. Però... fixa't que el botó és simètric i que els forats són dos."
     ]
   },
   {
@@ -2937,9 +2937,9 @@
     "pregunta": "data/cb4eso2026p27.png",
     "indexCorrecte": 3,
     "pistes": [
-      "",
-      "",
-      "",
+      "Aquesta quantitat correspon a 2 litres, i a la pregunta en demanen 3.",
+      "Sembla que has agafat la fila del tint groc. Torna a la taula i busca el vermell.",
+      "Hi ha un error en les operacions. Revisa quants grams per litre porta el tint vermell.",
       ""
     ]
   },
@@ -2953,10 +2953,10 @@
     "pregunta": "data/cb4eso2026p28.png",
     "indexCorrecte": 2,
     "pistes": [
+      "Has comptat els tres tints per igual. Repassa el que indica la taula.",
+      "No és correcte. Suma primer els grams de tota la mescla i després mira quina correspon al tint beix.",
       "",
-      "",
-      "",
-      ""
+      "Aquesta és la part que representa un altre tint. Localitza el tint beix a la taula."
     ]
   },
   {
@@ -2969,9 +2969,9 @@
     "pregunta": "data/cb4eso2026p29.png",
     "indexCorrecte": 3,
     "pistes": [
-      "",
-      "",
-      "",
+      "Amb un quart de litre no n'hi ha prou. Mira quin dels tres tints s'ha passat de la ratlla.",
+      "No hi arriba. El tint que sobra és el beix: calcula quanta aigua demanen aquests 60 g.",
+      "Gairebé. Compara l'aigua que demanen els 60 g de beix amb el litre que ja hi ha a la mescla.",
       ""
     ]
   },
@@ -2986,9 +2986,9 @@
     "indexCorrecte": 0,
     "pistes": [
       "",
-      "",
-      "",
-      ""
+      "No és el més freqüent. Suma la columna sencera i compara-la amb les altres dues.",
+      "No és correcte, perquè aquest defecte és, precisament, el menys freqüent.",
+      "No és cert: suma cada columna sencera i veuràs que els tres totals obtinguts són diferents."
     ]
   },
   {
@@ -3001,10 +3001,10 @@
     "pregunta": "data/cb4eso2026p31.png",
     "indexCorrecte": 1,
     "pistes": [
+      "El lot 1 és el que menys botons trencats té. Has de comparar les proporcions, i no els nombres absoluts.",
       "",
-      "",
-      "",
-      ""
+      "Al lot 3 hi ha 12 trencats, però respecte un lot més gran. Has d'estudiar les proporcions, i per fer-ho hauràs de dividir, en cada lot, el nombre de trencats entre el total.",
+      "No és correcte. Has de calcular la proporció en els quatre casos i compara-les."
     ]
   },
   {
@@ -3017,10 +3017,10 @@
     "pregunta": "data/cb4eso2026p32.png",
     "indexCorrecte": 1,
     "pistes": [
+      "Sembla que has dividit entre un total que no és el de la taula. Revisa quants botons hi ha en total.",
       "",
-      "",
-      "",
-      ""
+      "Surt una probabilitat massa alta. Revisa-ho.",
+      "Has col·locat malament la coma. Repassa la divisió amb calma."
     ]
   },
   {
@@ -3033,10 +3033,10 @@
     "pregunta": "data/cb2eso2026p1.png",
     "indexCorrecte": 2,
     "pistes": [
+      "No quadra. Amb 1 € de paper, el llibre en valdria 21 i entre tots dos farien 22, no 24.",
+      "Comprova-ho: amb 1,5 € de paper, el llibre en valdria 21,5 i entre tots dos farien 23 €, no 24.",
       "",
-      "",
-      "",
-      ""
+      "Te n'has passat. Amb 2,5 € de paper, el llibre en valdria 22,5 i entre tots dos arribarien a 25 €."
     ]
   },
   {
@@ -3049,9 +3049,9 @@
     "pregunta": "data/cb2eso2026p2.png",
     "indexCorrecte": 3,
     "pistes": [
-      "",
-      "",
-      "",
+      "Has comptat només els dos costats de 16 cm. El paper també passa pel gruix del llibre, i hi passa dues vegades.",
+      "Has sumat els 2 cm que han de sobrar als dos costats de 16 cm, però t'has deixat el gruix, que hi surt dues vegades.",
+      "Gairebé ho tens! La volta al llibre està ben feta, però l'enunciat encara demana una cosa més.",
       ""
     ]
   },
@@ -3066,9 +3066,9 @@
     "indexCorrecte": 0,
     "pistes": [
       "",
-      "",
-      "",
-      ""
+      "Aquestes surten a 10 € el quilo. Calcula el preu per quilo de totes quatre i compara'ls.",
+      "Són les més cares de totes: 4,50 € els 400 g surten a més d'11 € el quilo.",
+      "3,90 € els 400 g fan 9,75 € el quilo, i encara n'hi ha de més barates. Mira les llaunes de 250 g."
     ]
   },
   {
@@ -3081,10 +3081,10 @@
     "pregunta": "data/cb2eso2026p4.png",
     "indexCorrecte": 2,
     "pistes": [
+      "Aquest és l'euro que s'estalvia, no el percentatge. Un descompte sempre es compara amb un preu.",
+      "El descompte és més gran: un 10 % de 5 € només serien 50 cèntims.",
       "",
-      "",
-      "",
-      ""
+      "Has comparat l'euro de rebaixa amb els 4 € que va pagar. Un descompte es compara amb el preu que hi havia abans."
     ]
   },
   {
@@ -3097,10 +3097,10 @@
     "pregunta": "data/cb2eso2026p5.png",
     "indexCorrecte": 2,
     "pistes": [
+      "Aquesta és la quantitat de la recepta original, la dels 3 ous. Si en posa 5, n'hi ha d'anar més.",
+      "Aquesta quantitat no surt de cap proporció. Tots els ingredients s'han de multiplicar pel mateix nombre.",
       "",
-      "",
-      "",
-      ""
+      "T'has passat: 360 g voldria dir el doble de recepta, i això demanaria 6 ous."
     ]
   },
   {
@@ -3114,9 +3114,9 @@
     "indexCorrecte": 0,
     "pistes": [
       "",
-      "",
-      "",
-      ""
+      "Repassa ingredient per ingredient: n'hi ha un que s'acaba abans d'arribar a 20 persones.",
+      "Aquest és el màxim que donen els ous, però hi ha un altre ingredient que s'acaba abans.",
+      "Aquest seria el màxim si només comptessis la farina. El pastís el limita el que s'acaba primer."
     ]
   },
   {
@@ -3129,10 +3129,10 @@
     "pregunta": "data/cb2eso2026p7.png",
     "indexCorrecte": 2,
     "pistes": [
+      "En aquesta gràfica el forn no perd mai temperatura, però sabem que en Biel l'apaga al final.",
+      "Aquí el forn triga molt a escalfar-se i, en canvi, es refreda de cop. Torna a llegir què explica en Biel.",
       "",
-      "",
-      "",
-      ""
+      "En aquesta gràfica el forn ja comença calent, però l'enunciat diu que estava fred."
     ]
   },
   {
@@ -3145,10 +3145,10 @@
     "pregunta": "data/cb2eso2026p8.png",
     "indexCorrecte": 1,
     "pistes": [
+      "Aquests són els minuts que han passat, per tant no és el que ens demanen.",
       "",
-      "",
-      "",
-      ""
+      "Segurament has dividit els 180 ºC entre 10, però pensa que la temperatura inicial no són 0 ºC.",
+      "Potser has sumat 20+180 i després has fet una divisió. Creus que és correcte sumar?"
     ]
   },
   {
@@ -3161,10 +3161,10 @@
     "pregunta": "data/cb2eso2026p9.png",
     "indexCorrecte": 1,
     "pistes": [
+      "Hi ha d'haver més persones: pensa bé quina part del pastís es reparteix de veritat.",
       "",
-      "",
-      "",
-      ""
+      "No quadra. Si fossin 10, entre tots es menjarien més pastís del que queda després de reservar-ne un quart.",
+      "T'has passat. Amb 15 persones no n'hi hauria prou amb 1 pastís, faltarien trossos."
     ]
   },
   {
@@ -3177,9 +3177,9 @@
     "pregunta": "data/cb2eso2026p10.png",
     "indexCorrecte": 3,
     "pistes": [
-      "",
-      "",
-      "",
+      "En Biel sí que ha de posar 7 €, però oblides segurament la Mia: amb aquesta opció, ha gastat menys diners que els altres dos.",
+      "No és correcte, perquè la Mia en tot cas ha de donar diners per compensar, i no rebre'n.",
+      "Gairebé ho tens! T'has equivocat en algun càlcul, però l'estratègia és bona.",
       ""
     ]
   },
@@ -3194,9 +3194,9 @@
     "indexCorrecte": 0,
     "pistes": [
       "",
-      "",
-      "",
-      ""
+      "La figura B sí que es pot obtenir: a cada cantonada hi ha mitja rajola blanca, després hi ha una llisa blanca al mig, i la resta són blaves.",
+      "La figura C sí que es pot fer. Fixa't que tot són rajoles senceres o bé mitges rajoles tallades per la diagonal.",
+      "La figura D sí que es pot aconseguir, perquè estem combinant rajoles senceres amb mitges rajoles tallades per la diagonal."
     ]
   },
   {
@@ -3209,10 +3209,10 @@
     "pregunta": "data/cb2eso2026p13.png",
     "indexCorrecte": 1,
     "pistes": [
+      "T'has equivocat. Potser has passat de 9 a 16 rajoles i després has pensat sumar 16+4. Compta-ho bé.",
       "",
-      "",
-      "",
-      ""
+      "No quadra amb la successió. Compta quantes rajoles de costat té cada figura.",
+      "Aquest és el nombre de rajoles de la figura 6, però et demana la figura 5."
     ]
   },
   {
@@ -3225,10 +3225,10 @@
     "pregunta": "data/cb2eso2026p14.png",
     "indexCorrecte": 2,
     "pistes": [
+      "Aquestes són les llises blaves d'una figura anterior. Compta les de la que et demanen.",
+      "Hi ha un error en el recompte. Mira com creixen les blaves de figura en figura.",
       "",
-      "",
-      "",
-      ""
+      "Has comptat també les rajoles cartabó, i la pregunta demana només les llises de color blau."
     ]
   },
   {
@@ -3242,9 +3242,9 @@
     "indexCorrecte": 0,
     "pistes": [
       "",
-      "",
-      "",
-      ""
+      "Gairebé ho tens: compta els cartabós de les primeres figures i mira quina relació tenen amb el seu número.",
+      "Aquest nombre no encaixa amb la successió. Les rajoles cartabó són només les de la diagonal.",
+      "Aquest és el total de rajoles de la figura 10, però els cartabós només en són una part."
     ]
   },
   {
@@ -3257,9 +3257,9 @@
     "pregunta": "data/cb2eso2026p16.png",
     "indexCorrecte": 3,
     "pistes": [
-      "",
-      "",
-      "",
+      "Tens raó que amb una simetria vertical no canvia. Però sí que canvia amb la simetria horitzontal, perquè la fletxa miraria cap avall.",
+      "Amb la simetria horitzontal es queda igual, però prova-li la vertical: el que ara és a l'esquerra passaria a la dreta i els colors s'inverteixen. Per tant, no pot ser.",
+      "Les dues puntes miren cap al mateix costat, i per tant amb la simetria vertical passarien a mirar a l'altre. No pot ser aquesta opció.",
       ""
     ]
   },
@@ -3273,10 +3273,10 @@
     "pregunta": "data/cb2eso2026p17.png",
     "indexCorrecte": 1,
     "pistes": [
+      "Aquest és el resultat només de fer una simetria horitzontal. Fes-les totes tres, per ordre.",
       "",
-      "",
-      "",
-      ""
+      "Aquí t'has aturat just després del gir. Encara queden les dues simetries.",
+      "Aquesta és la figura amb només una simetria feta. Repassa l'ordre que diu l'enunciat."
     ]
   },
   {
@@ -3289,10 +3289,10 @@
     "pregunta": "data/cb2eso2026p18.png",
     "indexCorrecte": 1,
     "pistes": [
+      "Et deixes comptar les persones que no es van inscriure a la bicicletada, però que també són del club.",
       "",
-      "",
-      "",
-      ""
+      "Aquestes són les persones inscrites a la Ruta de la font. Has de mirar només el grup de les persones sòcies.",
+      "Has sumat també les persones que no són sòcies. Fixa't amb el grup de la dreta de la gràfica."
     ]
   },
   {
@@ -3305,9 +3305,9 @@
     "pregunta": "data/cb2eso2026p19.png",
     "indexCorrecte": 3,
     "pistes": [
-      "",
-      "",
-      "",
+      "T'has fixat en el grup equivocat: et demanen justament les que NO són sòcies.",
+      "Segurament has fet la divisió 120 : 220, i les 220 inclouen sòcies que no es van inscriure. L'enunciat diu \"... de les 180 persones inscrites\".",
+      "Gairebé ho tens, però la divisió no està ben feta. Torna a fer-la amb la calculadora.",
       ""
     ]
   },
@@ -3321,9 +3321,9 @@
     "pregunta": "data/cb2eso2026p20.png",
     "indexCorrecte": 3,
     "pistes": [
-      "",
-      "",
-      "",
+      "No és correcte, perquè 1/3 de 120 són 40 persones.",
+      "No és correcte: 1/4 de 120 serien 30 persones, i a la gràfica no n'hi ha tantes.",
+      "Gairebé ho tens: 1/5 de 120 són 24 persones, però no hi ha tantes persones sòcies en aquesta ruta.",
       ""
     ]
   },
@@ -3337,10 +3337,10 @@
     "pregunta": "data/cb2eso2026p21.png",
     "indexCorrecte": 1,
     "pistes": [
+      "No és correcte, perquè veiem a la gràfica que el grup de persones NO sòcies és bastant més nombrós.",
       "",
-      "",
-      "",
-      ""
+      "A la Ruta del castell hi ha menys gent inscrita que a l'altra ruta. Torna a mirar la gràfica.",
+      "Aquest és el grup més petit de tots. Per tant, la probabilitat que surti premi aquí no és la més gran."
     ]
   },
   {
@@ -3353,9 +3353,9 @@
     "pregunta": "data/cb2eso2026p22.png",
     "indexCorrecte": 3,
     "pistes": [
-      "",
-      "",
-      "",
+      "No és correcte, perquè veiem que els quatre sectors surten gairebé iguals, i en canvi les quatre quantitats de la taula no ho són.",
+      "No és correcte, però gairebé ho tens: fixa't bé en els colors i les llegendes.",
+      "Aquest esquema reparteix el quadrat en unes quantitats d'àrea que no tenen res a veure amb les que veiem a la taula.",
       ""
     ]
   },
@@ -3369,10 +3369,10 @@
     "pregunta": "data/cb2eso2026p23.png",
     "indexCorrecte": 2,
     "pistes": [
+      "Hi ha més maneres: compta també els camins que fan més volta abans d'arribar al pantà.",
+      "No és correcte. Repassa les sortides del turó i de la font.",
       "",
-      "",
-      "",
-      ""
+      "No hi ha tantes maneres: en algun dels camins deus passar dues vegades pel mateix lloc."
     ]
   },
   {
@@ -3385,10 +3385,10 @@
     "pregunta": "data/cb2eso2026p24.png",
     "indexCorrecte": 2,
     "pistes": [
+      "La distància és massa curta. Suma bé el camí d'anada i recorda que després s'ha de tornar.",
+      "Revisa la llargada del tram que va de la cruïlla al turó: al mapa no és un nombre sencer.",
       "",
-      "",
-      "",
-      ""
+      "Aquest és el recorregut passant per la font, però n'hi ha un de més curt."
     ]
   },
   {
@@ -3402,9 +3402,9 @@
     "indexCorrecte": 0,
     "pistes": [
       "",
-      "",
-      "",
-      ""
+      "Hi ha un error. Suma primer els tres trams de la ruta i mira a quina velocitat es recorren.",
+      "És massa temps. Recorda que es fa per camí pla.",
+      "Sembla que has fet servir la velocitat de les pujades, però en aquesta ruta sempre es va per camí pla."
     ]
   },
   {
@@ -3418,9 +3418,9 @@
     "indexCorrecte": 0,
     "pistes": [
       "",
-      "",
-      "",
-      ""
+      "Revisa-ho amb cura: cada tram té la seva velocitat pròpia, i n'hi ha un de pujada i un altre de baixada.",
+      "No és correcte. Pensa que en el tram de baixada, la velocitat és 30 km/h.",
+      "No pot ser tanta estona, perquè el tram més llarg fa baixada i per tant es fa a més velocitat."
     ]
   },
   {
@@ -3434,9 +3434,9 @@
     "indexCorrecte": 0,
     "pistes": [
       "",
-      "",
-      "",
-      ""
+      "Hi ha un error. Pista: divideix el sostre en dos rectangles i pensa bé quines mides té cadascun.",
+      "El resultat és massa gran. Potser has sumat un tros 2 vegades.",
+      "Aquest és el resultat de multiplicar 80 per 50, com si el sostre fos un rectangle complet."
     ]
   },
   {
@@ -3449,9 +3449,9 @@
     "pregunta": "data/cb2eso2026p28.png",
     "indexCorrecte": 3,
     "pistes": [
-      "",
-      "",
-      "",
+      "Et falten costats per sumar. Recorre tot el contorn amb el dit i compta quants trams hi ha.",
+      "Has sumat només les mesures que llegeixes al dibuix, però falten dos costats per comptar.",
+      "Repassa les operacions que has fet i pensa que has de sumar, en total, 6 longituds.",
       ""
     ]
   },
@@ -3465,10 +3465,10 @@
     "pregunta": "data/cb2eso2026p29.png",
     "indexCorrecte": 2,
     "pistes": [
+      "Has dividit entre 4, i això està bé. El que no quadra és el total: repassa la suma dels quatre anys.",
+      "Gairebé ho tens. La divisió entre 4 està bé, però a la suma se t'ha escapat alguna cosa.",
       "",
-      "",
-      "",
-      ""
+      "És cert que per calcular una mitjana normalment comencem sumant, com tu has fet. Però falta fer una altra operació: quina és?"
     ]
   },
   {
@@ -3481,10 +3481,10 @@
     "pregunta": "data/cb2eso2026p30.png",
     "indexCorrecte": 1,
     "pistes": [
+      "No és correcte: calcula quants mil·límetres de pluja calen per fer 500 litres, si ho recollim en 10 m².",
       "",
-      "",
-      "",
-      ""
+      "No és cert, perquè per exemple el 2022 no hi arriba. Repassa la taula.",
+      "Tens raó quan dius que el 2022 no hi arriba, però et deixes un altre any que tampoc hi arriba."
     ]
   }
 ]
