@@ -30,7 +30,7 @@ cb/
 
 | Paràmetre | Valors | Descripció |
 |-----------|--------|------------|
-| `p` | `0` o `1` | Mode: 0=examen, 1=pràctica (amb pistes) |
+| `p` | `0`, `1` o `2` | Mode: 0=examen, 1=pràctica (amb pistes), 2=examen sense nota final (funciona com l'examen, però en acabar no es mostra la nota, només el codi; el codi és idèntic al de l'examen) |
 | `nivell` | `4eso`, `2eso` | Nivell educatiu |
 | `any` | `2022`-`2026` | Any de la convocatòria |
 | `dificultat` | `1`, `2`, `3` | Nivell de dificultat |

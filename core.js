@@ -7,7 +7,10 @@
 // 1. CONFIGURACIÓ DE MODES I FILTRES
 // ==========================================
 const urlParams = new URLSearchParams(window.location.search);
-const modeExamen = urlParams.get('p') !== '1';
+// p=1 → pràctica (amb pistes) · p=0 → examen · p=2 → examen sense nota final
+const modeParam = urlParams.get('p');
+const modeExamen = modeParam !== '1';   // p=0 i p=2 funcionen exactament com un examen
+const mostrarNota = modeParam !== '2';  // p=2: en acabar no es mostra la nota, però sí el codi
 const etiquetaMode = modeExamen ? "Mode examen" : "Mode pràctica";
 
 const filtreAny = urlParams.get('any');
@@ -378,7 +381,7 @@ function finalitzarProva() {
     pNivell.appendChild(strong1);
     resumDiv.appendChild(pNivell);
 
-    if (modeExamen) {
+    if (modeExamen && mostrarNota) {
         const pNota = document.createElement('p');
         pNota.innerHTML = `Nota: <span style="font-size:1.5rem; color:var(--primary)"><strong>${notaDisplay}</strong></span>`;
         resumDiv.appendChild(pNota);
