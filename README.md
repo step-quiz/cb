@@ -122,6 +122,14 @@ Al projecte del departament (`m`) hi ha la guia completa dels dos eixos, CB i Fl
 `ACTUALITZACIO-ANUAL.md`, i el guió `genera_cb_items.py`, que refà el banc de `banc-cb.html`
 a partir d'aquest `preguntes.json`.
 
+## Proves
+
+`python3 tests/docs_vs_codi.py` comprova que aquest README diu el mateix que les dades: el nombre
+de preguntes, els anys de cada nivell, les imatges que `preguntes.json` no fa servir i que les
+rutes citades existeixen. GitHub l'executa a cada canvi a `main`, a cada pull request i després de
+cada ZIP (`.github/workflows/tests.yml`). Si falla perquè has afegit preguntes, posa al dia la xifra
+que diu el missatge.
+
 ## Tecnologies
 
 - HTML5 / CSS3 purs (sense frameworks)
