@@ -101,10 +101,11 @@ descripció amb les especificacions dels ítems i la clau de respostes. **D'aque
 document en surten el sentit, el grau de complexitat i la resposta correcta de cada ítem**:
 no cal deduir res.
 
-1. `python3 retalla_cb.py` (necessita `pdfplumber` i `Pillow`). L'script té escrits al codi
-   (al final del fitxer) els PDF d'entrada, `pdfs/2eso_prova.pdf` i `pdfs/4eso_prova.pdf`,
-   l'any (`2026`) i la carpeta de sortida, `noves/data/`: canvia l'any abans d'executar-lo.
-   Genera els PNG amb la convenció `cb<nivell><any>e<N>.png` (enunciat del bloc N) i
+1. Desa els PDF de la prova a `pdfs/2eso_prova.pdf` i `pdfs/4eso_prova.pdf` (carpeta que
+   no es puja al repositori) i executa `python3 retalla_cb.py 2027`, amb l'any de la
+   convocatòria (necessita `pdfplumber`, `Pillow` i `pdftoppm`). Deixa els PNG a
+   `noves/data/`. Amb `--2eso`, `--4eso` i `--sortida` es poden fer servir altres rutes
+   (`python3 retalla_cb.py --help`). Genera els PNG amb la convenció `cb<nivell><any>e<N>.png` (enunciat del bloc N) i
    `cb<nivell><any>p<M>.png` (pregunta M, amb el número oficial de l'ítem). Revisa'ls (la
    segmentació és automàtica) i copia els bons a `data/`.
 2. Transcriu les metadades: `dificultat` (Bàsic 1 · Intermedi 2 · Superior 3) i

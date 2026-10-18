@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-retalla_cb2.py — genera els PNG d'enunciat i pregunta d'una prova CB oficial
+retalla_cb.py — genera els PNG d'enunciat i pregunta d'una prova CB oficial
 amb la convenció de cb.step-quiz.net:
     data/cb<nivell><any>e<N>.png   (enunciat del bloc N)
     data/cb<nivell><any>p<M>.png   (pregunta M, amb la numeració oficial de la prova)
@@ -24,8 +24,19 @@ Amplada
 Es parteix de la columna de text, però si el contingut (una figura ampla,
 per exemple) surt del marge, el retall s'eixampla fins a encabir-lo. Així
 no es talla mai res i els retalls normals queden ajustats.
+
+Ús
+--
+    python3 retalla_cb.py 2027
+        Retalla pdfs/2eso_prova.pdf i pdfs/4eso_prova.pdf (els que hi siguin)
+        i deixa els PNG a noves/data/. Revisa'ls i copia els bons a data/.
+    python3 retalla_cb.py 2027 --4eso altra/ruta.pdf --sortida /tmp/cb
+        Rutes diferents. --2eso i --4eso trien els PDF de cada nivell;
+        --primera, la primera pàgina amb preguntes (per defecte, la 2).
+Necessita pdfplumber, Pillow i pdftoppm (poppler-utils).
+Aquest fitxer és idèntic a cb i a m: si en canvies un, copia'l a l'altre.
 """
-import os, re, shutil, subprocess, sys
+import argparse, os, re, shutil, subprocess, sys
 import pdfplumber
 from PIL import Image
 
@@ -138,11 +149,41 @@ def processa(pdf_path, nivell, any_, sortida, primera=2):
     return blocs, escrits
 
 
-if __name__ == '__main__':
-    for nivell, pdf_path in (('2eso', 'pdfs/2eso_prova.pdf'), ('4eso', 'pdfs/4eso_prova.pdf')):
-        print(f'\n=== {nivell} 2026 ===')
-        blocs, escrits = processa(pdf_path, nivell, 2026, 'noves/data')
+def main(argv=None):
+    ap = argparse.ArgumentParser(
+        description="Retalla els PDF oficials d'una prova CB en PNG d'enunciat i pregunta.")
+    ap.add_argument('any', type=int, help="any de la convocatòria (p. ex. 2027)")
+    ap.add_argument('--2eso', dest='pdf_2eso', default='pdfs/2eso_prova.pdf',
+                    help="PDF de la prova de 2n d'ESO (per defecte: %(default)s)")
+    ap.add_argument('--4eso', dest='pdf_4eso', default='pdfs/4eso_prova.pdf',
+                    help="PDF de la prova de 4t d'ESO (per defecte: %(default)s)")
+    ap.add_argument('--sortida', default='noves/data',
+                    help="carpeta on es desen els PNG (per defecte: %(default)s)")
+    ap.add_argument('--primera', type=int, default=2,
+                    help="primera pàgina amb preguntes (per defecte: %(default)s)")
+    a = ap.parse_args(argv)
+
+    proves = [(n, p) for n, p in (('2eso', a.pdf_2eso), ('4eso', a.pdf_4eso)) if os.path.exists(p)]
+    for n, p in (('2eso', a.pdf_2eso), ('4eso', a.pdf_4eso)):
+        if not os.path.exists(p):
+            print(f'Avís: no hi ha {p}; es salta {n}.')
+    if not proves:
+        print("Error: no hi ha cap PDF per retallar. Indica'ls amb --2eso i --4eso.")
+        return 1
+
+    for nivell, pdf_path in proves:
+        print(f'\n=== {nivell} {a.any} ===')
+        blocs, escrits = processa(pdf_path, nivell, a.any, a.sortida, a.primera)
         for b in blocs:
             print(f"  bloc {b['num']:>2}  pàg. {b['pagines']}  preguntes {b['preguntes']}")
-        amples = {s[1][0] for s in escrits}
-        print(f'  {len(escrits)} imatges · {len(blocs)} blocs · amplades {min(amples)}–{max(amples)} px')
+        if escrits:
+            amples = {s[1][0] for s in escrits}
+            print(f'  {len(escrits)} imatges · {len(blocs)} blocs · amplades {min(amples)}–{max(amples)} px')
+        else:
+            print("  No s'ha trobat cap pregunta: revisa --primera o la maquetació del PDF.")
+    print(f'\nPNG a {a.sortida}/. Revisa\'ls i copia els bons a data/.')
+    return 0
+
+
+if __name__ == '__main__':
+    sys.exit(main())
