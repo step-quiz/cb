@@ -25,8 +25,9 @@ cb/
 │   ├── cb4eso2025p1.png
 │   └── ...
 ├── retalla_cb.py       ← Retalla els PDF oficials en PNG (vegeu «Afegir l'edició d'un any nou»)
-├── _headers            ← Capçaleres de Cloudflare Pages: CORS obert a /data/* perquè
-│                         m.step-quiz.net pugui descarregar les imatges per fer PDF
+├── _headers            ← Capçaleres de Cloudflare Pages: CORS obert a /data/*, perquè
+│                         un altre web en pugui descarregar les imatges (m ja no ho necessita:
+│                         des del 18/10/2026 en té una còpia a m/cb/data/)
 ├── googled9af5cf2562dfba3.html ← Verificació de Google Search Console
 └── icon.png, LICENSE, LLICENCIA.md
 ```
