@@ -337,8 +337,16 @@ function finalitzarProva() {
             resultsStr += r.encertat ? '1' : '4';
         });
     } else {
-        // Mode pràctica: 1=1r intent, 2=2n, 3=3r, 4=fallit
+        // Mode pràctica: 1=1r intent, 2=2n, 3=3r, 4=fallit, 0=no resposta.
+        // En l'ús normal no n'hi pot haver cap sense resposta (només s'avança
+        // encertant), però si mai s'arribés aquí abans d'hora, una pregunta no
+        // resposta ha de sortir com a 0 (com a l'examen), no com a «1r intent».
+        const respostes = new Set(resultatsExamen.map(r => r.id));
         preguntesActives.forEach(p => {
+            if (!respostes.has(p.id)) {
+                resultsStr += '0';
+                return;
+            }
             let errors = intentsPerPregunta[p.id] || 0;
             let intents = errors + 1;
             if (intents > 4) intents = 4;
