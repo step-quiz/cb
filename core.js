@@ -318,11 +318,13 @@ function finalitzarProva() {
     const hh  = String(ara.getHours()).padStart(2, '0');
     const min = String(ara.getMinutes()).padStart(2, '0');
 
-    // ── Salt codificat (conserva nivell + any de la convocatòria) ──
-    // Posició 0: 's' = 2n ESO, 'q' = 4t ESO
-    // Posicions 1-2: últims 2 dígits de l'any (p.ex. 26 per a 2026)
+    // ── Salt codificat (nivell + any en què es fa la prova) ──
+    // Posició 0: 'q' = 4t ESO; 's' = 2n ESO o sense nivell
+    // Posicions 1-2: últims 2 dígits de l'any EN QUÈ ES FA LA PROVA (la data
+    //   del navegador), no el de la convocatòria: una prova de 2024 feta el
+    //   2026 dona "q26".
     // Compatible amb regex v2: [a-z][a-z0-9]{2} → ex: "q26", "s25"
-    // L'analitzador ja sap decodificar-ho (parseCode, línia 309-311).
+    // L'analitzador ja sap decodificar-ho (parseCode).
     const nivellChar = (filtreNivell === '4eso') ? 'q' : 's';
     const anyStr = String(ara.getFullYear()).slice(-2);
     const salt = nivellChar + anyStr;
@@ -330,7 +332,7 @@ function finalitzarProva() {
     // ── Codi d'exercici ──
     const exCode = 'CB';
 
-    // ── Dificultat: codifiquem nivell+any per no perdre la info ──
+    // ── Camp D: el nivell ──
     //    0 = sense nivell, 1 = 2eso, 2 = 4eso
     const dif = filtreNivell === '2eso' ? '1' : filtreNivell === '4eso' ? '2' : '0';
 
