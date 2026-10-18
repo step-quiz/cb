@@ -127,4 +127,23 @@ sobrants = [f for f in os.listdir(os.path.join(ARREL, 'data'))
 for f in sorted(sobrants):
     comprova(False, f'data/{f}: preguntes.json no la fa servir (esborra-la o afegeix la pregunta)')
 
+# ── 3. Pistes i tipus d'error de cada opció ──────────────────────────────
+tipus = json.loads(llegeix('errors.json'))
+for q in preguntes:
+    pistes, errs, bona = q.get('pistes', []), q.get('errors'), q['indexCorrecte']
+    comprova(len(pistes) == 4, f"pregunta {q['id']}: ha de tenir 4 pistes")
+    comprova(isinstance(errs, list) and len(errs) == 4, f"pregunta {q['id']}: ha de tenir 4 errors (un per opció)")
+    if not isinstance(errs, list) or len(errs) != 4 or len(pistes) != 4:
+        continue
+    for i in range(4):
+        if i == bona:
+            comprova(errs[i] is None and pistes[i] == '', f"pregunta {q['id']}: l'opció correcta ({i}) no porta pista ni error")
+            continue
+        comprova(pistes[i].strip() and 'pendent' not in pistes[i], f"pregunta {q['id']}: falta la pista de l'opció {i}")
+        comprova(errs[i] is None or errs[i] in tipus, f"pregunta {q['id']}: «{errs[i]}» no és a errors.json")
+usats = {e for q in preguntes for e in (q.get('errors') or []) if e}
+for t in tipus:
+    comprova(t in usats, f'errors.json: el tipus {t} no el fa servir cap pregunta')
+    comprova(f'`{t}`' in readme, f'README.md: falta el tipus d\'error `{t}` a la taula')
+
 acaba('cb')

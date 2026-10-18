@@ -50,6 +50,7 @@ let preguntaActual = 0;
 let intentsPerPregunta = {}; 
 let resultatsExamen = [];
 let ultimEnunciatCarregat = ""; // Per evitar parpelleigs si l'enunciat és el mateix
+let tipusErrors = {}; // errors.json: nom de cada tipus d'error (si no carrega, no es mostra l'etiqueta)
 
 // ==========================================
 // 2. CÀRREGA DE DADES (FETCH) I FILTRATGE
@@ -60,6 +61,14 @@ async function inicialitzarApp() {
         if (!resposta.ok) throw new Error("No s'ha pogut trobar el fitxer preguntes.json");
         
         const dadesTotals = await resposta.json();
+
+        // Taxonomia d'errors (només per al mode pràctica). Si falla, el joc funciona igual.
+        if (!modeExamen) {
+            try {
+                const r = await fetch('errors.json');
+                if (r.ok) tipusErrors = await r.json();
+            } catch (e) { console.warn("No s'ha pogut carregar errors.json", e); }
+        }
 
         // Filtratge segons paràmetres URL
         preguntesActives = dadesTotals.filter(p => {
@@ -190,12 +199,19 @@ function validarPractica(index, btn, espai) {
         btn.disabled = true;
         btn.classList.add('incorrecta');
         
-        // --- NOU CODI AFEGIT AQUÍ ---
         // Esborrem el text de qualsevol pista que s'hagi mostrat abans en aquesta pregunta
         document.querySelectorAll('.pista-contextual').forEach(p => p.innerText = '');
-        // ----------------------------
 
-        espai.innerText = dades.pistes[index]; // Mostra la nova pista
+        // Tipus d'error de l'opció triada (errors.json), damunt de la pista
+        const tipus = dades.errors && tipusErrors[dades.errors[index]];
+        if (tipus) {
+            const etiqueta = document.createElement('span');
+            etiqueta.className = 'etiqueta-error';
+            etiqueta.textContent = tipus.nom;
+            etiqueta.title = tipus.descripcio;
+            espai.appendChild(etiqueta);
+        }
+        espai.appendChild(document.createTextNode(dades.pistes[index])); // Mostra la nova pista
     }
 }
 

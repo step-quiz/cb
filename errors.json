@@ -1,0 +1,54 @@
+{
+  "LLEGIR": {
+    "nom": "Lectura de l'enunciat",
+    "descripcio": "La resposta contesta una altra cosa del que es demana: el màxim en lloc del valor en un moment, l'opció que sí que compleix quan es busca la que no, una pregunta veïna…"
+  },
+  "DADES": {
+    "nom": "Dada equivocada",
+    "descripcio": "El procediment és bo, però s'ha agafat un valor que no toca: de la taula, del gràfic, de l'enunciat o d'una pregunta anterior."
+  },
+  "COMPTAR": {
+    "nom": "Recompte",
+    "descripcio": "S'han deixat casos per comptar o se n'han comptat de més (punts d'un gràfic, casos favorables, combinacions…)."
+  },
+  "OPERACIO": {
+    "nom": "Operació equivocada",
+    "descripcio": "S'ha triat una operació que no correspon a la situació: sumar en lloc de restar, multiplicar en lloc de dividir, una regla de tres on no n'hi ha…"
+  },
+  "CALCUL": {
+    "nom": "Error de càlcul",
+    "descripcio": "L'estratègia és bona, però falla una operació concreta (una suma, una divisió, una simplificació)."
+  },
+  "PASSOS": {
+    "nom": "Raonament incomplet",
+    "descripcio": "S'ha fet bé una part del camí, però falta un pas o se n'ha saltat un d'intermedi."
+  },
+  "PROPORCIO": {
+    "nom": "Proporcionalitat",
+    "descripcio": "La relació entre les quantitats no és la correcta: regla de tres, escala, percentatge, recepta o mescla."
+  },
+  "FORMULA": {
+    "nom": "Fórmula o propietat",
+    "descripcio": "S'ha aplicat malament una fórmula (àrea, volum, perímetre…) o una propietat (de la probabilitat, d'una equació…)."
+  },
+  "UNITATS": {
+    "nom": "Unitats",
+    "descripcio": "No s'ha passat bé d'una unitat a l'altra, o s'han barrejat unitats diferents."
+  },
+  "ESPAI": {
+    "nom": "Visió espacial",
+    "descripcio": "Desenvolupaments, plecs, girs, vistes o figures que no encaixen com s'ha imaginat."
+  },
+  "QUADRA": {
+    "nom": "Resultat poc raonable",
+    "descripcio": "El valor és massa gran o massa petit per a la situació: contrastar-lo amb l'enunciat ho hauria detectat."
+  },
+  "GAIREBE": {
+    "nom": "Gairebé",
+    "descripcio": "La resposta s'acosta molt a la correcta: falla un últim detall."
+  },
+  "PATRO": {
+    "nom": "Patró",
+    "descripcio": "No s'ha trobat bé com creix o es repeteix una seqüència de figures o de nombres."
+  }
+}

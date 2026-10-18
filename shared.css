@@ -237,6 +237,19 @@ button.opcio.seleccionada {
     font-weight: bold; 
 }
 
+/* Tipus d'error de l'opció triada (mode pràctica, errors.json) */
+.etiqueta-error {
+    display: block;
+    width: fit-content;
+    margin-bottom: 0.25rem;
+    padding: 0.1rem 0.5rem;
+    border-radius: 999px;
+    background: #fdecea;
+    color: #8a1c12;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
 @keyframes fadeIn {
     from { opacity: 0; transform: translateX(-10px); }
     to { opacity: 1; transform: translateX(0); }

@@ -19,7 +19,8 @@ cb/
 ├── test.html           ← Pàgina de la prova (pàgina de l'alumne)
 ├── core.js             ← Motor de joc (càrrega JSON, validació, codi antifrau)
 ├── shared.css          ← Estils globals (2 columnes, responsiu, mode horitzontal)
-├── preguntes.json      ← Base de dades de preguntes (enunciats, pistes, respostes)
+├── preguntes.json      ← Base de dades de preguntes (enunciats, pistes, respostes, tipus d'error)
+├── errors.json         ← Tipus d'error de les opcions incorrectes (nom i descripció)
 ├── data/               ← Imatges dels enunciats i preguntes (PNG)
 │   ├── cb4eso2025e1.png
 │   ├── cb4eso2025p1.png
@@ -89,11 +90,39 @@ Cada entrada de `preguntes.json` segueix aquest format:
     "Pista per a l'opció B...",
     "Pista per a l'opció C...",
     "Pista per a l'opció D..."
-  ]
+  ],
+  "errors": [null, "DADES", "PASSOS", "QUADRA"]
 }
 ```
 
 El camp `pistes` conté 4 textos (un per opció A-D). La pista de la resposta correcta és buida (`""`).
+
+El camp `errors` diu, també per a cada opció, **quin tipus d'error** porta a triar-la: és el
+model dels distractors etiquetats de repas. L'opció correcta hi té `null`, i també una opció
+incorrecta la pista de la qual no apunta a cap error concret («Revisa els càlculs»). En mode
+pràctica, quan l'alumne tria una opció incorrecta, el nom del tipus surt en una etiqueta vermella
+damunt de la pista (si passes el ratolí per sobre, en surt la descripció). Els tipus són a
+`errors.json`:
+
+| Tipus | Nom | Quan |
+|---|---|---|
+| `LLEGIR` | Lectura de l'enunciat | La resposta contesta una altra cosa del que es demana: el màxim en lloc del valor en un moment, l'opció que sí que compleix quan es busca la que no, una pregunta veïna… |
+| `DADES` | Dada equivocada | El procediment és bo, però s'ha agafat un valor que no toca: de la taula, del gràfic, de l'enunciat o d'una pregunta anterior. |
+| `COMPTAR` | Recompte | S'han deixat casos per comptar o se n'han comptat de més (punts d'un gràfic, casos favorables, combinacions…). |
+| `OPERACIO` | Operació equivocada | S'ha triat una operació que no correspon a la situació: sumar en lloc de restar, multiplicar en lloc de dividir, una regla de tres on no n'hi ha… |
+| `CALCUL` | Error de càlcul | L'estratègia és bona, però falla una operació concreta (una suma, una divisió, una simplificació). |
+| `PASSOS` | Raonament incomplet | S'ha fet bé una part del camí, però falta un pas o se n'ha saltat un d'intermedi. |
+| `PROPORCIO` | Proporcionalitat | La relació entre les quantitats no és la correcta: regla de tres, escala, percentatge, recepta o mescla. |
+| `FORMULA` | Fórmula o propietat | S'ha aplicat malament una fórmula (àrea, volum, perímetre…) o una propietat (de la probabilitat, d'una equació…). |
+| `UNITATS` | Unitats | No s'ha passat bé d'una unitat a l'altra, o s'han barrejat unitats diferents. |
+| `ESPAI` | Visió espacial | Desenvolupaments, plecs, girs, vistes o figures que no encaixen com s'ha imaginat. |
+| `QUADRA` | Resultat poc raonable | El valor és massa gran o massa petit per a la situació: contrastar-lo amb l'enunciat ho hauria detectat. |
+| `GAIREBE` | Gairebé | La resposta s'acosta molt a la correcta: falla un últim detall. |
+| `PATRO` | Patró | No s'ha trobat bé com creix o es repeteix una seqüència de figures o de nombres. |
+
+Per afegir-ne un, posa'l a `errors.json` i a aquesta taula. Les proves fallen si una pregunta fa
+servir un tipus que no és a `errors.json`, si un tipus no el fa servir cap pregunta o si falta a la
+taula.
 
 ## Afegir l'edició d'un any nou
 
@@ -110,7 +139,8 @@ no cal deduir res.
    `cb<nivell><any>p<M>.png` (pregunta M, amb el número oficial de l'ítem). Revisa'ls (la
    segmentació és automàtica) i copia els bons a `data/`.
 2. Transcriu les metadades: `dificultat` (Bàsic 1 · Intermedi 2 · Superior 3) i
-   `indexCorrecte` (a 0 · b 1 · c 2 · d 3).
+   `indexCorrecte` (a 0 · b 1 · c 2 · d 3). Escriu una pista per a cada opció incorrecta
+   (`pistes`) i tria'n el tipus d'error (`errors`, vegeu la taula de més amunt).
 3. Afegeix les entrades a `preguntes.json` amb ids correlatius a partir de l'últim,
    **inserides abans del claudàtor de tancament** per no reserialitzar el fitxer sencer.
 4. Prou. El desplegable d'anys de l'`index.html` es refà sol llegint `preguntes.json`; la
@@ -128,7 +158,8 @@ a partir d'aquest `preguntes.json`.
 
 `python3 tests/docs_vs_codi.py` comprova que aquest README diu el mateix que les dades: el nombre
 de preguntes, els anys de cada nivell, les imatges que `preguntes.json` no fa servir i que les
-rutes citades existeixen. GitHub l'executa a cada canvi a `main`, a cada pull request i després de
+rutes citades existeixen. També comprova les pistes i els tipus d'error: cada opció incorrecta té
+pista (cap «pista pendent»), l'opció correcta no en té, i els tipus són els d'`errors.json`. GitHub l'executa a cada canvi a `main`, a cada pull request i després de
 cada ZIP (`.github/workflows/tests.yml`). Si falla perquè has afegit preguntes, posa al dia la xifra
 que diu el missatge.
 

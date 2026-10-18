@@ -13,6 +13,12 @@
       "Hi ha un error. Compta només els punts de la línia del gràfic.",
       "El resultat no és correcte perquè has comptat punts de més. Fixa't bé i compta d'esquerra a dreta.",
       "Has triat un nombre massa alt. Segurament has comptat totes les marques de les hores de l'eix horitzontal."
+    ],
+    "errors": [
+      null,
+      "DADES",
+      "COMPTAR",
+      "DADES"
     ]
   },
   {
@@ -29,6 +35,12 @@
       "",
       "Hi ha una petita errada en el teu recompte. Busca el nombre 39 a l'eix vertical i torna a comptar.",
       "Has comptat massa punts. Situa't a la línia horitzontal del 39 i compta els punts que queden a aquesta altura o més amunt."
+    ],
+    "errors": [
+      "DADES",
+      null,
+      "COMPTAR",
+      "COMPTAR"
     ]
   },
   {
@@ -45,6 +57,12 @@
       "Aquesta no és la durada correcta. Pensa que des de dissabte a la nit fins dilluns a la tarda passen més de 24 hores.",
       "",
       "Has calculat malament, perquè voldria dir que han passat més de dos dies."
+    ],
+    "errors": [
+      "LLEGIR",
+      "UNITATS",
+      null,
+      "QUADRA"
     ]
   },
   {
@@ -61,6 +79,12 @@
       "",
       "Hi ha un error: potser has sumat 8 més 3. Pensa en primer lloc quantes vegades li toca el medicament, cada dia.",
       "Error, potser has multiplicat els nombres de l'enunciat. Prendre el medicament cada 8 hores no vol dir fer-ho 8 vegades al dia."
+    ],
+    "errors": [
+      "PASSOS",
+      null,
+      "OPERACIO",
+      "OPERACIO"
     ]
   },
   {
@@ -77,6 +101,12 @@
       "Error, perquè aquesta frase és certa: a menys pes, menys medicament",
       "",
       "No és aquesta la frase falsa, perquè la quantitat de medicament i el pes sí que són directament proporcionals."
+    ],
+    "errors": [
+      "LLEGIR",
+      "LLEGIR",
+      null,
+      "LLEGIR"
     ]
   },
   {
@@ -93,6 +123,12 @@
       "Aquest pes no és el correcte. Segurament has multiplicat en comptes de dividir.",
       "Hi ha un error en l'operació que has fet. Revisa la fórmula: 32=0,8·P.",
       "Segurament ho has fet a ull, però no l'has encertat. Revisa la fórmula: 32=0,8·P."
+    ],
+    "errors": [
+      null,
+      "OPERACIO",
+      "CALCUL",
+      "CALCUL"
     ]
   },
   {
@@ -109,6 +145,12 @@
       "Hi ha una petita errada en la resta. Sabem que 22 kg correspon a la franja que dona 16 ml. Ara recorda la resposta de la pregunta anterior. Finalment, fes una resta.",
       "Aquest nombre no és correcte, revisa càlculs.",
       ""
+    ],
+    "errors": [
+      "PASSOS",
+      "CALCUL",
+      null,
+      null
     ]
   },
   {
@@ -125,6 +167,12 @@
       "És erroni el càlcul. Si 5 ml són 105 mg, pensa quant seria 1 ml. I després, quant serien 16 ml.",
       "Hi ha errors en l'operació. Calcula primer la quantitat per a un sol mil·lilitre. Quan ho tinguis, multiplica'l per 16.",
       ""
+    ],
+    "errors": [
+      "PROPORCIO",
+      "PROPORCIO",
+      "PROPORCIO",
+      null
     ]
   },
   {
@@ -141,6 +189,12 @@
       "La mesura no és correcta. Passa els 1,05 metres a centímetres i divideix entre 15 per saber quants esglaons hi ha. Finalment, cada esglaó fa 20 centímetres.",
       "",
       "Hi ha un error, potser has multiplicat de forma directa. Primer has de descobrir quants esglaons hi ha."
+    ],
+    "errors": [
+      "UNITATS",
+      "PASSOS",
+      null,
+      "PASSOS"
     ]
   },
   {
@@ -157,6 +211,12 @@
       "",
       "Has obtingut una longitud errònia. Multiplica l'altura (1,05) per 100 i després dedueix quant val la longitud horitzontal.",
       "El resultat és massa gran, potser t'has descuidat de fer una divisió final."
+    ],
+    "errors": [
+      "PROPORCIO",
+      null,
+      "PROPORCIO",
+      "PASSOS"
     ]
   },
   {
@@ -173,6 +233,12 @@
       "Hi ha un error amb les mides del triangle. Per aplicar Pitàgores només necessites 15 metres.",
       "",
       "La base del triangle no és correcta. Per fer el càlcul has d'agafar només la meitat de la base de 30 metres d'ample."
+    ],
+    "errors": [
+      "PASSOS",
+      "FORMULA",
+      null,
+      "FORMULA"
     ]
   },
   {
@@ -189,6 +255,12 @@
       "",
       "Has comptat massa línies de simetria. Imagina't que doblegues la lletra H com si fos un paper, i que tot encaixi.",
       "Aquest nombre és massa gran, perquè la lletra H no té un eix de simetria que vagi en diagonal."
+    ],
+    "errors": [
+      "ESPAI",
+      null,
+      "ESPAI",
+      "ESPAI"
     ]
   },
   {
@@ -205,6 +277,12 @@
       "Aquesta àrea no és la correcta. Busca quantes parts blanques i resta-ho de l'àrea total.",
       "Hi ha un error. Has provat de dividir la placa en quadrets o triangles més petits?",
       "Aquest valor és massa gran. Fixa't que una bona part de la placa està en blanc."
+    ],
+    "errors": [
+      null,
+      "PASSOS",
+      null,
+      "QUADRA"
     ]
   },
   {
@@ -221,6 +299,12 @@
       "Crec que confons entre perímetre i àrea. És veritat que 25 cm és la quarta part de 1 m, però pensa en l'àrea.",
       "No és correcte. Quants quadrats de 25 cm caben a l'interior de la placa? La placa és un quadrat de 100 cm de costat.",
       ""
+    ],
+    "errors": [
+      "LLEGIR",
+      "FORMULA",
+      null,
+      null
     ]
   },
   {
@@ -237,6 +321,12 @@
       "El total de persones no és correcte. Potser t'has equivocat sumant.",
       "Aquest resultat no quadra. Agafa només els valors que corresponen als de menys de 30 anys.",
       "Has obtingut un nombre massa gran. Comprova que estàs sumant les dades correctes."
+    ],
+    "errors": [
+      null,
+      "CALCUL",
+      "DADES",
+      "DADES"
     ]
   },
   {
@@ -253,6 +343,12 @@
       "Hi ha un error. Recorda que en total hi ha 250 persones, i fixa't que 84 van 2 vegades al mercat.",
       "",
       "Aquest percentatge és massa alt, potser has sumat una franja equivocada."
+    ],
+    "errors": [
+      "PROPORCIO",
+      "PROPORCIO",
+      null,
+      "DADES"
     ]
   },
   {
@@ -269,6 +365,12 @@
       "Aquest resultat no és correcte. Són persones majors de 50 anys, que en total n'hi ha 95.",
       "",
       "La mitjana que et surt és massa alta, potser has dividit per un nombre total equivocat."
+    ],
+    "errors": [
+      "FORMULA",
+      "DADES",
+      null,
+      "DADES"
     ]
   },
   {
@@ -285,6 +387,12 @@
       "Hi ha un error de concepte, potser t'has confós perquè has vist el màxim de 4 cops per setmana.",
       "El denominador de la teva fracció és massa petit. Quanta gent hi ha en total?",
       ""
+    ],
+    "errors": [
+      "FORMULA",
+      "FORMULA",
+      "DADES",
+      null
     ]
   },
   {
@@ -301,6 +409,12 @@
       "",
       "No és correcte, perquè amb 6 jugadors, tothom tindria el mateix nombre de cartes.",
       "Gairebé ho tens! És cert que amb 7 jugadors funciona, però ens demanen EL MÍNIM nombre de jugadors."
+    ],
+    "errors": [
+      "LLEGIR",
+      null,
+      "LLEGIR",
+      "LLEGIR"
     ]
   },
   {
@@ -317,6 +431,12 @@
       "Aquesta frase és certa! Si divideixes 36 cartes entre 4 toquen a 9 cartes per persona i no en sobra cap, així que la probabilitat del comodí és idèntica.",
       "Aquesta no és la frase falsa que estem buscant. Necessitem que les cartes no es reparteixin exactament.",
       ""
+    ],
+    "errors": [
+      "LLEGIR",
+      "LLEGIR",
+      "LLEGIR",
+      null
     ]
   },
   {
@@ -333,6 +453,12 @@
       "No és correcte, perquè sembla que les puntuacions s'estan restant, i haurien de sumar-se.",
       "",
       "No és la resposta correcta, gairebé ho tens!"
+    ],
+    "errors": [
+      "PASSOS",
+      "OPERACIO",
+      null,
+      "GAIREBE"
     ]
   },
   {
@@ -349,6 +475,12 @@
       "T'has equivocat, perquè segurament t'has oblidat de les primeres 3 hores.",
       "Error, revisa els teus càlculs. Són 6 hores en total, no sempre es paga el mateix.",
       ""
+    ],
+    "errors": [
+      "PASSOS",
+      "PASSOS",
+      null,
+      null
     ]
   },
   {
@@ -365,6 +497,12 @@
       "",
       "Resposta incorrecta, perquè llavors haurien passat només 4 hores i no seria tan car.",
       "Si només fos de 14h a 17h, són només 3 hores, no quadra amb el preu pagat."
+    ],
+    "errors": [
+      "QUADRA",
+      null,
+      "QUADRA",
+      "QUADRA"
     ]
   },
   {
@@ -381,6 +519,12 @@
       "Gairebé ho tens! La gràfica correcta s'assembla molt a aquesta.",
       "Aquesta opció no és correcta, perquè la tarifa plana dura 3 hores, i no 2 hores.",
       ""
+    ],
+    "errors": [
+      "DADES",
+      "GAIREBE",
+      "DADES",
+      null
     ]
   },
   {
@@ -397,6 +541,12 @@
       "",
       "Incorrecte, perquè sembla que comencis pagant 1,5 euros per les primeres 3 hores.",
       "Gairebé ho tens. El signe de restar de la fórmula no quadra, perquè semblaria que amb el pas de temps, cada cop pagues menys!"
+    ],
+    "errors": [
+      "FORMULA",
+      null,
+      "FORMULA",
+      "GAIREBE"
     ]
   },
   {
@@ -413,6 +563,12 @@
       "Has calculat bé l'angle A, però recorda que els altres dos angles són iguals, perquè el triangle és isòsceles.",
       "",
       "L'angle A no és correcte. Per trobar-lo, pensa que si multipliquem 8 vegades l'angle A, ens dona 360º."
+    ],
+    "errors": [
+      "FORMULA",
+      "PASSOS",
+      null,
+      "FORMULA"
     ]
   },
   {
@@ -429,6 +585,12 @@
       "Aquest resultat no és correcte. Potser has oblidat elevar el radi al quadrat.",
       "El valor de la superfície és massa gran. Segurament has multiplicat per 2, en comptes d'elevar el radi al quadrat.",
       "Atenció, has utilitzat el diàmetre en lloc del radi? Calcula a partir del valor del radi."
+    ],
+    "errors": [
+      null,
+      "FORMULA",
+      "FORMULA",
+      "FORMULA"
     ]
   },
   {
@@ -445,6 +607,12 @@
       "Aquesta altura no quadra amb la proporció de l'ombra. Has d'aplicar una proporció directa.",
       "Hi ha una errada en els teus càlculs.",
       "Aquesta altura és massa gran, per un error en plantejar la proporció."
+    ],
+    "errors": [
+      null,
+      "PROPORCIO",
+      null,
+      "PROPORCIO"
     ]
   },
   {
@@ -461,6 +629,12 @@
       "Gairebé ho tens, revisa els càlculs.",
       "No és correcte. El destí 1 és el més votat, per tant ha de tenir obligatòriament el sector més gran.",
       "No és correcte. El destí 1 és el més votat, per tant ha de tenir obligatòriament el sector més gran."
+    ],
+    "errors": [
+      null,
+      "GAIREBE",
+      "DADES",
+      "DADES"
     ]
   },
   {
@@ -477,6 +651,12 @@
       "Si tries aquesta opció, es produeix un empat amb el destí 1. I volem que guanyi el destí 2.",
       "",
       "Gairebé ho tens, però recorda que ens demanen COM A MÍNIM. Llegeix l'enunciat una altra vegada."
+    ],
+    "errors": [
+      "QUADRA",
+      "QUADRA",
+      null,
+      "LLEGIR"
     ]
   },
   {
@@ -489,10 +669,16 @@
     "pregunta": "data/cb4eso2025p31.png",
     "indexCorrecte": 1,
     "pistes": [
-      "pista pendent",
+      "2.000 × 1,5 no és 2.500: potser has sumat 500 en lloc de multiplicar. Multiplicar per 1,5 és sumar-hi la meitat.",
       "",
-      "pista pendent",
-      "pista pendent"
+      "Has sumat massa. 2.000 × 1,5 és 2.000 més la meitat de 2.000. Quant és la meitat de 2.000?",
+      "Has calculat com si cada papereta costés 2 €. Fixa't en el preu: 1,50 €."
+    ],
+    "errors": [
+      "CALCUL",
+      null,
+      "CALCUL",
+      "DADES"
     ]
   },
   {
@@ -505,10 +691,16 @@
     "pregunta": "data/cb4eso2025p32.png",
     "indexCorrecte": 3,
     "pistes": [
-      "pista pendent",
-      "pista pendent",
-      "pista pendent",
+      "Ves pas a pas: quantes paperetes són la meitat de 2.000? Quants diners en treuen, a 1,50 € cadascuna? Quina fracció d'aquests diners són 250 €?",
+      "Has comparat 250 amb el nombre de paperetes venudes (1.000), però la pregunta parla de diners. Quants euros recapten amb 1.000 paperetes?",
+      "Has comparat el premi amb el que queda per al viatge. La pregunta demana quina part del total recaptat és el premi.",
       ""
+    ],
+    "errors": [
+      "PASSOS",
+      "DADES",
+      "LLEGIR",
+      null
     ]
   },
   {
@@ -522,9 +714,15 @@
     "indexCorrecte": 0,
     "pistes": [
       "",
-      "pista pendent",
-      "pista pendent",
-      "pista pendent"
+      "Ha comprat 3 paperetes de 1.500. Revisa com simplifiques la fracció: has de dividir el numerador i el denominador pel mateix nombre.",
+      "Aquesta seria la probabilitat amb una sola papereta. Quantes paperetes ha comprat l'alumne?",
+      "El número imprès a la papereta no hi té res a veure: totes les paperetes tenen la mateixa probabilitat de sortir. Compta quantes en té."
+    ],
+    "errors": [
+      null,
+      "CALCUL",
+      "DADES",
+      "LLEGIR"
     ]
   },
   {
@@ -541,6 +739,12 @@
       "No és correcte, repassa les teves sumes.",
       "Error, potser has mirat només el nombre de jerseis.",
       ""
+    ],
+    "errors": [
+      "DADES",
+      "CALCUL",
+      "DADES",
+      null
     ]
   },
   {
@@ -557,6 +761,12 @@
       "Has calculat malament la mitjana, repassa-ho.",
       "",
       "No és correcte. Revisa la suma total abans de fer la divisió."
+    ],
+    "errors": [
+      "DADES",
+      null,
+      null,
+      "CALCUL"
     ]
   },
   {
@@ -573,6 +783,12 @@
       "Recorda que amb els jerseis guanya més diners... Multiplica cada quantitat pel seu preu.",
       "",
       "Revisa els càlculs. Has de sumar els guanys de samarretes i jerseis de cada mes."
+    ],
+    "errors": [
+      "DADES",
+      "PASSOS",
+      null,
+      "PASSOS"
     ]
   },
   {
@@ -589,6 +805,12 @@
       "",
       "Atenció, error: si ja fas servir el decimal, no cal tornar a dividir entre 100.",
       "No és correcte, perquè has escollit la fórmula que diu els diners que no li estalvia."
+    ],
+    "errors": [
+      "PROPORCIO",
+      null,
+      "PROPORCIO",
+      "LLEGIR"
     ]
   },
   {
@@ -605,6 +827,12 @@
       "Aquest gràfic no encaixa. Recorda que la categoria 'bona' és la que té més vots.",
       "No és correcte aquest gràfic, perquè totes les valoracions tenen el mateix nombre de vots.",
       ""
+    ],
+    "errors": [
+      "DADES",
+      "DADES",
+      "DADES",
+      null
     ]
   },
   {
@@ -621,6 +849,12 @@
       "Revisa els teus càlculs. Recorda que has de comparar 32 valoracions respecte 80.",
       "Revisa els càlculs. Hem de veure quin % suposa 32 valoracions respecte el total, que són 80.",
       ""
+    ],
+    "errors": [
+      "QUADRA",
+      "PROPORCIO",
+      "PROPORCIO",
+      null
     ]
   },
   {
@@ -637,6 +871,12 @@
       "Has calculat el percentatge només sobre les valoracions dolentes, no sobre el total.",
       "Revisa el càlcul. Primer has de trobar quantes valoracions són i després el percentatge.",
       "No és cert, però quasi ho tens. Segurament has fallat en l'últim pas."
+    ],
+    "errors": [
+      null,
+      "PROPORCIO",
+      "PASSOS",
+      "GAIREBE"
     ]
   },
   {
@@ -653,6 +893,12 @@
       "Tu has fet una mitjana aritmètica, però pensa que has de fer una mitjana ponderada.",
       "",
       "Vas per bon camí, però repassa els càlculs perquè t'has equivocat en algun lloc."
+    ],
+    "errors": [
+      "QUADRA",
+      "FORMULA",
+      null,
+      "GAIREBE"
     ]
   },
   {
@@ -669,6 +915,12 @@
       "No és correcte, perquè si fas girar aquesta figura obtindries un cilindre.",
       "Aquesta figura no genera un cornet, perquè la part de sota no acaba en punta.",
       ""
+    ],
+    "errors": [
+      "ESPAI",
+      "ESPAI",
+      "ESPAI",
+      null
     ]
   },
   {
@@ -685,6 +937,12 @@
       "Fixa't bé en la paraula 'altre' de l'enunciat. Quants altres cornets hi ha que no siguin de xocolata?",
       "",
       "Aquesta frase no és certa, perquè hi ha més cornets de xocolata que cornets de vainilla."
+    ],
+    "errors": [
+      "DADES",
+      "LLEGIR",
+      null,
+      "DADES"
     ]
   },
   {
@@ -701,6 +959,12 @@
       "Aquesta és la probabilitat només per la xocolata. Et falta tenir en compte el sabor nata.",
       "",
       "No és cert. Potser t'has equivocat simplificant la fracció que tenies."
+    ],
+    "errors": [
+      "COMPTAR",
+      "PASSOS",
+      null,
+      "CALCUL"
     ]
   },
   {
@@ -717,6 +981,12 @@
       "",
       "Això seria correcte si fossin 4 cornets de xocolata entre 8 possibles, però... hi ha un cornet de xocolata menys.",
       "Aquesta probabilitat és massa alta. Pensa que menys de la meitat de cornets són de xocolata."
+    ],
+    "errors": [
+      "DADES",
+      null,
+      "DADES",
+      "QUADRA"
     ]
   },
   {
@@ -733,6 +1003,12 @@
       "",
       "Tens un error de càlcul, repassa-ho.",
       "T'has equivocat quan has sumat l'altura amb el diàmetre de la bola, perquè ha de ser amb el radi de la bola."
+    ],
+    "errors": [
+      "FORMULA",
+      null,
+      "CALCUL",
+      "FORMULA"
     ]
   },
   {
@@ -749,6 +1025,12 @@
       "Quan apliques el teorema de Pitàgores, has de fer servir 2 cm, i tu potser has fet servir 4 cm.",
       "Revisa els teus càlculs, i recorda que cal aplicar el teorema de Pitàgores.",
       "No pots sumar directament les longituds. Cal aplicar el teorema de Pitàgores."
+    ],
+    "errors": [
+      null,
+      "FORMULA",
+      "FORMULA",
+      "FORMULA"
     ]
   },
   {
@@ -765,6 +1047,12 @@
       "",
       "El resultat és massa gran. Repassa els teus càlculs.",
       "Aquest volum és massa gran. Repassa quants centímetres cúbics equivalen a 1 litre."
+    ],
+    "errors": [
+      "FORMULA",
+      null,
+      "QUADRA",
+      "UNITATS"
     ]
   },
   {
@@ -781,6 +1069,12 @@
       "",
       "Aquest plec no pot ser, perquè un vèrtex ha d'anar a parar al centre.",
       "Aquest plec és impossible perquè en el dibuix veiem un triangle blau i no veiem un rectangle blau."
+    ],
+    "errors": [
+      "ESPAI",
+      null,
+      "ESPAI",
+      "ESPAI"
     ]
   },
   {
@@ -797,6 +1091,12 @@
       "El triangle blau ocupa la meitat d'un quadradet petit, però tu ho has de comparar amb el quadrat gran.",
       "Gairebé ho tens! T'ha passat una cosa, i és que ho has calculat a l'inrevés. Repassa: t'estan preguntant l'àrea del triangle blau.",
       ""
+    ],
+    "errors": [
+      "LLEGIR",
+      "PROPORCIO",
+      "GAIREBE",
+      null
     ]
   },
   {
@@ -813,6 +1113,12 @@
       "Tens bé la figura de l'esquerra, però no tens bé la figura de la dreta.",
       "La figura de l'esquerra no toca en aquesta posició. Repassa-ho.",
       "La figura de l'esquerra no toca en aquesta posició. Repassa-ho."
+    ],
+    "errors": [
+      null,
+      "ESPAI",
+      "ESPAI",
+      "ESPAI"
     ]
   },
   {
@@ -829,6 +1135,12 @@
       "",
       "El resultat és massa gran, pensa-ho bé.",
       "No és correcte, repassa com comptes les possibilitats."
+    ],
+    "errors": [
+      "COMPTAR",
+      null,
+      "COMPTAR",
+      "COMPTAR"
     ]
   },
   {
@@ -845,6 +1157,12 @@
       "",
       "No és correcte. Potser t'has equivocat fent alguna divisió. Repassa-ho.",
       "Aquest nombre és massa gran. Revisa els teus càlculs."
+    ],
+    "errors": [
+      "QUADRA",
+      null,
+      "CALCUL",
+      "QUADRA"
     ]
   },
   {
@@ -861,6 +1179,12 @@
       "No quadra, perquè per 1 dia pagaria 30 euros.",
       "Aquest gràfic no pot ser, perquè ja comença pagant 20 euros.",
       ""
+    ],
+    "errors": [
+      "DADES",
+      "DADES",
+      "DADES",
+      null
     ]
   },
   {
@@ -877,6 +1201,12 @@
       "Tens algun error en els teus càlculs. Recorda que són dotze mesos.",
       "",
       "El resultat és massa alt. Revisa com has calculat el cost d'un sol mes."
+    ],
+    "errors": [
+      "PASSOS",
+      "DADES",
+      null,
+      "CALCUL"
     ]
   },
   {
@@ -893,6 +1223,12 @@
       "Llegeix bé l'enunciat: et demana la tarifa combinada, no la tarifa diària.",
       "Has comès un error petit. Repassa qui és la lletra X i qui és la lletra Y.",
       ""
+    ],
+    "errors": [
+      "PASSOS",
+      "LLEGIR",
+      "FORMULA",
+      null
     ]
   },
   {
@@ -909,6 +1245,12 @@
       "Si hi vas aquests dies, la combinada surt més a compte que la mensual. Per tant, no pot ser aquesta opció.",
       "",
       "Gairebé ho tens! Tot i que amb 8 dies la tarifa mensual és la que surt a compte, fixa't que el mínim nombre de dies."
+    ],
+    "errors": [
+      "QUADRA",
+      "QUADRA",
+      null,
+      "LLEGIR"
     ]
   },
   {
@@ -925,6 +1267,12 @@
       "No és correcte: és veritat que el valor de 8 és el màxim de l'eix vertical, però al cap de 50 minuts, no ha fet 8 km.",
       "Aquest valor de 40 correspon al desnivell màxim superat. Llegeix bé els gràfics.",
       "Has mirat l'eix horitzontal (el temps), però t'has de fixar en l'eix vertical (la distància)."
+    ],
+    "errors": [
+      null,
+      "DADES",
+      "DADES",
+      "DADES"
     ]
   },
   {
@@ -941,6 +1289,12 @@
       "",
       "No és correcte, perquè aquest és el desnivell màxim, però et demanen el desnivell en el minut 25.",
       "Atenció, tu has escrit el temps total de l'entrenament, però et demana un desnivell."
+    ],
+    "errors": [
+      "DADES",
+      null,
+      "LLEGIR",
+      "LLEGIR"
     ]
   },
   {
@@ -957,6 +1311,12 @@
       "En aquest tram l'inclinació no és la més alta possible.",
       "En aquest tram l'inclinació no és la més alta possible.",
       "En aquest tram l'inclinació no és la més alta possible."
+    ],
+    "errors": [
+      null,
+      "DADES",
+      "DADES",
+      "DADES"
     ]
   },
   {
@@ -973,6 +1333,12 @@
       "Aquest desenvolupament no permet formar un octàedre.",
       "",
       "Aquest desenvolupament no permet formar un octàedre."
+    ],
+    "errors": [
+      "ESPAI",
+      "ESPAI",
+      null,
+      "ESPAI"
     ]
   },
   {
@@ -989,6 +1355,12 @@
       "Aquesta opció no és possible, perquè voldria dir que la figura original té 6 cares.",
       "Opció incorrecta, perquè no veiem el vèrtex superior de l'octàedre.",
       "No és correcte. Fixa't en el vèrtex superior de la figura original."
+    ],
+    "errors": [
+      null,
+      "ESPAI",
+      "ESPAI",
+      "ESPAI"
     ]
   },
   {
@@ -1005,6 +1377,12 @@
       "",
       "Potser has comptat 16 arestes? Recorda que un octàedre regular té exactament 12 arestes.",
       "El resultat és massa gran. En aquest cas, no tenim 20 arestes."
+    ],
+    "errors": [
+      "ESPAI",
+      null,
+      "ESPAI",
+      "ESPAI"
     ]
   },
   {
@@ -1021,6 +1399,12 @@
       "Atenció, potser has pensat 1 cara retallada del total de 3. Però en total, n'hi havia 4.",
       "Has calculat malament el percentatge, repassa-ho.",
       "Gairebé! Ho has calculat a l'inrevés. Et demanen la part blanca i no la part grisa."
+    ],
+    "errors": [
+      null,
+      "DADES",
+      "PROPORCIO",
+      "LLEGIR"
     ]
   },
   {
@@ -1037,6 +1421,12 @@
       "Has comès algun error de càlcul. Revisa amb calma.",
       "",
       "No és correcte. Pista: has de restar 1 menys 7/16. Quant et donarà?"
+    ],
+    "errors": [
+      "COMPTAR",
+      "CALCUL",
+      null,
+      "PASSOS"
     ]
   },
   {
@@ -1053,6 +1443,12 @@
       "Aquesta no és l'opció correcta. Revisa els teus càlculs.",
       "T'has confós, perquè has triat el total de la població mundial.",
       "Error, perquè aquesta xifra correspon als telèfons amb Internet. Torna a llegir la pregunta."
+    ],
+    "errors": [
+      null,
+      null,
+      "DADES",
+      "DADES"
     ]
   },
   {
@@ -1069,6 +1465,12 @@
       "Gairebé ho tens. Recorda que estàs buscant una proporció entre les persones amb Internet i la població total.",
       "Vas per bon camí, però no és la correcta. Tot i tenir el nombre més alt d'usuaris d'Internet, fixa't en quanta població són.",
       ""
+    ],
+    "errors": [
+      "DADES",
+      "PROPORCIO",
+      "PROPORCIO",
+      null
     ]
   },
   {
@@ -1085,6 +1487,12 @@
       "Aquest resultat no és correcte. Assegura't d'haver calculat bé el percentatge de l'Àfrica primer.",
       "",
       "Has obtingut un valor massa alt. Repassa els percentatges i després ja restaràs."
+    ],
+    "errors": [
+      "PROPORCIO",
+      "PROPORCIO",
+      null,
+      "PROPORCIO"
     ]
   },
   {
@@ -1101,6 +1509,12 @@
       "",
       "Això no és cert a tot arreu. Fixa't en les dades.",
       "Aquesta frase és falsa, podem trobar més d'un exemple on no funciona."
+    ],
+    "errors": [
+      "DADES",
+      null,
+      "DADES",
+      "DADES"
     ]
   },
   {
@@ -1117,6 +1531,12 @@
       "No és correcte. Fixa't quantes fitxes necessitem per passar de la figura 3 a la figura 4.",
       "No afegim tantes fitxes de cop. Fixa't quantes fitxes necessitem per passar de la figura 3 a la figura 4.",
       "No afegim tantes fitxes de cop. Fixa't quantes fitxes necessitem per passar de la figura 3 a la figura 4."
+    ],
+    "errors": [
+      null,
+      "PATRO",
+      "PATRO",
+      "PATRO"
     ]
   },
   {
@@ -1133,6 +1553,12 @@
       "Aquest seria el nombre de fitxes per a la figura 8, no per a la figura 9.",
       "És impossible que doni un nombre parell, te n'adones?",
       ""
+    ],
+    "errors": [
+      "QUADRA",
+      "LLEGIR",
+      "QUADRA",
+      null
     ]
   },
   {
@@ -1149,6 +1575,12 @@
       "",
       "Aquesta opció no és correcta, perquè necessita 131 fitxes.",
       "El nombre és massa gran. Repassa els càlculs."
+    ],
+    "errors": [
+      "QUADRA",
+      null,
+      "QUADRA",
+      "QUADRA"
     ]
   },
   {
@@ -1165,6 +1597,12 @@
       "Aquesta expressió no sempre funciona: per la figura 3, sí que funciona; però per la figura 4, no funciona.",
       "No és l'opció correcta, però gairebé ho tens.",
       ""
+    ],
+    "errors": [
+      "PATRO",
+      "PATRO",
+      "GAIREBE",
+      null
     ]
   },
   {
@@ -1181,6 +1619,12 @@
       "",
       "Has calculat un nombre massa gran. Pensa que en la taula apareixen uns nombres que són quadrats perfectes.",
       "Gairebé ho tens. T'has equivocat només en què has calculat per les 9 primeres figures, i et pregunten per les 8 primeres figures."
+    ],
+    "errors": [
+      "PATRO",
+      null,
+      "PATRO",
+      "LLEGIR"
     ]
   },
   {
@@ -1197,6 +1641,12 @@
       "",
       "No és correcte, perquè la gràfica indica que per construir la figura 2 caldrien 10 fitxes, i no és veritat.",
       "Gràfica no correcta. Fixa't, és estrany que les figures 3 i 4 necessiten gairebé les mateixes fitxes."
+    ],
+    "errors": [
+      "DADES",
+      null,
+      "DADES",
+      "DADES"
     ]
   },
   {
@@ -1213,6 +1663,12 @@
       "Revisa els teus càlculs. Has de sumar els resultats d'obtenir un 2, un 4, un 6 i un 8.",
       "Revisa els teus càlculs. Has de sumar els resultats d'obtenir un 2, un 4, un 6 i un 8.",
       ""
+    ],
+    "errors": [
+      "PASSOS",
+      "PASSOS",
+      "PASSOS",
+      null
     ]
   },
   {
@@ -1229,6 +1685,12 @@
       "Has calculat malament el percentatge. Fixa't que tenim 18 llançaments d'un total de 200.",
       "Aquest percentatge és massa alt. Llegeix bé al gràfic quantes vegades hem obtingut el nombre 3.",
       "No és correcte. Per calcular el percentatge, recorda que el total de llançaments és 200."
+    ],
+    "errors": [
+      null,
+      "PROPORCIO",
+      "DADES",
+      "PROPORCIO"
     ]
   },
   {
@@ -1245,6 +1707,12 @@
       "Resposta incorrecta. Pista: el dau que busques és el que té menys resultats possibles, perquè llavors el resultat 2 té menys competidors.",
       "Incorrecte. Pensa una cosa: com més cares tingui un dau, menys probable serà treure un 2.",
       "No és la mateixa probabilitat, ja que depèn del nombre total de cares que té el dau."
+    ],
+    "errors": [
+      null,
+      "FORMULA",
+      "FORMULA",
+      "FORMULA"
     ]
   },
   {
@@ -1261,6 +1729,12 @@
       "No és veritat. Pensa que els llançaments anteriors no canvien res del futur. La probabilitat continua sent la mateixa.",
       "No és correcte. En un dau equilibrat, encara que surti el 6 moltes vegades seguides, això no fa que ara sigui més fàcil treure un 6.",
       ""
+    ],
+    "errors": [
+      "FORMULA",
+      "FORMULA",
+      "FORMULA",
+      null
     ]
   },
   {
@@ -1277,6 +1751,12 @@
       "",
       "No és aquesta l'opció. Recorda que estem buscant el desplegament que no funciona.",
       "Incorrecte. Fixa't que amb aquesta opció les cares sí que tanquen de manera correcta per formar un dau."
+    ],
+    "errors": [
+      "LLEGIR",
+      null,
+      "LLEGIR",
+      "LLEGIR"
     ]
   },
   {
@@ -1293,6 +1773,12 @@
       "Aquestes mides no quadren. Recorda que per obtenir el DIN-A3 cal unir dos fulls DIN-A4 pel costat llarg.",
       "",
       "Error: crec que has calculat el doble de cada longitud, i llavors et surt un full massa gran."
+    ],
+    "errors": [
+      "PROPORCIO",
+      "PROPORCIO",
+      null,
+      "PROPORCIO"
     ]
   },
   {
@@ -1309,6 +1795,12 @@
       "T'has quedat curt. Això seria la quantitat de fulls DIN-A4, però l'enunciat demana fulls DIN-A5. Has de fer un pas més.",
       "",
       "Aquest nombre és massa gran, repassa els teus càlculs."
+    ],
+    "errors": [
+      "QUADRA",
+      "PASSOS",
+      null,
+      "QUADRA"
     ]
   },
   {
@@ -1325,6 +1817,12 @@
       "T'has equivocat, perquè has dit l'àrea d'un DIN-A2, i et demanen la d'un DIN-A3.",
       "Crec que has fet la meitat i per això obtens 0,5 metres quadrats. No és correcte, repassa-ho.",
       "La resposta no pot ser un nombre tan gran. Pensa una cosa: estem passant de DIN-A0 a un DIN-A3."
+    ],
+    "errors": [
+      null,
+      "LLEGIR",
+      "PASSOS",
+      "QUADRA"
     ]
   },
   {
@@ -1341,6 +1839,12 @@
       "",
       "Hi ha un error en els càlculs. Crec que has comptat 15 fotografies en blanc i negre i 25 fotografies en color.",
       "No és correcte. Aquesta seria la resposta si les 40 fotografies fossin en color."
+    ],
+    "errors": [
+      "DADES",
+      null,
+      "DADES",
+      "DADES"
     ]
   },
   {
@@ -1357,6 +1861,12 @@
       "T'has equivocat. Crec que has fet com si el descompte fos del 50%, pot ser?",
       "",
       "No és correcte, perquè aquest és el preu sense descompte."
+    ],
+    "errors": [
+      "LLEGIR",
+      "PROPORCIO",
+      null,
+      "PASSOS"
     ]
   },
   {
@@ -1373,6 +1883,12 @@
       "No és cert, perquè si hagués encarregat 10 fotografies, hauria pagat menys de 4 euros. Repassa-ho.",
       "Tens algun error de càlcul, perquè aquesta opció no és la correcta.",
       ""
+    ],
+    "errors": [
+      "QUADRA",
+      "QUADRA",
+      null,
+      null
     ]
   },
   {
@@ -1389,6 +1905,12 @@
       "No és l'opció correcta, però et dono una pista: has encertat 1 de les 2 equacions.",
       "No és correcte. De totes maneres, has encertat una equació i l'altra equació, no.",
       "Aquesta opció no funciona. Observa bé la primera equació: aquesta resta, no quadra amb l'enunciat."
+    ],
+    "errors": [
+      null,
+      "GAIREBE",
+      "GAIREBE",
+      "FORMULA"
     ]
   },
   {
@@ -1405,6 +1927,12 @@
       "Has obtingut un valor massa petit per a l'alçada. Revisa els càlculs.",
       "",
       "És molt estrany que l'alçada passi de 34 cm a 30 cm, i en canvi l'amplada disminueix molt més, en proporció. Ho entens?"
+    ],
+    "errors": [
+      "PROPORCIO",
+      "QUADRA",
+      null,
+      "PROPORCIO"
     ]
   },
   {
@@ -1412,7 +1940,7 @@
     "any": 2023,
     "nivell": "4eso",
     "dificultat": 2,
-    "sentit": "mesura", 
+    "sentit": "mesura",
     "enunciat": "data/cb4eso2023e8.png",
     "pregunta": "data/cb4eso2023p27.png",
     "indexCorrecte": 2,
@@ -1421,6 +1949,12 @@
       "Sembla que has oblidat afegir algun tros de marc. Observa el dibuix amb calma i torna a calcular.",
       "",
       "Aquesta xifra és massa gran. Revisa els càlculs."
+    ],
+    "errors": [
+      "PASSOS",
+      "PASSOS",
+      null,
+      "QUADRA"
     ]
   },
   {
@@ -1437,6 +1971,12 @@
       "",
       "No és la resposta correcta, però et dono una pista: has encertat un dels dos nombres.",
       "La teva resposta no és correcta, perquè has pensat com si l'error fos de 1 mm, i això no és cert."
+    ],
+    "errors": [
+      "GAIREBE",
+      null,
+      "GAIREBE",
+      "DADES"
     ]
   },
   {
@@ -1453,6 +1993,12 @@
       "Tens un error en el càlcul. Revisa-ho.",
       "",
       "Aquesta quantitat és massa gran. Recorda que les dades són 0,5 mm d'error per peça. Quantes peces hi ha?"
+    ],
+    "errors": [
+      "DADES",
+      null,
+      null,
+      "DADES"
     ]
   },
   {
@@ -1469,6 +2015,12 @@
       "No és la resposta correcta, però et dono una pista: has encertat un dels dos nombres.",
       "",
       "No és la resposta correcta, però et dono una pista: has encertat un dels dos nombres."
+    ],
+    "errors": [
+      "DADES",
+      "GAIREBE",
+      null,
+      "GAIREBE"
     ]
   },
   {
@@ -1485,6 +2037,12 @@
       "No és correcte. Revisa la suma. En total has de sumar 4 nombres.",
       "No és correcte. Revisa la suma. En total has de sumar 4 nombres.",
       "Has sumat el total d'alumnes de cada curs, però et demanen només els que han contestat l'enquesta. Fixa't en les barres de color fosc."
+    ],
+    "errors": [
+      null,
+      "CALCUL",
+      "CALCUL",
+      "DADES"
     ]
   },
   {
@@ -1501,6 +2059,12 @@
       "Aquest gràfic és impossible, perquè la majoria d'alumnes sí que han contestat l'enquesta",
       "Les proporcions d'aquest gràfic no són correctes. Com a pista, gairebé el 80% dels alumnes han contestat.",
       ""
+    ],
+    "errors": [
+      "DADES",
+      "DADES",
+      "PROPORCIO",
+      null
     ]
   },
   {
@@ -1517,6 +2081,12 @@
       "No és correcte. Els alumnes que van en transport públic aquí no compten.",
       "",
       "Error, perquè has sumat el percentatge de cotxe o moto. Torna a llegir la pregunta."
+    ],
+    "errors": [
+      "PASSOS",
+      "DADES",
+      null,
+      "DADES"
     ]
   },
   {
@@ -1533,6 +2103,12 @@
       "",
       "Opció incorrecta. Pista: la carretera entre VilaA i VilaB fa 5,5 km.",
       "Opció no correcta. Pensa que entre VilaA i VilaB hi ha 5,5 km de carretera."
+    ],
+    "errors": [
+      "DADES",
+      null,
+      "DADES",
+      "DADES"
     ]
   },
   {
@@ -1549,6 +2125,12 @@
       "No és correcte. Pista: converteix els 10 minuts a hores.",
       "",
       "Atenció, no has de multiplicar 10 per 10. La velocitat es calcula dividint: distància / temps."
+    ],
+    "errors": [
+      "UNITATS",
+      "UNITATS",
+      null,
+      "OPERACIO"
     ]
   },
   {
@@ -1565,6 +2147,12 @@
       "No és el trajecte més curt. Pensa-ho millor.",
       "No és la millor opció, perquè n'hi ha una amb menys km.",
       "No és l'opció amb menys km, perquè el bus passa 2 vegades per Vilagran, i això allarga el recorregut."
+    ],
+    "errors": [
+      null,
+      null,
+      null,
+      "DADES"
     ]
   },
   {
@@ -1581,6 +2169,12 @@
       "Revisa els teus càlculs, no és aquesta l'opció correcta.",
       "",
       "Tens un error en els 180 minuts, perquè cada viatge dura com a màxim 15 minuts."
+    ],
+    "errors": [
+      "GAIREBE",
+      null,
+      null,
+      "DADES"
     ]
   },
   {
@@ -1597,6 +2191,12 @@
       "Atenció, has comptat 7 dies, però el Lluc no agafa el bus el cap de setmana.",
       "",
       "Error, perquè en el fons has comptat 7 dies, però el Lluc agafa el bus 5 dies a la setmana."
+    ],
+    "errors": [
+      "DADES",
+      "DADES",
+      null,
+      "DADES"
     ]
   },
   {
@@ -1613,6 +2213,12 @@
       "",
       "Has comptat malament els viatges. Recorda que cada dia fa dos viatges, un al matí i un a la tarda.",
       "No és correcte. Recorda que cada dia fa 2 viatges: al matí i a la tarda."
+    ],
+    "errors": [
+      "DADES",
+      null,
+      "COMPTAR",
+      "DADES"
     ]
   },
   {
@@ -1629,6 +2235,12 @@
       "Has triat un camí massa llarg. Hi ha una possibilitat que és més curta.",
       "Aquest camí no és el més curt. Busca el camí més curt possible.",
       "Aquesta distància és massa gran. Hi ha un camí més curt."
+    ],
+    "errors": [
+      null,
+      "QUADRA",
+      null,
+      "QUADRA"
     ]
   },
   {
@@ -1645,6 +2257,12 @@
       "Gairebé ho tens, però un dels moviments no és correcte. Revisa amb calma.",
       "Aquesta opció no és possible, perquè l'últim moviment ha de ser O.",
       ""
+    ],
+    "errors": [
+      "ESPAI",
+      "GAIREBE",
+      "ESPAI",
+      null
     ]
   },
   {
@@ -1661,6 +2279,12 @@
       "La tanca mesura més metres dels que has escollit aquí. Revisa bé la forma del parc.",
       "Gairebé ho tens, però et falten alguns trams. Potser t'estàs oblidant algunes cantonades.",
       ""
+    ],
+    "errors": [
+      "PASSOS",
+      "QUADRA",
+      "PASSOS",
+      null
     ]
   },
   {
@@ -1677,6 +2301,12 @@
       "Aquesta divisió sí que dona 2 parts iguals. Recorda que estem buscant una opció que NO dona 2 parts iguals.",
       "",
       "Aquesta divisió sí que dona 2 parts iguals. Recorda que estem buscant una opció que NO dona 2 parts iguals."
+    ],
+    "errors": [
+      "LLEGIR",
+      "LLEGIR",
+      null,
+      "LLEGIR"
     ]
   },
   {
@@ -1693,6 +2323,12 @@
       "",
       "No és correcte. Revisa els teus càlculs.",
       "No és correcte. Revisa els teus càlculs."
+    ],
+    "errors": [
+      null,
+      null,
+      null,
+      null
     ]
   },
   {
@@ -1709,6 +2345,12 @@
       "",
       "Revisa els càlculs. Potser t'has equivocat quan has restat.",
       "No és correcte. Has fet com si només comprés 1 sol bitllet de 2 euros."
+    ],
+    "errors": [
+      "LLEGIR",
+      null,
+      "CALCUL",
+      "PASSOS"
     ]
   },
   {
@@ -1725,6 +2367,12 @@
       "T'has equivocat, repassa els càlculs.",
       "",
       "Vigila, perquè has restat 0,25 euros directament del preu. Pista: l'estalvi és el 25% de 2 euros."
+    ],
+    "errors": [
+      "DADES",
+      null,
+      null,
+      "PROPORCIO"
     ]
   },
   {
@@ -1741,6 +2389,12 @@
       "No és correcte. Has comptat només els vots del projecte B.",
       "Aquesta xifra no és correcta. Potser t'has confós i has comptat els alumnes de 2n, en lloc dels alumnes de 1r.",
       ""
+    ],
+    "errors": [
+      "PASSOS",
+      "PASSOS",
+      "DADES",
+      null
     ]
   },
   {
@@ -1757,6 +2411,12 @@
       "",
       "No és correcte: em sembla que has posat els vots del projecte B. Torna a llegir la pregunta.",
       "Opció incorrecta. Revisa els teus càlculs."
+    ],
+    "errors": [
+      "PROPORCIO",
+      null,
+      "DADES",
+      null
     ]
   },
   {
@@ -1773,6 +2433,12 @@
       "No és correcte. Revisa els teus càlculs.",
       "",
       "Has comès un error de lectura, perquè aquesta opció correspon al projecte A, no el projecte B. Torna a llegir la pregunta."
+    ],
+    "errors": [
+      "PROPORCIO",
+      null,
+      null,
+      "DADES"
     ]
   },
   {
@@ -1789,6 +2455,12 @@
       "No és correcte, perquè els percentatges que veiem a 4t d'ESO ens diuen que ha de ser 1 de cada 4.",
       "Gairebé ho tens, però t'has confós de projecte: és el projecte B.",
       ""
+    ],
+    "errors": [
+      "PROPORCIO",
+      "PROPORCIO",
+      "DADES",
+      null
     ]
   },
   {
@@ -1805,6 +2477,12 @@
       "",
       "Aquesta superfície és massa gran. Recorda que l'espai no és un rectangle complet.",
       "T'has equivocat perquè 80 metres quadrats és tot el rectangle sencer."
+    ],
+    "errors": [
+      "CALCUL",
+      null,
+      "QUADRA",
+      "PASSOS"
     ]
   },
   {
@@ -1821,6 +2499,12 @@
       "Incorrecte. Et dono 2 pistes: la part inferior no té color verd. I has d'aplicar el teorema de Pitàgores.",
       "Incorrecte. Et dono 2 pistes: la part inferior no té color verd. I has d'aplicar el teorema de Pitàgores.",
       "Incorrecte. Et dono 2 pistes: la part inferior no té color verd. I has d'aplicar el teorema de Pitàgores."
+    ],
+    "errors": [
+      null,
+      "FORMULA",
+      "FORMULA",
+      "FORMULA"
     ]
   },
   {
@@ -1837,6 +2521,12 @@
       "No és correcte. La puntuació pot ser més alta, pensa per què.",
       "",
       "T'has equivocat en els càlculs, perquè és impossible treure una puntuació tan alta."
+    ],
+    "errors": [
+      "DADES",
+      "QUADRA",
+      null,
+      "QUADRA"
     ]
   },
   {
@@ -1853,6 +2543,12 @@
       "No és correcte. Revisa bé les combinacions.",
       "Has comptat massa combinacions. Revisa.",
       "Hi ha massa combinacions. Repassa quins valors es poden obtenir amb cada dard."
+    ],
+    "errors": [
+      null,
+      "COMPTAR",
+      "COMPTAR",
+      "COMPTAR"
     ]
   },
   {
@@ -1869,6 +2565,12 @@
       "El percentatge no és correcte. Revisa quantes partides ha guanyat en Leo, de les 5 partides que s'han jugat.",
       "",
       "Atenció, això no és possible, perquè el 50% és la meitat, i tenim 5 partides."
+    ],
+    "errors": [
+      "DADES",
+      "PROPORCIO",
+      null,
+      "QUADRA"
     ]
   },
   {
@@ -1885,6 +2587,12 @@
       "No és correcte. Revisa la suma total de punts del Nil.",
       "Revisa els càlculs. Pensa que la mitjana pot ser un nombre decimal.",
       ""
+    ],
+    "errors": [
+      "LLEGIR",
+      "CALCUL",
+      "CALCUL",
+      null
     ]
   },
   {
@@ -1901,6 +2609,12 @@
       "No és correcte. Revisa la direcció del robot després de cada gir i compta bé les caselles.",
       "Hi ha un error en el recorregut. Recorda que girar a la dreta vol dir girar en sentit horari.",
       ""
+    ],
+    "errors": [
+      "ESPAI",
+      "ESPAI",
+      "ESPAI",
+      null
     ]
   },
   {
@@ -1917,6 +2631,12 @@
       "No és correcte. Crec que has repetit 3 vegades, i has de repetir 4 vegades.",
       "No és correcte. Revisa els passos.",
       "No és correcte. Crec que has repetit 2 vegades, i has de repetir 4 vegades."
+    ],
+    "errors": [
+      null,
+      "COMPTAR",
+      null,
+      "COMPTAR"
     ]
   },
   {
@@ -1933,6 +2653,12 @@
       "No és correcte. Recorda que cada gir consumeix 2 UC i no 1 UC.",
       "No és correcte, revisa el nombre de caselles i de girs del recorregut.",
       ""
+    ],
+    "errors": [
+      "PASSOS",
+      "DADES",
+      "COMPTAR",
+      null
     ]
   },
   {
@@ -1949,6 +2675,12 @@
       "Error: has intercanviat els coeficients. Gairebé ho tens.",
       "",
       "No és correcte. Cada casella consumeix 1 UC, no 2 UC. Revisa."
+    ],
+    "errors": [
+      "DADES",
+      "GAIREBE",
+      null,
+      "DADES"
     ]
   },
   {
@@ -1965,6 +2697,12 @@
       "No és correcte. Revisa el gràfic i busca en quin segon el robot s'atura.",
       "No és correcte. Revisa el gràfic i busca en quin segon el robot s'atura.",
       "Potser has confós el valor de l'eix horitzontal amb el de l'eix vertical. Fixa't en el temps."
+    ],
+    "errors": [
+      null,
+      "DADES",
+      "DADES",
+      "DADES"
     ]
   },
   {
@@ -1981,6 +2719,12 @@
       "",
       "Has comptat massa girs. Recorda que un gir consumeix 2 UC en un segon. Revisa.",
       "Has comptat massa girs. Recorda que un gir consumeix 2 UC en un segon. Revisa."
+    ],
+    "errors": [
+      "COMPTAR",
+      null,
+      "COMPTAR",
+      "COMPTAR"
     ]
   },
   {
@@ -1997,6 +2741,12 @@
       "No és correcte. No quadra amb el gràfic.",
       "Aquest recorregut no correspon al gràfic. Revisa els passos i els girs.",
       ""
+    ],
+    "errors": [
+      "DADES",
+      "DADES",
+      "DADES",
+      null
     ]
   },
   {
@@ -2013,6 +2763,12 @@
       "Aquest model no és correcte, perquè no surt un cub.",
       "No és correcte. Imagina't plegant el cartró: li falta la tapa.",
       "Aquest model no funciona perquè té massa cares."
+    ],
+    "errors": [
+      null,
+      "ESPAI",
+      "ESPAI",
+      "ESPAI"
     ]
   },
   {
@@ -2029,6 +2785,12 @@
       "Aquesta resposta no és correcta. Pensa bé quantes capses petites hi caben.",
       "",
       "No és correcte. Imagina't com quedarien les capses petites dins de la capsa gran: no hi caben 10 capses petites."
+    ],
+    "errors": [
+      "ESPAI",
+      "ESPAI",
+      null,
+      "ESPAI"
     ]
   },
   {
@@ -2045,6 +2807,12 @@
       "",
       "Aquesta probabilitat seria correcta si només hi hagués una capsa amb joguina, però n'hi ha dues.",
       "Crec que t'has confós, perquè aquesta és la probabilitat d'agafar una capsa sense joguina."
+    ],
+    "errors": [
+      "DADES",
+      null,
+      "DADES",
+      "LLEGIR"
     ]
   },
   {
@@ -2061,6 +2829,12 @@
       "Et falten cares per comptar. Revisa la construcció des de tots els costats: davant, darrere, dalt i els laterals.",
       "Gairebé ho tens, però et deixes algunes cares. Mira també la part de darrere i la part de sota.",
       ""
+    ],
+    "errors": [
+      "ESPAI",
+      "ESPAI",
+      "ESPAI",
+      null
     ]
   },
   {
@@ -2077,6 +2851,12 @@
       "Gairebé ho tens, però et falta comptar alguna capsa oculta.",
       "",
       "Has obtingut massa capses. Revisa amb calma."
+    ],
+    "errors": [
+      "ESPAI",
+      "ESPAI",
+      null,
+      "ESPAI"
     ]
   },
   {
@@ -2093,6 +2873,12 @@
       "T'has confós: no et demanen el perímetre. Et demanen l'àrea.",
       "Resposta incorrecta. Llegeix bé la pregunta.",
       ""
+    ],
+    "errors": [
+      "CALCUL",
+      "FORMULA",
+      "LLEGIR",
+      null
     ]
   },
   {
@@ -2109,6 +2895,12 @@
       "No és correcte. Fixa't que el quadrat negre ocupa més àrea que 1/4.",
       "No és correcte. Pista: imagina el quadrat negre que està dividit en 4 triangles.",
       ""
+    ],
+    "errors": [
+      "QUADRA",
+      "QUADRA",
+      "ESPAI",
+      null
     ]
   },
   {
@@ -2125,6 +2917,12 @@
       "",
       "Resposta incorrecta. Potser t'has equivocat en els càlculs. Pista: si has aplicat Pitàgores, vas per bon camí.",
       "No és possible que el costat del quadrat negre mesuri el mateix que el costat de la rajola."
+    ],
+    "errors": [
+      "FORMULA",
+      null,
+      "CALCUL",
+      "QUADRA"
     ]
   },
   {
@@ -2141,6 +2939,12 @@
       "Atenció, un gir de 90 graus faria que el costat horitzontal passi a ser vertical. I això no passa, fixa-t'hi.",
       "",
       "Opció incorrecta, perquè un gir de 180 graus seria com fer mitja volta."
+    ],
+    "errors": [
+      "ESPAI",
+      "ESPAI",
+      null,
+      "ESPAI"
     ]
   },
   {
@@ -2157,6 +2961,12 @@
       "Aquesta probabilitat és massa petita.",
       "",
       "Atenció: una probabilitat = 1 voldria dir que en Pol i la Lídia segur que coincideixen, però això no ho sabem."
+    ],
+    "errors": [
+      "QUADRA",
+      "QUADRA",
+      null,
+      "FORMULA"
     ]
   },
   {
@@ -2173,6 +2983,12 @@
       "No és cert, perquè si augmentes un 50%, passes de 3 cm a 4,5 cm.",
       "No és correcte. Revisa els càlculs.",
       ""
+    ],
+    "errors": [
+      "LLEGIR",
+      "PROPORCIO",
+      null,
+      null
     ]
   },
   {
@@ -2189,6 +3005,12 @@
       "Revisa els teus càlculs i recorda que cal fer servir la mesura del radi del got.",
       "Aquesta opció no és correcta. Revisa la fórmula per trobar el volum del cilindre.",
       ""
+    ],
+    "errors": [
+      "FORMULA",
+      "FORMULA",
+      "FORMULA",
+      null
     ]
   },
   {
@@ -2205,6 +3027,12 @@
       "No és correcte. Revisa els càlculs.",
       "",
       "No és correcte. Revisa els càlculs."
+    ],
+    "errors": [
+      "PROPORCIO",
+      null,
+      null,
+      null
     ]
   },
   {
@@ -2221,6 +3049,12 @@
       "Opció incorrecta, perquè la suma dels percentatges d'imatges i aplicacions no arriba ni al 26%.",
       "Gairebé ho tens! Fixa't: àudios i sistema operatiu sumen entre 31% i 32%, i un terç és, arrodonint, el 33,33%.",
       ""
+    ],
+    "errors": [
+      "QUADRA",
+      "QUADRA",
+      "GAIREBE",
+      null
     ]
   },
   {
@@ -2237,6 +3071,12 @@
       "No és correcte. Revisa els teus càlculs.",
       "",
       "Revisa els càlculs. El 19,1% de 32 GB no és 19,1 GB."
+    ],
+    "errors": [
+      "PROPORCIO",
+      null,
+      null,
+      "PROPORCIO"
     ]
   },
   {
@@ -2253,6 +3093,12 @@
       "",
       "Revisa els càlculs. Primer has de saber quants MB ocupen totes les imatges, i després dividir entre 1030.",
       "Tu has llegit 10,3% i directament has escrit 10,3 MB. Això no és correcte, perquè has d'aplicar un percentatge primer."
+    ],
+    "errors": [
+      null,
+      null,
+      "PASSOS",
+      "PROPORCIO"
     ]
   },
   {
@@ -2269,6 +3115,12 @@
       "",
       "Gairebé ho tens. Jo crec que t'has confós, perquè has dit la probabilitat de treure una peça blanca.",
       "Tens un error de concepte. Els casos possibles són 75 i els casos favorables són 25."
+    ],
+    "errors": [
+      "DADES",
+      null,
+      "LLEGIR",
+      "FORMULA"
     ]
   },
   {
@@ -2285,6 +3137,12 @@
       "No és correcte. Et dono una pista: pensa en nombres que siguin quadrats perfectes.",
       "No és correcte. Et dono una pista: pensa en nombres que siguin quadrats perfectes.",
       "Gairebé ho tens! Has escollit l'opció com si et preguntessin el pis 6è. Però et pregunten el pis 5è."
+    ],
+    "errors": [
+      null,
+      "PATRO",
+      "PATRO",
+      "LLEGIR"
     ]
   },
   {
@@ -2301,6 +3159,12 @@
       "Aquesta construcció sí que es pot obtenir traient peces. Recorda que busquem la que no podem obtenir.",
       "Aquesta construcció sí que es pot obtenir traient peces. Recorda que busquem la que no podem obtenir.",
       "Aquesta construcció sí que es pot obtenir traient peces. Recorda que busquem la que no podem obtenir."
+    ],
+    "errors": [
+      null,
+      "LLEGIR",
+      "LLEGIR",
+      "LLEGIR"
     ]
   },
   {
@@ -2317,6 +3181,12 @@
       "No és correcte. Revisa la suma dels 5 nombres.",
       "",
       "Atenció, 50 és el total de llançaments, no el total de cistelles."
+    ],
+    "errors": [
+      "DADES",
+      "CALCUL",
+      null,
+      "DADES"
     ]
   },
   {
@@ -2333,6 +3203,12 @@
       "És impossible que sigui el 50% de les tandes, perquè hi ha un nombre imparell de tandes.",
       "Has comptat massa tandes. Quantes tandes amb 8 o més cistelles hi ha a la taula?",
       "Resposta incorrecta. Revisa els teus càlculs."
+    ],
+    "errors": [
+      null,
+      "QUADRA",
+      "COMPTAR",
+      null
     ]
   },
   {
@@ -2349,6 +3225,12 @@
       "Gairebé ho tens, perquè has trobat una diferència molt gran, però encara pot ser-ho més.",
       "Resposta incorrecta. Revisa amb cura tot el gràfic.",
       ""
+    ],
+    "errors": [
+      "DADES",
+      "GAIREBE",
+      "DADES",
+      null
     ]
   },
   {
@@ -2365,6 +3247,12 @@
       "Gairebé ho tens, però pensa quina diferència hi ha entre 1 i -3.",
       "Resposta incorrecta. Pensa que l'equip A perd avantatge durant aquest minut.",
       ""
+    ],
+    "errors": [
+      "DADES",
+      "CALCUL",
+      "DADES",
+      null
     ]
   },
   {
@@ -2381,6 +3269,12 @@
       "No és correcte, revisa els teus càlculs.",
       "Aquesta opció és impossible, perquè l'equip A va guanyant al minut 20.",
       "Aquesta opció és impossible, perquè l'equip A va guanyant al minut 20."
+    ],
+    "errors": [
+      null,
+      null,
+      "QUADRA",
+      "QUADRA"
     ]
   },
   {
@@ -2397,6 +3291,12 @@
       "",
       "No és l'opció, però gairebé ho has trobat. Repassa-ho bé.",
       "Fer una multiplicació aquí no té massa sentit."
+    ],
+    "errors": [
+      "QUADRA",
+      null,
+      "GAIREBE",
+      "OPERACIO"
     ]
   },
   {
@@ -2413,6 +3313,12 @@
       "La primera equació és correcta, però la segona equació no és vàlida.",
       "La segona equació és correcta, però la primera equació no és vàlida.",
       "Opció incorrecta. Hi ha uns nombres negatius que no encaixen en aquesta situació."
+    ],
+    "errors": [
+      null,
+      "FORMULA",
+      "FORMULA",
+      "QUADRA"
     ]
   },
   {
@@ -2429,6 +3335,12 @@
       "No és correcte. Revisa els càlculs.",
       "Atenció, pensa que en 1 minut no es perden 60 vegades els 0,2 litres, sinó 20 vegades.",
       "No es poden substituir directament els 60 segons i posar-ho als litres. Pensa quin càlcul faràs."
+    ],
+    "errors": [
+      null,
+      null,
+      "UNITATS",
+      "UNITATS"
     ]
   },
   {
@@ -2445,6 +3357,12 @@
       "No es poden escriure directament els 10 litres com un percentatge. Has de fer càlculs, saps quins són?",
       "",
       "Gairebé ho tens! Jo crec que has comparat 3 amb 7, però el que has de comparar és 3 amb 10."
+    ],
+    "errors": [
+      "LLEGIR",
+      "PROPORCIO",
+      null,
+      "PROPORCIO"
     ]
   },
   {
@@ -2461,6 +3379,12 @@
       "",
       "Revisa els càlculs. Pista: en 24 hores hi ha 86.400 segons.",
       "Gairebé ho tens! Tu has fet com si cada gota fos 1 ml, però no és així. Recorda que 4 gotes fan 1 ml."
+    ],
+    "errors": [
+      null,
+      null,
+      "UNITATS",
+      "UNITATS"
     ]
   },
   {
@@ -2477,6 +3401,12 @@
       "",
       "No és correcte. Pista: cada dia són 24h que sumem.",
       "No és correcte, és abans."
+    ],
+    "errors": [
+      "DADES",
+      null,
+      "UNITATS",
+      "DADES"
     ]
   },
   {
@@ -2493,6 +3423,12 @@
       "",
       "Revisa els càlculs. Passaran menys dies.",
       "Revisa els càlculs. Pista: l'aigua del got interior comença a 50 mm i baixa 5 mm cada dia."
+    ],
+    "errors": [
+      "DADES",
+      null,
+      "QUADRA",
+      "DADES"
     ]
   },
   {
@@ -2509,6 +3445,12 @@
       "Aquesta fórmula no té sentit, perquè sembla que cada dia baixi 50 mm, i això no és cert.",
       "Fórmula no correcta. Pensa que l'altura inicial de 50 mm és constant i no depèn de D.",
       "Amb aquesta fórmula, al cap d'un dia l'alçada seria negativa, i això no té sentit."
+    ],
+    "errors": [
+      null,
+      "FORMULA",
+      "FORMULA",
+      "QUADRA"
     ]
   },
   {
@@ -2525,6 +3467,12 @@
       "No és correcte, perquè amb 72 kg cadascuna, 8 persones pesarien només 576 kg.",
       "",
       "El resultat és massa alt: amb 78 kg cadascuna, 8 persones passarien dels 600 kg que admet l'ascensor."
+    ],
+    "errors": [
+      "OPERACIO",
+      "QUADRA",
+      null,
+      "QUADRA"
     ]
   },
   {
@@ -2541,6 +3489,12 @@
       "Has fet servir un pes mitjà de 70 kg. Torna a la pregunta anterior i mira quin has obtingut.",
       "",
       "El resultat és massa gran: aquesta xifra surt de comptar 90 kg per persona. Pensa-ho millor."
+    ],
+    "errors": [
+      "QUADRA",
+      "DADES",
+      null,
+      "QUADRA"
     ]
   },
   {
@@ -2557,6 +3511,12 @@
       "Hi ha un error: sembla que has oblidat l'amplada d'1,6 m.",
       "No és correcte, perquè has multiplicat només 1,6 per 2,5.",
       ""
+    ],
+    "errors": [
+      "OPERACIO",
+      "PASSOS",
+      "PASSOS",
+      null
     ]
   },
   {
@@ -2573,6 +3533,12 @@
       "Gairebé ho tens. A l'altura hi caben més caixes de les que has comptat.",
       "",
       "Has volgut apilar una caixa de més a l'altura, però no hi cap aquesta caixa extra."
+    ],
+    "errors": [
+      "PASSOS",
+      "GAIREBE",
+      null,
+      "ESPAI"
     ]
   },
   {
@@ -2589,6 +3555,12 @@
       "Gairebé. Has comptat 8 trams, però de la planta baixa a la 7a només n'hi ha 7.",
       "Has intercanviat els dos temps. Els 10 segons són el que dura cada aturada; pujar un tram només en costa 5.",
       "El total és massa alt: aquesta xifra surt de comptar quatre aturades, i només n'hi ha dues."
+    ],
+    "errors": [
+      null,
+      "COMPTAR",
+      "DADES",
+      "COMPTAR"
     ]
   },
   {
@@ -2605,6 +3577,12 @@
       "No és correcte perquè aquí sembla que s'atura a la 1a i la 2a planta.",
       "En aquesta gràfica l'ascensor només s'atura una vegada, i l'enunciat en diu dues.",
       ""
+    ],
+    "errors": [
+      "DADES",
+      "DADES",
+      "DADES",
+      null
     ]
   },
   {
@@ -2621,6 +3599,12 @@
       "No és correcte. Aplica el teorema de Pitàgores per trobar la hipotenusa d'un triangle rectangle de catets 3 i 5.",
       "Aquest valor és massa gran. La hipotenusa no pot mesurar tant si els catets fan 3 m i 5 m.",
       "Has sumat els dos catets, i això és impossible, perquè en un triangle rectangle la hipotenusa sempre és més petita que la suma dels catets."
+    ],
+    "errors": [
+      null,
+      "FORMULA",
+      "QUADRA",
+      "FORMULA"
     ]
   },
   {
@@ -2637,6 +3621,12 @@
       "",
       "Segurament has fet (15:3)·5, com si fos una regla de tres. Has de canviar d'estratègia: has de repartir esglaons, i això és una divisió. Et recomano que facis abans 15 cm = 0,15 m.",
       "Sembla que has dividit els 5 m de llargada entre 15 cm. El que compta és l'altura del tram: 3 m."
+    ],
+    "errors": [
+      "OPERACIO",
+      null,
+      "OPERACIO",
+      "DADES"
     ]
   },
   {
@@ -2653,6 +3643,12 @@
       "No quadra. Una volta sencera són 360º i s'han de repartir entre les 16 pestanyes.",
       "Has dividit 360 entre 8, i t'ha donat un angle massa gran. Revisa l'esquema i compta bé quantes pestanyes té l'anella.",
       "Aquest angle seria un angle recte, però en l'esquema ja es veu que és un angle més petit."
+    ],
+    "errors": [
+      null,
+      "DADES",
+      "COMPTAR",
+      "QUADRA"
     ]
   },
   {
@@ -2669,6 +3665,12 @@
       "No has comptat totes les possibilitats. A part de les dues diagonals, pensa també en la possibilitat que hi hagi eixos horitzontals o verticals.",
       "Gairebé ho tens, pensa-hi més!",
       ""
+    ],
+    "errors": [
+      "ESPAI",
+      "ESPAI",
+      "GAIREBE",
+      null
     ]
   },
   {
@@ -2685,6 +3687,12 @@
       "",
       "N'has comptat massa. Compta els segments que s'afegeixen cada vegada que hi entren dues anelles.",
       "Surten massa segments. Segurament has fet créixer la successió més de pressa del que mostren les figures."
+    ],
+    "errors": [
+      "PATRO",
+      null,
+      "PATRO",
+      "PATRO"
     ]
   },
   {
@@ -2701,6 +3709,12 @@
       "Gairebé, però amb 12 anelles encara en falten. Segueix afegint anelles de dues en dues.",
       "",
       "Te n'has passat: amb 16 anelles la figura ja tindria més de 19 segments."
+    ],
+    "errors": [
+      "PATRO",
+      "PATRO",
+      null,
+      "PATRO"
     ]
   },
   {
@@ -2717,6 +3731,12 @@
       "No és correcta: comprova-la amb la figura de 4 anelles: veuràs a la gràfica que els segments no es corresponen amb les anelles.",
       "Gairebé, però prova-la amb la figura de 2 anelles i ja no quadra. Repassa-la terme a terme.",
       ""
+    ],
+    "errors": [
+      "PATRO",
+      "PATRO",
+      "GAIREBE",
+      null
     ]
   },
   {
@@ -2733,6 +3753,12 @@
       "Aquest és el percentatge de la primera setmana. Fixa't bé en quina barra és la segona.",
       "Aquest correspon a la tercera setmana. Torna a la gràfica i situa-hi la segona.",
       "Això voldria dir que l'hotel va estar gairebé ple, i la segona setmana és la que menys places va ocupar."
+    ],
+    "errors": [
+      null,
+      "DADES",
+      "DADES",
+      "DADES"
     ]
   },
   {
@@ -2749,6 +3775,12 @@
       "Hi ha un error pel camí. Repassa la suma de les quatre setmanes abans de dividir.",
       "",
       "Aquesta és la suma de les quatre setmanes. Si vols obtenir la mitjana, encara et falta un pas per a fer."
+    ],
+    "errors": [
+      "PASSOS",
+      "CALCUL",
+      null,
+      "PASSOS"
     ]
   },
   {
@@ -2765,6 +3797,12 @@
       "En aquest diagrama les quatre setmanes ocupen un quart cadascuna, però sabem que els ingressos no van ser iguals.",
       "Aquí la primera setmana s'emporta la meitat del total, i això no és així.",
       "Gairebé ho tens, però aquest diagrama dona menys a la tercera setmana que a la segona i això no és així."
+    ],
+    "errors": [
+      null,
+      "DADES",
+      "DADES",
+      "DADES"
     ]
   },
   {
@@ -2781,6 +3819,12 @@
       "Gairebé, però n'hi ha una de més cara. Torna a fer la comparació.",
       "",
       "És la que més va ingressar, però també la que més places va ocupar. No és la nostra opció."
+    ],
+    "errors": [
+      "PROPORCIO",
+      "GAIREBE",
+      null,
+      "PROPORCIO"
     ]
   },
   {
@@ -2797,6 +3841,12 @@
       "",
       "Has canviat de lloc les 29 habitacions i les 40 places. Torna a llegir bé les dades.",
       "No és correcte. Pensa què és el que suma 29: són les habitacions o són les places?"
+    ],
+    "errors": [
+      "FORMULA",
+      null,
+      "DADES",
+      "DADES"
     ]
   },
   {
@@ -2813,6 +3863,12 @@
       "Aquest és el resultat per a 15 ºC, per tant no és la resposta.",
       "Sembla que has canviat la fracció 9/5 per un altre nombre, potser 5. Torna a mirar bé la fórmula.",
       "Has multiplicat per 9, en lloc de multiplicar per 9/5."
+    ],
+    "errors": [
+      null,
+      "DADES",
+      "FORMULA",
+      "FORMULA"
     ]
   },
   {
@@ -2829,6 +3885,12 @@
       "T'has aturat a mig camí: has restat els 32 i encara queden operacions per fer.",
       "Hi ha un error pel camí. Revisa la fórmula amb calma.",
       "Has aplicat la fracció a l'inrevés. Pensa que 95 ºF han de donar bastants menys graus Celsius."
+    ],
+    "errors": [
+      null,
+      "PASSOS",
+      null,
+      "FORMULA"
     ]
   },
   {
@@ -2845,6 +3907,12 @@
       "Aquesta és la fórmula de l'enunciat amb les lletres canviades de nom, i per aïllar la C has de fer una altra cosa.",
       "Gairebé, però no has operat bé amb la fracció. Torna a aïllar la C, pas a pas.",
       ""
+    ],
+    "errors": [
+      "FORMULA",
+      "FORMULA",
+      "GAIREBE",
+      null
     ]
   },
   {
@@ -2861,6 +3929,12 @@
       "Falten parelles. Et recomano que facis la llista ordenada, color per color, i no te'n deixaràs cap.",
       "",
       "Aquest és el nombre de parelles si es pogués repetir color, i la Xènia ha dit que no en vol repetir."
+    ],
+    "errors": [
+      "COMPTAR",
+      "COMPTAR",
+      null,
+      "LLEGIR"
     ]
   },
   {
@@ -2877,6 +3951,12 @@
       "",
       "No quadra. És cert que totes les combinacions possibles són 25, però pensa que són 5 casos els que són favorables.",
       "Aquest valor és massa alt. Els casos en què els dos botons coincideixen són bastants menys."
+    ],
+    "errors": [
+      "COMPTAR",
+      null,
+      "COMPTAR",
+      "QUADRA"
     ]
   },
   {
@@ -2893,6 +3973,12 @@
       "",
       "Amb 4 mm no sobra res de material, perquè 1.000 mm és divisible entre 4 mm.",
       "Amb 5 mm no sobra res de material, perquè 1.000 mm és divisible entre 5 mm."
+    ],
+    "errors": [
+      "QUADRA",
+      null,
+      "QUADRA",
+      "QUADRA"
     ]
   },
   {
@@ -2909,6 +3995,12 @@
       "",
       "El resultat és massa gran. Troba primer quant pesa un disc sol i després pensa què has de dividir.",
       "Aquest nombre és desmesurat. Potser has multiplicat en algun pas on tocava dividir."
+    ],
+    "errors": [
+      "UNITATS",
+      null,
+      "PASSOS",
+      "OPERACIO"
     ]
   },
   {
@@ -2925,6 +4017,12 @@
       "No quadra. Suma tots els trossos que travessen el botó d'esquerra a dreta i veuràs que no encaixa.",
       "Gairebé, però encara et falta un pas: el botó té dos forats, no un. Tu has fet els càlculs pensant en un sol forat, segurament.",
       "Has restat 25 - 8 - 4. Però... fixa't que el botó és simètric i que els forats són dos."
+    ],
+    "errors": [
+      null,
+      "QUADRA",
+      "PASSOS",
+      "PASSOS"
     ]
   },
   {
@@ -2941,6 +4039,12 @@
       "Sembla que has agafat la fila del tint groc. Torna a la taula i busca el vermell.",
       "Hi ha un error en les operacions. Revisa quants grams per litre porta el tint vermell.",
       ""
+    ],
+    "errors": [
+      "DADES",
+      "DADES",
+      "DADES",
+      null
     ]
   },
   {
@@ -2957,6 +4061,12 @@
       "No és correcte. Suma primer els grams de tota la mescla i després mira quina correspon al tint beix.",
       "",
       "Aquesta és la part que representa un altre tint. Localitza el tint beix a la taula."
+    ],
+    "errors": [
+      "DADES",
+      "PASSOS",
+      null,
+      "DADES"
     ]
   },
   {
@@ -2973,6 +4083,12 @@
       "No hi arriba. El tint que sobra és el beix: calcula quanta aigua demanen aquests 60 g.",
       "Gairebé. Compara l'aigua que demanen els 60 g de beix amb el litre que ja hi ha a la mescla.",
       ""
+    ],
+    "errors": [
+      "DADES",
+      "PASSOS",
+      "GAIREBE",
+      null
     ]
   },
   {
@@ -2989,6 +4105,12 @@
       "No és el més freqüent. Suma la columna sencera i compara-la amb les altres dues.",
       "No és correcte, perquè aquest defecte és, precisament, el menys freqüent.",
       "No és cert: suma cada columna sencera i veuràs que els tres totals obtinguts són diferents."
+    ],
+    "errors": [
+      null,
+      "PASSOS",
+      "DADES",
+      "PASSOS"
     ]
   },
   {
@@ -3005,6 +4127,12 @@
       "",
       "Al lot 3 hi ha 12 trencats, però respecte un lot més gran. Has d'estudiar les proporcions, i per fer-ho hauràs de dividir, en cada lot, el nombre de trencats entre el total.",
       "No és correcte. Has de calcular la proporció en els quatre casos i compara-les."
+    ],
+    "errors": [
+      "PROPORCIO",
+      null,
+      "PROPORCIO",
+      "PROPORCIO"
     ]
   },
   {
@@ -3021,6 +4149,12 @@
       "",
       "Surt una probabilitat massa alta. Revisa-ho.",
       "Has col·locat malament la coma. Repassa la divisió amb calma."
+    ],
+    "errors": [
+      "DADES",
+      null,
+      "QUADRA",
+      "CALCUL"
     ]
   },
   {
@@ -3037,6 +4171,12 @@
       "Comprova-ho: amb 1,5 € de paper, el llibre en valdria 21,5 i entre tots dos farien 23 €, no 24.",
       "",
       "Te n'has passat. Amb 2,5 € de paper, el llibre en valdria 22,5 i entre tots dos arribarien a 25 €."
+    ],
+    "errors": [
+      "QUADRA",
+      "QUADRA",
+      null,
+      "QUADRA"
     ]
   },
   {
@@ -3053,6 +4193,12 @@
       "Has sumat els 2 cm que han de sobrar als dos costats de 16 cm, però t'has deixat el gruix, que hi surt dues vegades.",
       "Gairebé ho tens! La volta al llibre està ben feta, però l'enunciat encara demana una cosa més.",
       ""
+    ],
+    "errors": [
+      "PASSOS",
+      "PASSOS",
+      "GAIREBE",
+      null
     ]
   },
   {
@@ -3069,6 +4215,12 @@
       "Aquestes surten a 10 € el quilo. Calcula el preu per quilo de totes quatre i compara'ls.",
       "Són les més cares de totes: 4,50 € els 400 g surten a més d'11 € el quilo.",
       "3,90 € els 400 g fan 9,75 € el quilo, i encara n'hi ha de més barates. Mira les llaunes de 250 g."
+    ],
+    "errors": [
+      null,
+      "PROPORCIO",
+      "PROPORCIO",
+      "PROPORCIO"
     ]
   },
   {
@@ -3085,6 +4237,12 @@
       "El descompte és més gran: un 10 % de 5 € només serien 50 cèntims.",
       "",
       "Has comparat l'euro de rebaixa amb els 4 € que va pagar. Un descompte es compara amb el preu que hi havia abans."
+    ],
+    "errors": [
+      "PROPORCIO",
+      "PROPORCIO",
+      null,
+      "PROPORCIO"
     ]
   },
   {
@@ -3101,6 +4259,12 @@
       "Aquesta quantitat no surt de cap proporció. Tots els ingredients s'han de multiplicar pel mateix nombre.",
       "",
       "T'has passat: 360 g voldria dir el doble de recepta, i això demanaria 6 ous."
+    ],
+    "errors": [
+      "PROPORCIO",
+      "PROPORCIO",
+      null,
+      "PROPORCIO"
     ]
   },
   {
@@ -3117,6 +4281,12 @@
       "Repassa ingredient per ingredient: n'hi ha un que s'acaba abans d'arribar a 20 persones.",
       "Aquest és el màxim que donen els ous, però hi ha un altre ingredient que s'acaba abans.",
       "Aquest seria el màxim si només comptessis la farina. El pastís el limita el que s'acaba primer."
+    ],
+    "errors": [
+      null,
+      "PASSOS",
+      "PASSOS",
+      "PASSOS"
     ]
   },
   {
@@ -3133,6 +4303,12 @@
       "Aquí el forn triga molt a escalfar-se i, en canvi, es refreda de cop. Torna a llegir què explica en Biel.",
       "",
       "En aquesta gràfica el forn ja comença calent, però l'enunciat diu que estava fred."
+    ],
+    "errors": [
+      "DADES",
+      "DADES",
+      null,
+      "DADES"
     ]
   },
   {
@@ -3149,6 +4325,12 @@
       "",
       "Segurament has dividit els 180 ºC entre 10, però pensa que la temperatura inicial no són 0 ºC.",
       "Potser has sumat 20+180 i després has fet una divisió. Creus que és correcte sumar?"
+    ],
+    "errors": [
+      "LLEGIR",
+      null,
+      "DADES",
+      "OPERACIO"
     ]
   },
   {
@@ -3165,6 +4347,12 @@
       "",
       "No quadra. Si fossin 10, entre tots es menjarien més pastís del que queda després de reservar-ne un quart.",
       "T'has passat. Amb 15 persones no n'hi hauria prou amb 1 pastís, faltarien trossos."
+    ],
+    "errors": [
+      "DADES",
+      null,
+      "QUADRA",
+      "QUADRA"
     ]
   },
   {
@@ -3181,6 +4369,12 @@
       "No és correcte, perquè la Mia en tot cas ha de donar diners per compensar, i no rebre'n.",
       "Gairebé ho tens! T'has equivocat en algun càlcul, però l'estratègia és bona.",
       ""
+    ],
+    "errors": [
+      "PASSOS",
+      "QUADRA",
+      "GAIREBE",
+      null
     ]
   },
   {
@@ -3197,6 +4391,12 @@
       "La figura B sí que es pot obtenir: a cada cantonada hi ha mitja rajola blanca, després hi ha una llisa blanca al mig, i la resta són blaves.",
       "La figura C sí que es pot fer. Fixa't que tot són rajoles senceres o bé mitges rajoles tallades per la diagonal.",
       "La figura D sí que es pot aconseguir, perquè estem combinant rajoles senceres amb mitges rajoles tallades per la diagonal."
+    ],
+    "errors": [
+      null,
+      "LLEGIR",
+      "LLEGIR",
+      "LLEGIR"
     ]
   },
   {
@@ -3213,6 +4413,12 @@
       "",
       "No quadra amb la successió. Compta quantes rajoles de costat té cada figura.",
       "Aquest és el nombre de rajoles de la figura 6, però et demana la figura 5."
+    ],
+    "errors": [
+      "PATRO",
+      null,
+      "PATRO",
+      "LLEGIR"
     ]
   },
   {
@@ -3229,6 +4435,12 @@
       "Hi ha un error en el recompte. Mira com creixen les blaves de figura en figura.",
       "",
       "Has comptat també les rajoles cartabó, i la pregunta demana només les llises de color blau."
+    ],
+    "errors": [
+      "DADES",
+      "PATRO",
+      null,
+      "LLEGIR"
     ]
   },
   {
@@ -3245,6 +4457,12 @@
       "Gairebé ho tens: compta els cartabós de les primeres figures i mira quina relació tenen amb el seu número.",
       "Aquest nombre no encaixa amb la successió. Les rajoles cartabó són només les de la diagonal.",
       "Aquest és el total de rajoles de la figura 10, però els cartabós només en són una part."
+    ],
+    "errors": [
+      null,
+      "PATRO",
+      "PATRO",
+      "LLEGIR"
     ]
   },
   {
@@ -3261,6 +4479,12 @@
       "Amb la simetria horitzontal es queda igual, però prova-li la vertical: el que ara és a l'esquerra passaria a la dreta i els colors s'inverteixen. Per tant, no pot ser.",
       "Les dues puntes miren cap al mateix costat, i per tant amb la simetria vertical passarien a mirar a l'altre. No pot ser aquesta opció.",
       ""
+    ],
+    "errors": [
+      "ESPAI",
+      "ESPAI",
+      "ESPAI",
+      null
     ]
   },
   {
@@ -3277,6 +4501,12 @@
       "",
       "Aquí t'has aturat just després del gir. Encara queden les dues simetries.",
       "Aquesta és la figura amb només una simetria feta. Repassa l'ordre que diu l'enunciat."
+    ],
+    "errors": [
+      "PASSOS",
+      null,
+      "PASSOS",
+      "PASSOS"
     ]
   },
   {
@@ -3293,6 +4523,12 @@
       "",
       "Aquestes són les persones inscrites a la Ruta de la font. Has de mirar només el grup de les persones sòcies.",
       "Has sumat també les persones que no són sòcies. Fixa't amb el grup de la dreta de la gràfica."
+    ],
+    "errors": [
+      "DADES",
+      null,
+      "DADES",
+      "DADES"
     ]
   },
   {
@@ -3309,6 +4545,12 @@
       "Segurament has fet la divisió 120 : 220, i les 220 inclouen sòcies que no es van inscriure. L'enunciat diu \"... de les 180 persones inscrites\".",
       "Gairebé ho tens, però la divisió no està ben feta. Torna a fer-la amb la calculadora.",
       ""
+    ],
+    "errors": [
+      "LLEGIR",
+      "DADES",
+      "CALCUL",
+      null
     ]
   },
   {
@@ -3325,6 +4567,12 @@
       "No és correcte: 1/4 de 120 serien 30 persones, i a la gràfica no n'hi ha tantes.",
       "Gairebé ho tens: 1/5 de 120 són 24 persones, però no hi ha tantes persones sòcies en aquesta ruta.",
       ""
+    ],
+    "errors": [
+      "QUADRA",
+      "QUADRA",
+      "GAIREBE",
+      null
     ]
   },
   {
@@ -3341,6 +4589,12 @@
       "",
       "A la Ruta del castell hi ha menys gent inscrita que a l'altra ruta. Torna a mirar la gràfica.",
       "Aquest és el grup més petit de tots. Per tant, la probabilitat que surti premi aquí no és la més gran."
+    ],
+    "errors": [
+      "DADES",
+      null,
+      "DADES",
+      "DADES"
     ]
   },
   {
@@ -3357,6 +4611,12 @@
       "No és correcte, però gairebé ho tens: fixa't bé en els colors i les llegendes.",
       "Aquest esquema reparteix el quadrat en unes quantitats d'àrea que no tenen res a veure amb les que veiem a la taula.",
       ""
+    ],
+    "errors": [
+      "DADES",
+      "GAIREBE",
+      "DADES",
+      null
     ]
   },
   {
@@ -3373,6 +4633,12 @@
       "No és correcte. Repassa les sortides del turó i de la font.",
       "",
       "No hi ha tantes maneres: en algun dels camins deus passar dues vegades pel mateix lloc."
+    ],
+    "errors": [
+      "COMPTAR",
+      "COMPTAR",
+      null,
+      "COMPTAR"
     ]
   },
   {
@@ -3389,6 +4655,12 @@
       "Revisa la llargada del tram que va de la cruïlla al turó: al mapa no és un nombre sencer.",
       "",
       "Aquest és el recorregut passant per la font, però n'hi ha un de més curt."
+    ],
+    "errors": [
+      "PASSOS",
+      "DADES",
+      null,
+      "QUADRA"
     ]
   },
   {
@@ -3405,6 +4677,12 @@
       "Hi ha un error. Suma primer els tres trams de la ruta i mira a quina velocitat es recorren.",
       "És massa temps. Recorda que es fa per camí pla.",
       "Sembla que has fet servir la velocitat de les pujades, però en aquesta ruta sempre es va per camí pla."
+    ],
+    "errors": [
+      null,
+      "PASSOS",
+      "QUADRA",
+      "DADES"
     ]
   },
   {
@@ -3421,6 +4699,12 @@
       "Revisa-ho amb cura: cada tram té la seva velocitat pròpia, i n'hi ha un de pujada i un altre de baixada.",
       "No és correcte. Pensa que en el tram de baixada, la velocitat és 30 km/h.",
       "No pot ser tanta estona, perquè el tram més llarg fa baixada i per tant es fa a més velocitat."
+    ],
+    "errors": [
+      null,
+      "DADES",
+      "DADES",
+      "QUADRA"
     ]
   },
   {
@@ -3437,6 +4721,12 @@
       "Hi ha un error. Pista: divideix el sostre en dos rectangles i pensa bé quines mides té cadascun.",
       "El resultat és massa gran. Potser has sumat un tros 2 vegades.",
       "Aquest és el resultat de multiplicar 80 per 50, com si el sostre fos un rectangle complet."
+    ],
+    "errors": [
+      null,
+      "PASSOS",
+      "QUADRA",
+      "DADES"
     ]
   },
   {
@@ -3453,6 +4743,12 @@
       "Has sumat només les mesures que llegeixes al dibuix, però falten dos costats per comptar.",
       "Repassa les operacions que has fet i pensa que has de sumar, en total, 6 longituds.",
       ""
+    ],
+    "errors": [
+      "PASSOS",
+      "PASSOS",
+      "PASSOS",
+      null
     ]
   },
   {
@@ -3469,6 +4765,12 @@
       "Gairebé ho tens. La divisió entre 4 està bé, però a la suma se t'ha escapat alguna cosa.",
       "",
       "És cert que per calcular una mitjana normalment comencem sumant, com tu has fet. Però falta fer una altra operació: quina és?"
+    ],
+    "errors": [
+      "CALCUL",
+      "GAIREBE",
+      null,
+      "PASSOS"
     ]
   },
   {
@@ -3485,8 +4787,12 @@
       "",
       "No és cert, perquè per exemple el 2022 no hi arriba. Repassa la taula.",
       "Tens raó quan dius que el 2022 no hi arriba, però et deixes un altre any que tampoc hi arriba."
+    ],
+    "errors": [
+      "UNITATS",
+      null,
+      "DADES",
+      "PASSOS"
     ]
   }
 ]
-  
-  
