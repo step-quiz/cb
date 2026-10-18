@@ -60,7 +60,7 @@ Lsss-DDMM-HHMM-CB-D-S-QQ-NNN-RRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
 
 | Camp | Significat |
 |---|---|
-| `L` | lletra de control (`TRWAGMYFPDXBNJZSQVHLCKE`, suma de nota, data, hora i `s`) |
+| `L` | lletra de control (`TRWAGMYFPDXBNJZSQVHLCKE`). Des del 18/10/2026 cobreix tot el codi: la nota, la data, l'hora, `s` i també el nivell, el mode, les preguntes i cada resultat (la fórmula és la de `js/codi-verificacio.js` d'operacions). Els codis d'abans només en cobrien la nota, la data, l'hora i `s`; l'analitzador els accepta i els marca ☑️ (resultats sense verificar) |
 | `sss` | `s` (2n d'ESO) o `q` (4t d'ESO) + els dos últims dígits de l'any **en què es fa la prova** (no el de la convocatòria, encara que el comentari del codi digui el contrari) |
 | `CB` | codi d'exercici, sempre `CB` |
 | `D` | nivell: `1` = 2n d'ESO, `2` = 4t d'ESO, `0` = sense nivell |

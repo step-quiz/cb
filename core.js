@@ -353,11 +353,21 @@ function finalitzarProva() {
     const ampladaRes = resultsStr.length > 30 ? 40 : 30;
     resultsStr = resultsStr.slice(0, 40).padEnd(ampladaRes, '0');
 
-    // ── Checksum (idèntic a game-core.js i analitzador-stepquiz.html) ──
+    // ── Lletra de control ──
+    // Còpia exacta de lletraNova() de step-quiz/operacions (js/codi-verificacio.js),
+    // que és on l'analitzador la comprova. Des del 18/10/2026 cobreix també
+    // l'exercici, el nivell, el mode, les preguntes i els resultats de cada
+    // pregunta (abans només la nota, la data i l'hora). Si es toca aquí, s'ha
+    // de tocar allà, i els vectors de tests/codi-verificacio.test.js d'operacions
+    // ho comproven.
+    const cosCodi = `${exCode}${dif}${sessions}${questions}${resultsStr}`;
+    let sumaCos = 0;
+    for (let i = 0; i < cosCodi.length; i++) sumaCos += ((i % 22) + 1) * cosCodi.charCodeAt(i);
     const sumaControl = notaInt
         + parseInt(dd, 10) + parseInt(mm, 10)
         + parseInt(hh, 10) + parseInt(min, 10)
-        + salt.charCodeAt(0);
+        + salt.charCodeAt(0)
+        + sumaCos;
     const lletra = 'TRWAGMYFPDXBNJZSQVHLCKE'.charAt(sumaControl % 23);
 
     // ── Codi final v2 ──
