@@ -124,7 +124,7 @@ for nivell, nom in (('4eso', "4t d'ESO"), ('2eso', "2n d'ESO")):
 usades = {q[k] for q in preguntes for k in ('enunciat', 'pregunta') if q.get(k)}
 sobrants = [f for f in os.listdir(os.path.join(ARREL, 'data'))
             if f.endswith('.png') and f'data/{f}' not in usades]
-comprova(f'hi ha {len(sobrants)} imatges de pregunta' in readme,
-         f'README.md: hauria de dir «hi ha {len(sobrants)} imatges de pregunta» que preguntes.json no fa servir')
+for f in sorted(sobrants):
+    comprova(False, f'data/{f}: preguntes.json no la fa servir (esborra-la o afegeix la pregunta)')
 
 acaba('cb')

@@ -32,7 +32,7 @@ cb/
 ```
 
 Ara mateix el banc té **218 preguntes**: 4t d'ESO de 2022 a 2026 i 2n d'ESO de 2024 a 2026.
-A `data/` hi ha 17 imatges de pregunta que `preguntes.json` no fa servir (ítems omesos).
+Totes les imatges de `data/` les fa servir `preguntes.json`: si en sobra alguna, `tests/docs_vs_codi.py` falla i diu quina és.
 
 ## Paràmetres URL de la prova (test.html)
 
