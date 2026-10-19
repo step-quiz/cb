@@ -26,6 +26,8 @@ cb/
 │   ├── cb4eso2025p1.png
 │   └── ...
 ├── retalla_cb.py       ← Retalla els PDF oficials en PNG (vegeu «Afegir l'edició d'un any nou»)
+├── eines/optimitza_png.py ← Comprimeix els PNG de data/ sense cap pèrdua (els mateixos píxels).
+│                         Passa-ho després de retalla_cb.py: l'oct. de 2026 va deixar data/ de 34 a 18 MB
 ├── _headers            ← Capçaleres de Cloudflare Pages: CORS obert a /data/*, perquè
 │                         un altre web en pugui descarregar les imatges (m ja no ho necessita:
 │                         des del 18/10/2026 en té una còpia a m/cb/data/)

@@ -10,10 +10,10 @@
   <style>
     :root {
       --text-main: #1e293b;
-      --text-muted: #64748b;
+      --text-muted: #475569;   /* abans #64748b: 4,4:1 sobre els fons blavosos */
       --bg-body: #f8fafc;
       --eso-bg: #eff6ff;
-      --accent: #3b82f6;
+      --accent: #2563eb;   /* abans #3b82f6: 3,7:1 sobre blanc */
       --border-heavy: #cbd5e1;
       --panel-w: 420px;
     }
@@ -36,7 +36,7 @@
 
     .title-container { text-align: center; margin-bottom: 10px; } /* Reduït espai sota títol */
     .title-row-1 { display: flex; align-items: center; justify-content: center; gap: 6px; font-size: 32px; font-weight: 800; color: var(--text-main); margin: 0; }
-    .title-row-2 { font-size: 22px; font-weight: 400; color: var(--accent); margin-top: -5px; }
+    .title-row-2 { font-size: 22px; font-weight: 400; color: #2563eb; margin-top: -5px; } /* --accent fa 3,5:1 sobre el fons */
 
     .title-row-1, .title-row-2, .main-wrapper { opacity: 0; animation: fade-in 0.4s ease-out forwards; }
     .title-row-2 { animation-delay: 0.2s; }
@@ -125,8 +125,8 @@
     }
     
     .copy-btn { background: #ffffff; color: var(--text-main); border: 1px solid var(--border-heavy); }
-    .open-btn { background: var(--accent); color: white; } /* Color blau viu */
-    .open-btn:hover { background: #2563eb; }
+    .open-btn { background: #2563eb; color: white; } /* blau viu (amb --accent, el blanc fa 3,7:1) */
+    .open-btn:hover { background: #1d4ed8; }
 
     .copy-status { font-size: 13px; color: #059669; margin-top: 5px; min-height: 15px; font-weight: 700; text-align: center; }
 
@@ -258,7 +258,7 @@
         </div>
         <div id="status-msg" class="copy-status"></div>
 
-        <span class="link-label">Enllaç generat</span>
+        <label class="link-label" for="output-link">Enllaç generat</label>
         <textarea id="output-link" class="link-output" readonly></textarea>
       </div>
     </div>
