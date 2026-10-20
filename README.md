@@ -45,12 +45,12 @@ Totes les imatges de `data/` les fa servir `preguntes.json`: si en sobra alguna,
 | `p` | `0`, `1` o `2` | Mode: 0=examen, 1=pràctica (amb pistes), 2=examen sense nota final (funciona com l'examen, però en acabar no es mostra la nota, només el codi; el codi és idèntic al de l'examen) |
 | `nivell` | `4eso`, `2eso` | Nivell educatiu |
 | `any` | `2022`-`2026` (2n d'ESO només 2024-2026) | Any de la convocatòria |
-| `dificultat` | `1`, `2`, `3` | Nivell de dificultat |
+| `dificultat` | `1`, `2`, `3`, o diversos separats per comes (`1,2` · `2,3` · `1,3`…) | Nivell o nivells de dificultat. Si no hi és, o hi són els tres, no es filtra |
 | `sentit` | `espacial`, `mesura`, `estocastic`, `numeric`, `algebraic` | Sentit matemàtic |
 | `max` | enter positiu | Nombre màxim de preguntes |
 | `q` | ids separats per comes, amb rangs | Tria explícita de preguntes: `11-14,24,28`. S'aplica abans de `max` i respecta l'ordre del banc. Els ids que no passin la resta de filtres s'ignoren |
 
-Exemple: `test.html?p=1&nivell=4eso&any=2025&dificultat=1`
+Exemples: `test.html?p=1&nivell=4eso&any=2025&dificultat=1` · `test.html?p=1&dificultat=2,3`
 
 ## Format del codi de verificació
 

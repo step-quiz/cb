@@ -16,7 +16,8 @@ const etiquetaMode = modeExamen ? "Mode examen" : "Mode pràctica";
 const filtreAny = urlParams.get('any');
 const filtreNivell = urlParams.get('nivell');
 const filtreSentit = urlParams.get('sentit');
-const filtreDificultat = urlParams.get('dificultat');
+// "1", "1,2", "1,3"... -> ['1','3']; sense el paràmetre, totes les dificultats
+const filtreDificultat = (urlParams.get('dificultat') || '').split(',').map(d => d.trim()).filter(Boolean);
 const filtreMax = urlParams.get('max');
 const filtreQ = urlParams.get('q');
 
@@ -76,7 +77,7 @@ async function inicialitzarApp() {
             if (filtreAny && p.any.toString() !== filtreAny) compleix = false;
             if (filtreNivell && p.nivell !== filtreNivell) compleix = false;
             if (filtreSentit && p.sentit !== filtreSentit) compleix = false;
-            if (filtreDificultat && p.dificultat.toString() !== filtreDificultat) compleix = false;
+            if (filtreDificultat.length && !filtreDificultat.includes(p.dificultat.toString())) compleix = false;
             return compleix;
         });
         

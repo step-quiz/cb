@@ -131,6 +131,9 @@
     .copy-status { font-size: 13px; color: #059669; margin-top: 5px; min-height: 15px; font-weight: 700; text-align: center; }
 
     /* ── Tria de preguntes ── */
+    .dif-grup { display: flex; flex-wrap: wrap; gap: 6px 14px; }
+    .row .dif-opt { display: flex; align-items: center; gap: 6px; font-size: 14px; font-weight: 400; text-align: left; cursor: pointer; }
+    .dif-opt input { width: 16px; height: 16px; margin: 0; accent-color: var(--accent); cursor: pointer; flex-shrink: 0; }
     .tria-btn {
       appearance: none;
       background-color: #ffffff;
@@ -225,13 +228,12 @@
       </div>
 
       <div class="row">
-        <label for="f-dificultat">Dificultat:</label>
-        <select id="f-dificultat">
-          <option value="">Totes</option>
-          <option value="1">1 - Baixa</option>
-          <option value="2">2 - Mitjana</option>
-          <option value="3">3 - Alta</option>
-        </select>
+        <label id="f-dificultat-etiqueta">Dificultat:</label>
+        <div class="dif-grup" id="f-dificultat" role="group" aria-labelledby="f-dificultat-etiqueta">
+          <label class="dif-opt"><input type="checkbox" value="1" checked><span>1 - Baixa</span></label>
+          <label class="dif-opt"><input type="checkbox" value="2" checked><span>2 - Mitjana</span></label>
+          <label class="dif-opt"><input type="checkbox" value="3" checked><span>3 - Alta</span></label>
+        </div>
       </div>
 
       <div class="row">
@@ -307,7 +309,8 @@
     const selPractica = document.getElementById('f-practica');
     const selNivell = document.getElementById('f-nivell');
     const selAny = document.getElementById('f-any');
-    const selDificultat = document.getElementById('f-dificultat');
+    const grupDificultat = document.getElementById('f-dificultat');
+    const capsDificultat = [...grupDificultat.querySelectorAll('input[type="checkbox"]')];
     const selSentit = document.getElementById('f-sentit');
     const outputLink = document.getElementById('output-link');
     const btnCopy = document.getElementById('btn-copy');
@@ -327,6 +330,12 @@
 
     let preguntesFiltrades = [];   // les que passen els filtres, en l'ordre del banc
     let triades = new Set();       // ids que sortiran a la prova
+
+    // Dificultats marcades, p. ex. ['1','3']. Si les tres són marcades, no es filtra.
+    function dificultatsTriades() {
+      const marcades = capsDificultat.filter(c => c.checked).map(c => c.value);
+      return marcades.length === capsDificultat.length ? [] : marcades;
+    }
 
     function actualitzarAnys() {
       const nivell = selNivell.value;
@@ -375,10 +384,11 @@
 
     function recalcularFiltrades() {
       if (!bancPreguntes) { preguntesFiltrades = []; return; }
+      const difTriades = dificultatsTriades();
       preguntesFiltrades = bancPreguntes.filter(p =>
         (!selNivell.value || p.nivell === selNivell.value) &&
         (!selAny.value || String(p.any) === selAny.value) &&
-        (!selDificultat.value || String(p.dificultat) === selDificultat.value) &&
+        (!difTriades.length || difTriades.includes(String(p.dificultat))) &&
         (!selSentit.value || p.sentit === selSentit.value));
       triades = new Set(preguntesFiltrades.map(p => p.id));   // en canviar de filtre, totes
     }
@@ -429,7 +439,8 @@
       params.append('p', selPractica.value);
       if (selNivell.value) params.append('nivell', selNivell.value);
       if (selAny.value) params.append('any', selAny.value);
-      if (selDificultat.value) params.append('dificultat', selDificultat.value);
+      const difTriades = dificultatsTriades();
+      if (difTriades.length) params.append('dificultat', difTriades.join(','));
       if (selSentit.value) params.append('sentit', selSentit.value);
       if (bancPreguntes && preguntesFiltrades.length && triades.size < preguntesFiltrades.length) {
         params.append('q', comprimeixIds(triades));
@@ -470,7 +481,12 @@
     });
 
     selNivell.addEventListener('change', actualitzarAnys);
-    [selAny, selDificultat, selSentit].forEach(sel => sel.addEventListener('change', refrescarTria));
+    [selAny, selSentit].forEach(sel => sel.addEventListener('change', refrescarTria));
+    grupDificultat.addEventListener('change', ev => {
+      // Sempre n'ha de quedar una de marcada (sense cap, no hi hauria prova possible).
+      if (!capsDificultat.some(c => c.checked)) ev.target.checked = true;
+      refrescarTria();
+    });
     selPractica.addEventListener('change', updateLink);
 
     btnCopy.addEventListener('click', async () => {
