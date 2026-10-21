@@ -7,7 +7,7 @@ Plataforma interactiva per practicar les proves de competències bàsiques de ma
 No requereix instal·lació ni servidor. Són arxius totalment estàtics.
 
 1. Obre `index.html` al navegador — és el **generador d'enllaços** per al professorat.
-2. Configura la prova: mode (pràctica/examen), nivell, any, dificultat i sentit matemàtic.
+2. Configura la prova: mode (pràctica/examen), nivell, any, dificultat i sentit matemàtic (aquests dos, amb selecció múltiple).
 3. Copia l'enllaç generat o obre la prova directament.
 4. L'alumne resol les preguntes i, en acabar, obté un **codi de verificació** que lliura al professor.
 
@@ -17,7 +17,8 @@ No requereix instal·lació ni servidor. Són arxius totalment estàtics.
 cb/
 ├── index.html          ← Generador d'enllaços (pàgina del professorat)
 ├── test.html           ← Pàgina de la prova (pàgina de l'alumne)
-├── core.js             ← Motor de joc (càrrega JSON, validació, codi antifrau)
+├── core.js             ← Motor de joc (càrrega JSON, validació)
+├── codi.js             ← Codi de verificació v3 (lògica pura, sense DOM)
 ├── shared.css          ← Estils globals (2 columnes, responsiu, mode horitzontal)
 ├── preguntes.json      ← Base de dades de preguntes (enunciats, pistes, respostes, tipus d'error)
 ├── errors.json         ← Tipus d'error de les opcions incorrectes (nom i descripció)
@@ -46,32 +47,43 @@ Totes les imatges de `data/` les fa servir `preguntes.json`: si en sobra alguna,
 | `nivell` | `4eso`, `2eso` | Nivell educatiu |
 | `any` | `2022`-`2026` (2n d'ESO només 2024-2026) | Any de la convocatòria |
 | `dificultat` | `1`, `2`, `3`, o diversos separats per comes (`1,2` · `2,3` · `1,3`…) | Nivell o nivells de dificultat. Si no hi és, o hi són els tres, no es filtra |
-| `sentit` | `espacial`, `mesura`, `estocastic`, `numeric`, `algebraic` | Sentit matemàtic |
+| `sentit` | `espacial`, `mesura`, `estocastic`, `numeric`, `algebraic`, o diversos separats per comes (`numeric,algebraic`…) | Sentit o sentits matemàtics. Si no hi és, o hi són els cinc, no es filtra |
 | `max` | enter positiu | Nombre màxim de preguntes |
 | `q` | ids separats per comes, amb rangs | Tria explícita de preguntes: `11-14,24,28`. S'aplica abans de `max` i respecta l'ordre del banc. Els ids que no passin la resta de filtres s'ignoren |
 
-Exemples: `test.html?p=1&nivell=4eso&any=2025&dificultat=1` · `test.html?p=1&dificultat=2,3`
+Exemples: `test.html?p=1&nivell=4eso&any=2025&dificultat=1` · `test.html?p=1&dificultat=2,3&sentit=numeric,algebraic`
 
 ## Format del codi de verificació
 
-En acabar la prova, l'alumne obté un codi (format **v2**, el mateix que llegeix
-`analitzador-stepquiz.html`) amb la nota, la data i l'hora, el resultat de cada pregunta i una
-lletra de control tipus DNI. El professor el pot verificar sense cap sistema en línia.
+En acabar la prova, l'alumne obté un codi (format **v3**, que llegeix `analitzador-stepquiz.html`)
+amb la nota, la data i l'hora, el que s'havia triat a l'enllaç (convocatòria, dificultats i sentits),
+una empremta de les preguntes, el resultat de cada pregunta i una lletra de control tipus DNI. El
+professor el pot verificar sense cap sistema en línia. El construeix `codi.js` (lògica pura, amb
+`tests/codi.test.js`).
 
 ```
-Lsss-DDMM-HHMM-CB-D-S-QQ-NNN-RRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+Lsss-DDMM-HHMM-CB-D-S-QQ-AA-F-SS-EEEE-NNN-RRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
 ```
 
 | Camp | Significat |
 |---|---|
-| `L` | lletra de control (`TRWAGMYFPDXBNJZSQVHLCKE`). Des del 18/10/2026 cobreix tot el codi: la nota, la data, l'hora, `s` i també el nivell, el mode, les preguntes i cada resultat (la fórmula és la de `js/codi-verificacio.js` d'operacions). Els codis d'abans només en cobrien la nota, la data, l'hora i `s`; l'analitzador els accepta i els marca ☑️ (resultats sense verificar) |
+| `L` | lletra de control (`TRWAGMYFPDXBNJZSQVHLCKE`). Cobreix tot el codi: la nota, la data, l'hora, `s`, el nivell, el mode, les preguntes, la convocatòria, les dificultats, els sentits, l'empremta i cada resultat (la fórmula és la de `js/codi-verificacio.js` d'operacions, aplicada al cos del v3) |
 | `sss` | `q` (4t d'ESO) o `s` (2n d'ESO o sense nivell) + els dos últims dígits de l'any **en què es fa la prova** (no el de la convocatòria) |
 | `CB` | codi d'exercici, sempre `CB` |
 | `D` | nivell: `1` = 2n d'ESO, `2` = 4t d'ESO, `0` = sense nivell |
 | `S` | mode: `1` = examen, `2` = pràctica |
 | `QQ` | nombre de preguntes |
+| `AA` | convocatòria triada: els dos últims dígits de l'any (`25`), o `00` = tots els anys |
+| `F` | dificultats triades, com a suma: baixa = `1`, mitjana = `2`, alta = `4` (`7` = totes; `3` = baixa i mitjana; `5` = baixa i alta; `6` = mitjana i alta) |
+| `SS` | sentits triats, com a suma de dues xifres: numèric = `1`, algebraic = `2`, de mesura = `4`, espacial = `8`, estocàstic = `16` (`31` = tots) |
+| `EEEE` | empremta de la llista d'ids de les preguntes, en ordre: 4 lletres de la A a la W (FNV-1a de 32 bits del text `id,id,id…`). Dues proves amb la mateixa empremta tenen exactament les mateixes preguntes; si el professor ha triat preguntes una a una (paràmetre `q`) o el banc ha canviat, l'empremta ho delata encara que els filtres coincideixin |
 | `NNN` | nota × 10, de `000` a `100` |
 | `R…R` | una xifra per pregunta. Examen: `1` encert, `4` error. Pràctica: intents (`1`–`3`) o `4` fallada. S'omple amb `0` fins a 30 posicions (40 si hi ha més de 30 preguntes) |
+
+Els codis **v2** (9 segments, sense `AA`, `F`, `SS` ni `EEEE`) són els d'abans de la nova generació;
+l'analitzador els segueix llegint. Les lletres de l'empremta són 23 de seguides (A-W) perquè canviar-ne
+una de sola mai quedi amagat per la lletra de control. Els vectors de `tests/codi.test.js` són els
+mateixos que té el test de la lletra de control a `operacions`: si es toca el format, cal tocar-lo als dos.
 
 ## Estructura del JSON de preguntes
 

@@ -15,7 +15,8 @@ const etiquetaMode = modeExamen ? "Mode examen" : "Mode pràctica";
 
 const filtreAny = urlParams.get('any');
 const filtreNivell = urlParams.get('nivell');
-const filtreSentit = urlParams.get('sentit');
+// "numeric", "numeric,algebraic"... -> ['numeric','algebraic']; sense el paràmetre, tots els sentits
+const filtreSentit = (urlParams.get('sentit') || '').split(',').map(d => d.trim()).filter(Boolean);
 // "1", "1,2", "1,3"... -> ['1','3']; sense el paràmetre, totes les dificultats
 const filtreDificultat = (urlParams.get('dificultat') || '').split(',').map(d => d.trim()).filter(Boolean);
 const filtreMax = urlParams.get('max');
@@ -76,7 +77,7 @@ async function inicialitzarApp() {
             let compleix = true;
             if (filtreAny && p.any.toString() !== filtreAny) compleix = false;
             if (filtreNivell && p.nivell !== filtreNivell) compleix = false;
-            if (filtreSentit && p.sentit !== filtreSentit) compleix = false;
+            if (filtreSentit.length && !filtreSentit.includes(p.sentit)) compleix = false;
             if (filtreDificultat.length && !filtreDificultat.includes(p.dificultat.toString())) compleix = false;
             return compleix;
         });
@@ -301,104 +302,31 @@ function finalitzarProva() {
     // 2. Mostrar la pantalla final
     document.getElementById('pantalla-final').style.display = 'block';
 
-    // 3. Generació del codi de verificació — FORMAT v2
+    // 3. Generació del codi de verificació — FORMAT v3
     // ---------------------------------------------------------------
-    // Genera un codi v2 idèntic al de game-core.js (step-quiz operacions).
-    // Format: Lsss-DDMM-HHMM-EE-D-S-QQ-NNN-RRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
-    // L'analitzador-stepquiz.html el parseja com a format 'v2'.
+    // El construeix codi.js (lògica pura, amb tests/codi.test.js). Format:
+    // Lsss-DDMM-HHMM-CB-D-S-QQ-AA-F-SS-EEEE-NNN-RRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+    // Respecte del v2 hi ha la convocatòria, les dificultats, els sentits i una
+    // empremta de les preguntes: vegeu el README i la capçalera de codi.js.
+    // L'analitzador-stepquiz.html (operacions) el parseja com a format 'v3'.
     // ---------------------------------------------------------------
 
     const total = preguntesActives.length;
     const encerts = resultatsExamen.filter(r => r.encertat).length;
     const notaSobre10 = (encerts / total) * 10;
 
-    // ── Data i hora ──
-    const ara = new Date();
-    const dd  = String(ara.getDate()).padStart(2, '0');
-    const mm  = String(ara.getMonth() + 1).padStart(2, '0');
-    const hh  = String(ara.getHours()).padStart(2, '0');
-    const min = String(ara.getMinutes()).padStart(2, '0');
-
-    // ── Salt codificat (nivell + any en què es fa la prova) ──
-    // Posició 0: 'q' = 4t ESO; 's' = 2n ESO o sense nivell
-    // Posicions 1-2: últims 2 dígits de l'any EN QUÈ ES FA LA PROVA (la data
-    //   del navegador), no el de la convocatòria: una prova de 2024 feta el
-    //   2026 dona "q26".
-    // Compatible amb regex v2: [a-z][a-z0-9]{2} → ex: "q26", "s25"
-    // L'analitzador ja sap decodificar-ho (parseCode).
-    const nivellChar = (filtreNivell === '4eso') ? 'q' : 's';
-    const anyStr = String(ara.getFullYear()).slice(-2);
-    const salt = nivellChar + anyStr;
-
-    // ── Codi d'exercici ──
-    const exCode = 'CB';
-
-    // ── Camp D: el nivell ──
-    //    0 = sense nivell, 1 = 2eso, 2 = 4eso
-    const dif = filtreNivell === '2eso' ? '1' : filtreNivell === '4eso' ? '2' : '0';
-
-    // ── Sessions: codifiquem el MODE (examen o pràctica) ──
-    //    1 = mode examen (sense pistes)
-    //    2 = mode pràctica (amb pistes)
-    //    L'analitzador decodifica: 1→'Examen', 2→'Pràctica'
-    const sessions = modeExamen ? '1' : '2';
-    const questions = String(Math.min(total, 99)).padStart(2, '0');
-
-    // ── Nota (NNN = nota × 10, arrodonida, 000-100) ──
-    const notaInt = Math.round(notaSobre10 * 10);
-    const notaStr = String(notaInt).padStart(3, '0');
-
-    // ── Resultats per pregunta (30 chars) ──
-    let resultsStr = '';
-    if (modeExamen) {
-        // Mode examen: 1=encert, 4=error (sense intents intermedis)
-        resultatsExamen.forEach(r => {
-            resultsStr += r.encertat ? '1' : '4';
-        });
-    } else {
-        // Mode pràctica: 1=1r intent, 2=2n, 3=3r, 4=fallit, 0=no resposta.
-        // En l'ús normal no n'hi pot haver cap sense resposta (només s'avança
-        // encertant), però si mai s'arribés aquí abans d'hora, una pregunta no
-        // resposta ha de sortir com a 0 (com a l'examen), no com a «1r intent».
-        const respostes = new Set(resultatsExamen.map(r => r.id));
-        preguntesActives.forEach(p => {
-            if (!respostes.has(p.id)) {
-                resultsStr += '0';
-                return;
-            }
-            let errors = intentsPerPregunta[p.id] || 0;
-            let intents = errors + 1;
-            if (intents > 4) intents = 4;
-            resultsStr += intents.toString();
-        });
-    }
-    // El camp de resultats del format v2 admet de 30 a 40 posicions, una per pregunta.
-    // Amb 30 preguntes o menys s'omple a 30, com sempre, perquè els codis de les proves
-    // de tota la vida surtin idèntics als d'abans. Només s'eixampla a 40 quan cal.
-    // Per sobre de 40 es reté: val més perdre el detall de les últimes que no pas
-    // que l'analitzador rebutgi el codi sencer i es perdi també la nota.
-    const ampladaRes = resultsStr.length > 30 ? 40 : 30;
-    resultsStr = resultsStr.slice(0, 40).padEnd(ampladaRes, '0');
-
-    // ── Lletra de control ──
-    // Còpia exacta de lletraNova() de step-quiz/operacions (js/codi-verificacio.js),
-    // que és on l'analitzador la comprova. Des del 18/10/2026 cobreix també
-    // l'exercici, el nivell, el mode, les preguntes i els resultats de cada
-    // pregunta (abans només la nota, la data i l'hora). Si es toca aquí, s'ha
-    // de tocar allà, i els vectors de tests/codi-verificacio.test.js d'operacions
-    // ho comproven.
-    const cosCodi = `${exCode}${dif}${sessions}${questions}${resultsStr}`;
-    let sumaCos = 0;
-    for (let i = 0; i < cosCodi.length; i++) sumaCos += ((i % 22) + 1) * cosCodi.charCodeAt(i);
-    const sumaControl = notaInt
-        + parseInt(dd, 10) + parseInt(mm, 10)
-        + parseInt(hh, 10) + parseInt(min, 10)
-        + salt.charCodeAt(0)
-        + sumaCos;
-    const lletra = 'TRWAGMYFPDXBNJZSQVHLCKE'.charAt(sumaControl % 23);
-
-    // ── Codi final v2 ──
-    const codiFinal = `${lletra}${salt}-${dd}${mm}-${hh}${min}-${exCode}-${dif}-${sessions}-${questions}-${notaStr}-${resultsStr}`;
+    const codiFinal = CodiCB.construeix({
+        ara: new Date(),
+        nivell: filtreNivell,
+        any: filtreAny,
+        dificultats: filtreDificultat,
+        sentits: filtreSentit,
+        modeExamen,
+        ids: preguntesActives.map(p => p.id),
+        resultatsExamen,
+        intentsPerPregunta,
+        notaSobre10
+    });
 
     // ── Nota amb coma per mostrar a pantalla ──
     const notaDisplay = notaSobre10.toFixed(2).replace('.', ',');
