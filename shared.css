@@ -113,7 +113,8 @@ header {
 /* =========================================
    CONSULTA DE PREGUNTES ANTERIORS (només lectura)
    ========================================= */
-.amagat {
+.amagat,
+#opcions-container.amagat { /* el CSS de mòbil horitzontal força display: grid amb un id */
     display: none !important;
 }
 
