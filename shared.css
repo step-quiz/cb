@@ -111,6 +111,76 @@ header {
 }
 
 /* =========================================
+   CONSULTA DE PREGUNTES ANTERIORS (només lectura)
+   ========================================= */
+.amagat {
+    display: none !important;
+}
+
+#navegacio {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 10px;
+}
+
+.btn-nav {
+    padding: 6px 14px;
+    font-size: 0.95rem;
+    border: 1px solid var(--primary);
+    background: white;
+    color: var(--primary);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-nav:hover {
+    background: #eff6ff;
+}
+
+.btn-nav.btn-tornar {
+    background: var(--primary);
+    color: white;
+    font-weight: bold;
+}
+
+.btn-nav.btn-tornar:hover {
+    background: #004494;
+}
+
+.avis-revisio {
+    margin: 0 0 15px;
+    padding: 8px 12px;
+    border-left: 4px solid var(--primary);
+    background: #eff6ff;
+    color: #333;
+    font-size: 0.95rem;
+}
+
+#img-enunciat-revisio, #img-pregunta-revisio {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.zona-img-revisio {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+#opcions-revisio {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Les opcions de la consulta no es poden clicar: sense punter de clic */
+#opcions-revisio button.opcio {
+    cursor: default;
+}
+
+/* =========================================
    IMATGES (Enunciat i Pregunta)
    ========================================= */
 #zona-enunciat, #zona-pregunta {
@@ -354,7 +424,7 @@ button.opcio.seleccionada {
    ========================================= */
 @media screen and (max-height: 450px) and (orientation: landscape) and (hover: none) {
     
-    #opcions-container {
+    #opcions-container, #opcions-revisio {
         display: grid !important;
         grid-template-columns: 1fr 1fr;
         gap: 8px !important;
@@ -384,5 +454,20 @@ button.opcio.seleccionada {
     
     .pista-contextual {
         font-size: 0.85rem !important;
+    }
+
+    #navegacio {
+        margin-top: 6px;
+    }
+
+    .btn-nav {
+        padding: 4px 10px;
+        font-size: 0.85rem;
+    }
+
+    .avis-revisio {
+        margin-bottom: 8px;
+        padding: 4px 8px;
+        font-size: 0.8rem;
     }
 }

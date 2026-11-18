@@ -53,6 +53,13 @@ let intentsPerPregunta = {};
 let resultatsExamen = [];
 let ultimEnunciatCarregat = ""; // Per evitar parpelleigs si l'enunciat és el mateix
 let tipusErrors = {}; // errors.json: nom de cada tipus d'error (si no carrega, no es mostra l'etiqueta)
+// Opcions que l'alumne ha clicat a cada pregunta, per posició: [{ triades: [índex, ...] }, ...].
+// Examen: una sola (la confirmada). Pràctica: totes, en ordre; l'última és la correcta.
+let respostesDonades = [];
+// Consulta de preguntes anteriors: null = l'alumne és a la pregunta actual;
+// un nombre = posició de la pregunta anterior que està mirant (sempre < preguntaActual).
+let indexRevisio = null;
+let scrollAbansRevisio = null; // on era cada columna abans d'entrar a la consulta
 
 // ==========================================
 // 2. CÀRREGA DE DADES (FETCH) I FILTRATGE
@@ -143,12 +150,22 @@ function carregarPregunta() {
     }, 400);
 
     // 3. Actualitzar comptador AMB INDICADOR DE MODE
-    // Utilitzem innerHTML per poder posar el <span> amb l'etiqueta
+    pintaComptador();
+    comptador.classList.remove('fade-out');
+    pintaNavegacio();
+}
+
+function pintaComptador() {
+    const comptador = document.getElementById('comptador-preguntes');
+    const total = preguntesActives.length;
+    const text = indexRevisio === null
+        ? `Pregunta ${preguntaActual + 1} de ${total}`
+        : `Consultant la pregunta ${indexRevisio + 1} · ara ets a la ${preguntaActual + 1} de ${total}`;
+    // innerHTML per poder posar el <span> amb l'etiqueta del mode (cap text de la URL)
     comptador.innerHTML = `
         <span style="margin-right: 20px; font-weight: bold; opacity: 0.8;">${etiquetaMode}</span>
-        Pregunta ${preguntaActual + 1} de ${preguntesActives.length}
+        ${text}
     `;
-    comptador.classList.remove('fade-out');
 }
 
 function generatBotonsOpcions(dades) {
@@ -187,6 +204,7 @@ function generatBotonsOpcions(dades) {
 function validarPractica(index, btn, espai) {
     const dades = preguntesActives[preguntaActual];
     if (!intentsPerPregunta[dades.id]) intentsPerPregunta[dades.id] = 0;
+    desaResposta(index);
 
     if (index === dades.indexCorrecte) {
         btn.classList.add('correcta');
@@ -202,24 +220,34 @@ function validarPractica(index, btn, espai) {
         btn.classList.add('incorrecta');
         
         // Esborrem el text de qualsevol pista que s'hagi mostrat abans en aquesta pregunta
-        document.querySelectorAll('.pista-contextual').forEach(p => p.innerText = '');
+        document.querySelectorAll('#opcions-container .pista-contextual').forEach(p => p.innerText = '');
 
-        // Tipus d'error de l'opció triada (errors.json), damunt de la pista
-        const tipus = dades.errors && tipusErrors[dades.errors[index]];
-        if (tipus) {
-            const etiqueta = document.createElement('span');
-            etiqueta.className = 'etiqueta-error';
-            etiqueta.textContent = tipus.nom;
-            etiqueta.title = tipus.descripcio;
-            espai.appendChild(etiqueta);
-        }
-        espai.appendChild(document.createTextNode(dades.pistes[index])); // Mostra la nova pista
+        pintaPista(espai, dades, index); // Mostra la nova pista
     }
 }
 
+// Pista d'una opció incorrecta, amb el tipus d'error (errors.json) a sobre
+function pintaPista(espai, dades, index) {
+    const tipus = dades.errors && tipusErrors[dades.errors[index]];
+    if (tipus) {
+        const etiqueta = document.createElement('span');
+        etiqueta.className = 'etiqueta-error';
+        etiqueta.textContent = tipus.nom;
+        etiqueta.title = tipus.descripcio;
+        espai.appendChild(etiqueta);
+    }
+    espai.appendChild(document.createTextNode(dades.pistes[index]));
+}
+
+// Desa l'opció clicada a la pregunta actual (per poder-la consultar després)
+function desaResposta(index) {
+    if (!respostesDonades[preguntaActual]) respostesDonades[preguntaActual] = { triades: [] };
+    respostesDonades[preguntaActual].triades.push(index);
+}
+
 function seleccionarExamen(index, btn, espai) {
-    document.querySelectorAll('.opcio').forEach(b => b.classList.remove('seleccionada'));
-    document.querySelectorAll('.btn-confirmar').forEach(b => b.remove());
+    document.querySelectorAll('#opcions-container .opcio').forEach(b => b.classList.remove('seleccionada'));
+    document.querySelectorAll('#opcions-container .btn-confirmar').forEach(b => b.remove());
 
     btn.classList.add('seleccionada');
     const btnConf = document.createElement('button');
@@ -237,6 +265,7 @@ function seleccionarExamen(index, btn, espai) {
         // -------------------------------------
 
         const dades = preguntesActives[preguntaActual];
+        desaResposta(index);
         resultatsExamen.push({ id: dades.id, encertat: (index === dades.indexCorrecte) });
         prepararSeguent(false);
     };
@@ -293,7 +322,8 @@ function seguentPregunta() {
 }
 
 function finalitzarProva() {
-    // 1. Amagar interfície de joc
+    // 1. Amagar interfície de joc (i la consulta de preguntes anteriors)
+    document.getElementById('navegacio').style.display = 'none';
     document.getElementById('zona-pregunta').style.display = 'none';
     document.getElementById('opcions-container').style.display = 'none';
     document.getElementById('comptador-preguntes').style.display = 'none';
@@ -366,6 +396,124 @@ function finalitzarProva() {
 }
 
 // ==========================================
+// 6. CONSULTA DE PREGUNTES ANTERIORS (NOMÉS LECTURA)
+// ==========================================
+// Com en un examen en paper, l'alumne pot tornar a mirar les preguntes que ja
+// ha contestat, però no pot canviar-ne la resposta: la consulta es pinta en
+// elements propis (#zona-revisio, #img-enunciat-revisio) amb botons sense cap
+// acció, i la pregunta actual només s'amaga, sense tocar-la. En tornar-hi, la
+// troba igual que l'havia deixada (opció seleccionada, pistes, botó «Següent»).
+
+const ELEMENTS_PREGUNTA_ACTUAL = ['zona-pregunta', 'opcions-container', 'zona-seguent'];
+
+function pintaNavegacio() {
+    const enRevisio = indexRevisio !== null;
+    const btnAnterior = document.getElementById('btn-anterior');
+    const btnPosterior = document.getElementById('btn-posterior');
+    const btnTornar = document.getElementById('btn-tornar');
+
+    btnAnterior.textContent = enRevisio ? '← Anterior' : '← Pregunta anterior';
+    btnAnterior.style.display = (enRevisio ? indexRevisio > 0 : preguntaActual > 0) ? '' : 'none';
+    btnPosterior.style.display = enRevisio && indexRevisio < preguntaActual - 1 ? '' : 'none';
+    btnTornar.style.display = enRevisio ? '' : 'none';
+    // A la primera pregunta no hi ha res a consultar: la barra no ocupa espai
+    document.getElementById('navegacio').style.display =
+        (enRevisio || preguntaActual > 0) ? '' : 'none';
+}
+
+function mostraRevisio(posicio) {
+    if (posicio < 0 || posicio >= preguntaActual) return; // només preguntes ja contestades
+    const colA = document.getElementById('columna-a');
+    const colB = document.getElementById('columna-b');
+
+    if (indexRevisio === null) {
+        scrollAbansRevisio = { a: colA.scrollTop, b: colB.scrollTop };
+        document.getElementById('img-enunciat').classList.add('amagat');
+        ELEMENTS_PREGUNTA_ACTUAL.forEach(id => document.getElementById(id).classList.add('amagat'));
+        document.getElementById('img-enunciat-revisio').classList.remove('amagat');
+        document.getElementById('zona-revisio').classList.remove('amagat');
+    }
+    indexRevisio = posicio;
+
+    const dades = preguntesActives[posicio];
+    document.getElementById('img-enunciat-revisio').src = dades.enunciat;
+    document.getElementById('img-pregunta-revisio').src = dades.pregunta;
+    pintaOpcionsRevisio(dades, (respostesDonades[posicio] || { triades: [] }).triades);
+
+    pintaComptador();
+    pintaNavegacio();
+    colA.scrollTop = 0;
+    colB.scrollTop = 0;
+}
+
+// Opcions d'una pregunta ja contestada, tal com l'alumne les va deixar.
+// Examen: només quina va triar (sense dir si era correcta, com fins ara).
+// Pràctica: les incorrectes que va provar, amb la pista, i la correcta.
+function pintaOpcionsRevisio(dades, triades) {
+    const container = document.getElementById('opcions-revisio');
+    container.innerHTML = '';
+
+    ["A", "B", "C", "D"].forEach((lletra, index) => {
+        const fila = document.createElement('div');
+        fila.className = 'fila-opcio';
+
+        const btn = document.createElement('button');
+        btn.className = 'opcio';
+        btn.type = 'button';
+        btn.disabled = true; // cap acció: la resposta ja no es pot canviar
+        btn.innerText = `Opció ${lletra}`;
+
+        const espai = document.createElement('div');
+        espai.className = 'pista-contextual';
+
+        if (modeExamen) {
+            if (triades.includes(index)) {
+                btn.classList.add('seleccionada');
+                espai.textContent = 'La teva resposta';
+            }
+        } else if (index === dades.indexCorrecte && triades.includes(index)) {
+            btn.classList.add('correcta');
+            espai.className = 'pista-contextual success-msg';
+            espai.textContent = triades.length === 1
+                ? '✅ Encertada al primer intent'
+                : `✅ Encertada a l'intent ${triades.length}`;
+        } else if (triades.includes(index)) {
+            btn.classList.add('incorrecta');
+            pintaPista(espai, dades, index);
+        }
+
+        fila.appendChild(btn);
+        fila.appendChild(espai);
+        container.appendChild(fila);
+    });
+}
+
+function tornaPreguntaActual() {
+    if (indexRevisio === null) return;
+    indexRevisio = null;
+    document.getElementById('img-enunciat-revisio').classList.add('amagat');
+    document.getElementById('zona-revisio').classList.add('amagat');
+    document.getElementById('img-enunciat').classList.remove('amagat');
+    ELEMENTS_PREGUNTA_ACTUAL.forEach(id => document.getElementById(id).classList.remove('amagat'));
+
+    pintaComptador();
+    pintaNavegacio();
+    if (scrollAbansRevisio) {
+        document.getElementById('columna-a').scrollTop = scrollAbansRevisio.a;
+        document.getElementById('columna-b').scrollTop = scrollAbansRevisio.b;
+        scrollAbansRevisio = null;
+    }
+}
+
+document.getElementById('btn-anterior').addEventListener('click', () =>
+    mostraRevisio(indexRevisio === null ? preguntaActual - 1 : indexRevisio - 1));
+document.getElementById('btn-posterior').addEventListener('click', () => {
+    if (indexRevisio !== null) mostraRevisio(indexRevisio + 1);
+});
+document.getElementById('btn-tornar').addEventListener('click', tornaPreguntaActual);
+document.getElementById('btn-tornar-peu').addEventListener('click', tornaPreguntaActual);
+
+// ==========================================
 // UTILS
 // ==========================================
 function esMobilHoritzontal() {
@@ -373,7 +521,7 @@ function esMobilHoritzontal() {
 }
 
 function bloquejarOpcions() {
-    document.querySelectorAll('.opcio').forEach(b => b.disabled = true);
+    document.querySelectorAll('#opcions-container .opcio').forEach(b => b.disabled = true);
 }
 
 function mostrarError(msg) {
