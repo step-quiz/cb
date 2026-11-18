@@ -16,7 +16,7 @@ No requereix instal·lació ni servidor. Són arxius totalment estàtics.
 Com amb la prova en paper, des de la segona pregunta l'alumne pot tornar a mirar les que ja ha
 contestat (botó **← Pregunta anterior**, i després **← Anterior** / **Següent →** per moure's entre
 elles), però **mai no en pot canviar la resposta**: les opcions es mostren sense cap acció. Mentre
-consulta, sempre té el botó **Tornar a la pregunta actual** (a dalt i a peu de pregunta), que el
+consulta, sempre té el botó **Tornar a la pregunta actual** (a dalt, al costat de les fletxes), que el
 torna a la pregunta en curs tal com l'havia deixada (l'opció seleccionada sense confirmar, les pistes
 ja vistes, el botó de pregunta següent). En mode examen la consulta només diu quina opció va triar,
 no si era correcta; en mode pràctica mostra les opcions incorrectes que va provar, amb la pista, i la

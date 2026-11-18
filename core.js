@@ -160,7 +160,7 @@ function pintaComptador() {
     const total = preguntesActives.length;
     const text = indexRevisio === null
         ? `Pregunta ${preguntaActual + 1} de ${total}`
-        : `Consultant la pregunta ${indexRevisio + 1} · ara ets a la ${preguntaActual + 1} de ${total}`;
+        : `Consultant la pregunta ${indexRevisio + 1}`;
     // innerHTML per poder posar el <span> amb l'etiqueta del mode (cap text de la URL)
     comptador.innerHTML = `
         <span style="margin-right: 20px; font-weight: bold; opacity: 0.8;">${etiquetaMode}</span>
@@ -511,7 +511,6 @@ document.getElementById('btn-posterior').addEventListener('click', () => {
     if (indexRevisio !== null) mostraRevisio(indexRevisio + 1);
 });
 document.getElementById('btn-tornar').addEventListener('click', tornaPreguntaActual);
-document.getElementById('btn-tornar-peu').addEventListener('click', tornaPreguntaActual);
 
 // ==========================================
 // UTILS
